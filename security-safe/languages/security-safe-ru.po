@@ -1,0 +1,2383 @@
+# Copyright (C) 2019 Sovereign Stack, LLC
+# This file is distributed under the same license as the WP Security Safe plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Security Safe\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/security-safe\n"
+"Language-Team: Sovereign Stack Team\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-04-19 18:13-0400\n"
+"PO-Revision-Date: 2020-04-19 18:23-0400\n"
+"X-Generator: Poedit 2.3\n"
+"X-Domain: security-safe\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Language: ru\n"
+"X-Poedit-SearchPath-0: security-safe.php\n"
+"X-Poedit-SearchPath-1: core\n"
+
+#: core/Plugin.php:287
+#, fuzzy
+msgid "Error: Settings could not be deleted [1]."
+msgstr "Ошибка: Установки нельзя было удалить [1]."
+
+#: core/Plugin.php:301
+#, fuzzy, php-format
+msgid "%s settings have been set to the minimum standards."
+msgstr "Настройки %s установлены на минимальные стандарты."
+
+#: core/Plugin.php:305
+#, fuzzy
+msgid "The settings have been reset to default."
+msgstr "Настройки были сброшены на значения по умолчанию."
+
+#: core/Plugin.php:309
+#, fuzzy
+msgid "Error: Settings could not be reset. [2]"
+msgstr "Ошибка: Настройки не удалось сбросить. [2]"
+
+#: core/Plugin.php:430
+#, fuzzy, php-format
+msgid "%s: Your database has been upgraded."
+msgstr "%s: Ваша база данных обновлена."
+
+#: core/Plugin.php:466
+#, fuzzy, php-format
+msgid "%s: Your settings have been upgraded."
+msgstr "%s: Ваши настройки обновлены."
+
+#: core/Plugin.php:474
+#, fuzzy, php-format
+msgid ""
+"%s: There was an error upgrading your settings. We would recommend resetting "
+"your settings to fix the issue."
+msgstr ""
+"%s: Произошла ошибка при обновлении настроек. Мы рекомендуем сбросить "
+"настройки, чтобы исправить проблему."
+
+#: core/Plugin.php:504
+#, fuzzy
+msgid "Error: Settings not saved. Your session expired. Please try again."
+msgstr ""
+"Ошибка: Настройки не сохранены. Ваш сеанс истек. Пожалуйста, попробуйте еще "
+"раз."
+
+#: core/Plugin.php:568
+msgid "Settings saved."
+msgstr "Настройки сохранены."
+
+#: core/Plugin.php:577
+msgid "Your settings have been saved."
+msgstr "Ваши настройки сохранены."
+
+#: core/Plugin.php:582
+msgid "Error: Settings not saved."
+msgstr "Ошибка: Настройки не сохранены."
+
+#: core/Plugin.php:857
+#, fuzzy, php-format
+msgid "Security by %s"
+msgstr "Безопасность на %"
+
+#: core/admin/Admin.php:139 core/admin/pages/AdminPageGeneral.php:149
+msgid "Plugin"
+msgstr "Плагин"
+
+#: core/admin/Admin.php:140 core/admin/pages/AdminPageGeneral.php:142
+#: core/admin/pages/AdminPagePrivacy.php:23
+msgid "Privacy"
+msgstr "Конфиденциальность"
+
+#: core/admin/Admin.php:141 core/admin/pages/AdminPageGeneral.php:143
+msgid "Files"
+msgstr "Файлы"
+
+#: core/admin/Admin.php:142 core/admin/Admin.php:575
+#: core/admin/pages/AdminPageGeneral.php:145
+msgid "User Access"
+msgstr "Доступ пользователя"
+
+#: core/admin/Admin.php:143 core/admin/pages/AdminPageGeneral.php:144
+msgid "Content"
+msgstr "Содержание"
+
+#: core/admin/Admin.php:144 core/admin/pages/AdminPageFirewall.php:23
+#: core/admin/pages/AdminPageGeneral.php:146
+msgid "Firewall"
+msgstr "Брандмауэр"
+
+#: core/admin/Admin.php:357
+#, fuzzy, php-format
+msgid "Pro Version %s"
+msgstr "Версия Pro %s"
+
+#: core/admin/Admin.php:358
+#, fuzzy
+msgid "( free features only )"
+msgstr "(только бесплатные функции)"
+
+#: core/admin/Admin.php:366
+#, php-format
+msgid "Version %s"
+msgstr "Версия %s"
+
+#: core/admin/Admin.php:421
+#, fuzzy, php-format
+msgid ""
+"If you like %1$s, please <a href=\"%2$s\" target=\"_blank\">post a review</"
+"a>."
+msgstr ""
+"Если вам нравится %1$s, пожалуйста, <a href=\"%2$s\" target=\"_blank"
+"\">напишите отзыв</a>."
+
+#: core/admin/Admin.php:423
+#, fuzzy, php-format
+msgid ""
+"Need help? Visit the <a href=\"%1$s\" target=\"_blank\">support forum</a>"
+msgstr ""
+"Нужна помощь? Посетите <a href=\"%1$s\" target=\"_blank\">форум поддержки</a>"
+
+#: core/admin/Admin.php:487
+#, fuzzy
+msgid "Support This Plugin"
+msgstr "Поддержка этого модуля"
+
+#: core/admin/Admin.php:488
+#, fuzzy
+msgid "Your review encourages ongoing maintenance of this Free version."
+msgstr "Ваш отзыв поощряет текущую поддержку этой Бесплатной версии."
+
+#: core/admin/Admin.php:492
+#, php-format
+msgid "Like %s?"
+msgstr "Нравится %s?"
+
+#: core/admin/Admin.php:493
+#, fuzzy
+msgid "Share your positive experience!"
+msgstr "Поделитесь своим положительным опытом!"
+
+#: core/admin/Admin.php:502
+#, php-format
+msgid "Follow %s"
+msgstr "Отслеживать %s"
+
+#: core/admin/Admin.php:508
+msgid "Get More Features"
+msgstr "Получить больше информации"
+
+#: core/admin/Admin.php:509
+#, fuzzy
+msgid "Pro features give you more control and save you time."
+msgstr ""
+"Профессиональные функции дают вам больше контроля и экономят ваше время."
+
+#: core/admin/Admin.php:510
+msgid "Upgrade to Pro!"
+msgstr "Обновить до Pro!"
+
+#: core/admin/Admin.php:575
+msgid "Access"
+msgstr "Доступ"
+
+#: core/admin/Admin.php:721
+#, fuzzy
+msgid ""
+"Error: Settings could not be reset. Your session expired. Please try again."
+msgstr ""
+"Ошибка: Настройки не удалось сбросить. Ваш сеанс истек. Пожалуйста, "
+"попробуйте еще раз."
+
+#: core/admin/Admin.php:769
+#, fuzzy, php-format
+msgid ""
+"%s: WP Cron is disabled. This will affect the routine database table "
+"cleanup. Please setup a manual cron to trigger WP Cron daily or enable WP "
+"Cron."
+msgstr ""
+"%s: WP Cron отключен. Это повлияет на рутинную очистку таблицы базы данных. "
+"Пожалуйста, настройте ручной cron для ежедневного запуска WP Cron или "
+"включения WP Cron."
+
+#: core/admin/Admin.php:779
+#, fuzzy, php-format
+msgid "%s: Plugin Debug Mode is on."
+msgstr "%s: Plugin Debug Mode включен."
+
+#: core/admin/Admin.php:798
+#, fuzzy, php-format
+msgid "%s: All security policies are disabled."
+msgstr "%s: Все политики безопасности отключены."
+
+#: core/admin/Admin.php:803
+#, fuzzy, php-format
+msgid ""
+"%s: All security policies are disabled. You can enable them in <a href=\"%s"
+"\">Plugin Settings</a>. If you are experiencing an issue, <a href=\"%s"
+"\">reset your settings.</a>"
+msgstr ""
+"%s: Все политики безопасности отключены. Вы можете включить их в <a href=\"%s"
+"\">настройках плагина</a>. Если у вас возникли проблемы, <a href=\"%s"
+"\">сбросьте настройки.</a>"
+
+#: core/admin/Admin.php:820
+#, fuzzy, php-format
+msgid "%s: All privacy policies are disabled."
+msgstr "%s: Все политики конфиденциальности отключены."
+
+#: core/admin/Admin.php:825
+#, fuzzy, php-format
+msgid ""
+"%s: All privacy policies are disabled. You can enable them at the top of <a "
+"href=\"%s\">Privacy Settings</a>."
+msgstr ""
+"%s: Все политики конфиденциальности отключены. Вы можете включить их в "
+"верхней части <a href=\"%s\">Настройки конфиденциальности</a>."
+
+#: core/admin/Admin.php:841
+#, fuzzy, php-format
+msgid "%s: All file policies are disabled."
+msgstr "%s: Все файловые политики отключены."
+
+#: core/admin/Admin.php:846
+#, fuzzy, php-format
+msgid ""
+"%s: All file policies are disabled. You can enable them at the top of <a "
+"href=\"%s\">File Settings</a>."
+msgstr ""
+"%s: Все файловые политики отключены. Вы можете включить их в верхней части "
+"<a href=\"%s\">Параметры файла</a>."
+
+#: core/admin/Admin.php:862
+#, fuzzy, php-format
+msgid "%s: All user access policies are disabled."
+msgstr "%s: Все политики доступа пользователей отключены."
+
+#: core/admin/Admin.php:867
+#, fuzzy, php-format
+msgid ""
+"%s: All user access policies are disabled. You can enable them at the top of "
+"<a href=\"%s\">User Access Settings</a>."
+msgstr ""
+"%s: Все политики доступа пользователей отключены. Вы можете включить их в "
+"верхней части <a href=\"%s\">User Access Settings</a>."
+
+#: core/admin/Admin.php:883
+#, fuzzy, php-format
+msgid "%s: All content policies are disabled."
+msgstr "%s: Все политики контента отключены."
+
+#: core/admin/Admin.php:888
+#, fuzzy, php-format
+msgid ""
+"%s: All content policies are disabled. You can enable them at the top of <a "
+"href=\"%s\">Content Settings</a>."
+msgstr ""
+"%s: Все политики контента отключены. Вы можете включить их в верхней части "
+"<a href=\"%s\">Параметры контента</a>."
+
+#: core/admin/Admin.php:913
+#, fuzzy, php-format
+msgid ""
+"%1$s: Your Pro Key has expired or no longer valid. Please review <a href="
+"\"%2$s\">your account</a>."
+msgstr ""
+"%1$s: Ваш Про-ключ истек или больше недействителен. Пожалуйста, просмотрите "
+"<a href=\"%2$s\">свой аккаунт</a>."
+
+#: core/admin/Admin.php:995
+#, fuzzy
+msgid "Current settings match the imported settings. No changes were made."
+msgstr ""
+"Текущие настройки соответствуют импортированным. Никаких изменений сделано "
+"не было."
+
+#: core/admin/Admin.php:1004
+#, fuzzy
+msgid "Your settings imported successfully."
+msgstr "Ваши настройки успешно импортированы."
+
+#: core/admin/Admin.php:1009
+#, fuzzy
+msgid "Import Failed: File is corrupted [1]."
+msgstr "Импорт провалился: Файл поврежден [1]."
+
+#: core/admin/Admin.php:1018
+#, fuzzy
+msgid "Import Failed: File is corrupted [2]."
+msgstr "Импорт провалился: Файл поврежден [2]."
+
+#: core/admin/Admin.php:1024
+#, fuzzy
+msgid "Import Failed: Please upload a JSON file."
+msgstr "Импорт провалился: Пожалуйста, загрузите JSON файл."
+
+#: core/admin/Admin.php:1043
+msgid "Rate Plugin"
+msgstr "Оценить Плагин"
+
+#: core/admin/pages/AdminPage.php:259
+#, fuzzy
+msgid "Error: There are parameters missing to properly display checkbox."
+msgstr "Ошибка: Отсутствуют параметры для правильного отображения флажка."
+
+#: core/admin/pages/AdminPage.php:306 core/admin/pages/AdminPage.php:358
+#, fuzzy, php-format
+msgid "Error: There is an issue displaying this form field: %s."
+msgstr "Ошибка: Имеется проблема с отображением этого поля формы: %s."
+
+#: core/admin/pages/AdminPage.php:342
+#, fuzzy
+msgid "Error: Form field \"select\" is not an array."
+msgstr "Ошибка: Поле формы \"select\" не является массивом."
+
+#: core/admin/pages/AdminPage.php:391
+msgid "Choose File"
+msgstr "Выберите файл"
+
+#: core/admin/pages/AdminPage.php:391
+msgid "No File Chosen"
+msgstr "Файл не выбран"
+
+#: core/admin/pages/AdminPage.php:436
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: core/admin/pages/AdminPage.php:484
+#, fuzzy
+msgid "Process Log"
+msgstr "Журнал процесса"
+
+#: core/admin/pages/AdminPage.php:500
+#, fuzzy
+msgid "No changes were made to file permissions."
+msgstr "Никаких изменений в разрешениях на файлы внесено не было."
+
+#: core/admin/pages/AdminPageAccess.php:24
+#, fuzzy
+msgid "Control how users access your admin area."
+msgstr ""
+"Контролируйте, как пользователи получают доступ в вашу административную зону."
+
+#: core/admin/pages/AdminPageAccess.php:32
+#: core/admin/pages/AdminPageAccess.php:33
+msgid "Users"
+msgstr "Пользователи"
+
+#: core/admin/pages/AdminPageAccess.php:42
+msgid "Logins"
+msgstr "Логины"
+
+#: core/admin/pages/AdminPageAccess.php:43
+#, fuzzy
+msgid "Login Log"
+msgstr "Вход в систему"
+
+#: core/admin/pages/AdminPageAccess.php:52
+#: core/admin/pages/AdminPageContent.php:39
+#: core/admin/pages/AdminPageFiles.php:31
+#: core/admin/pages/AdminPageFirewall.php:48
+#: core/admin/pages/AdminPageGeneral.php:36
+#: core/admin/pages/AdminPagePrivacy.php:28
+msgid "Settings"
+msgstr "Настройки"
+
+#: core/admin/pages/AdminPageAccess.php:53
+msgid "User Access Settings"
+msgstr "إعداد صلاحيات الأعضاء"
+
+#: core/admin/pages/AdminPageAccess.php:63
+msgid "Activity Log"
+msgstr "Журнал активности"
+
+#: core/admin/pages/AdminPageAccess.php:64
+#, fuzzy
+msgid "Admin Activity Log"
+msgstr "Журнал активности администратора"
+
+#: core/admin/pages/AdminPageAccess.php:88
+#, fuzzy
+msgid "User Access Policies"
+msgstr "Политики доступа пользователей"
+
+#: core/admin/pages/AdminPageAccess.php:90
+#: core/admin/pages/AdminPageContent.php:65
+#: core/admin/pages/AdminPageFiles.php:117
+#: core/admin/pages/AdminPageGeneral.php:83
+#: core/admin/pages/AdminPagePrivacy.php:53
+msgid "Disabled"
+msgstr "Отключено"
+
+#: core/admin/pages/AdminPageAccess.php:90
+#: core/admin/pages/AdminPageContent.php:65
+#: core/admin/pages/AdminPageFiles.php:117
+#: core/admin/pages/AdminPageGeneral.php:83
+#: core/admin/pages/AdminPagePrivacy.php:53
+msgid "Enabled"
+msgstr "Включено"
+
+#: core/admin/pages/AdminPageAccess.php:91
+#, fuzzy
+msgid ""
+"If you experience a problem, you may want to temporarily turn off all user "
+"access policies at once to troubleshoot the issue."
+msgstr ""
+"Если у вас возникла проблема, вы можете захотеть временно отключить все "
+"политики доступа пользователей одновременно для устранения неполадок."
+
+#: core/admin/pages/AdminPageAccess.php:99
+msgid "Login Form"
+msgstr "Форма входа"
+
+#: core/admin/pages/AdminPageAccess.php:100
+#, fuzzy
+msgid "Your website's first line of defense is the login form."
+msgstr "Первая линия защиты вашего сайта - это форма авторизации."
+
+#: core/admin/pages/AdminPageAccess.php:105
+#, fuzzy
+msgid "Login Errors"
+msgstr "Ошибки входа"
+
+#: core/admin/pages/AdminPageAccess.php:107
+#, fuzzy
+msgid "Make login errors generic."
+msgstr "Сделайте общие ошибки входа в систему."
+
+#: core/admin/pages/AdminPageAccess.php:108
+#, fuzzy
+msgid ""
+"When someone attempts to log in, by default, the error messages will tell "
+"the user that the password is incorrect or that the username is not valid. "
+"This exposes too much information to the potential intruder."
+msgstr ""
+"Когда кто-то пытается войти в систему, по умолчанию сообщения об ошибке "
+"говорят пользователю, что пароль неверный или что имя пользователя "
+"недействительное. Это подвергает потенциального злоумышленника слишком "
+"большому объему информации."
+
+#: core/admin/pages/AdminPageAccess.php:113
+msgid "Password Reset"
+msgstr "Сброс пароля"
+
+#: core/admin/pages/AdminPageAccess.php:115
+#, fuzzy
+msgid "Disable Password Reset"
+msgstr "Отключить сброс пароля"
+
+#: core/admin/pages/AdminPageAccess.php:116
+#, fuzzy
+msgid ""
+"If you are the only user of the site, you may want to disable this feature "
+"as you have access to the database and hosting control panel."
+msgstr ""
+"Если вы являетесь единственным пользователем сайта, возможно, вы захотите "
+"отключить эту функцию, так как у вас есть доступ к базе данных и панели "
+"управления хостингом."
+
+#: core/admin/pages/AdminPageAccess.php:121
+msgid "Remember Me"
+msgstr "Запомнить меня"
+
+#: core/admin/pages/AdminPageAccess.php:123
+#, fuzzy
+msgid "Disable Remember Me Checkbox"
+msgstr "Отключить флажок \"Запомнить меня"
+
+#: core/admin/pages/AdminPageAccess.php:124
+#, fuzzy
+msgid ""
+"If the device that uses the remember me feature gets stolen, then the person "
+"in possession can now log in."
+msgstr ""
+"Если устройство, использующее функцию \"Запомнить меня\", будет украдено, то "
+"владелец может войти в систему."
+
+#: core/admin/pages/AdminPageAccess.php:130
+#, fuzzy
+msgid "Brute Force Logins"
+msgstr "Логины грубой силы"
+
+#: core/admin/pages/AdminPageAccess.php:131
+#, fuzzy
+msgid ""
+"Brute Force login attempts are repetitive attempts to gain access to your "
+"site using the login form."
+msgstr ""
+"Попытки входа в систему методом грубой силы - это повторяющиеся попытки "
+"получить доступ к вашему сайту с помощью формы входа в систему."
+
+#: core/admin/pages/AdminPageAccess.php:136
+#, fuzzy
+msgid "Local Logins"
+msgstr "Локальные логины"
+
+#: core/admin/pages/AdminPageAccess.php:138
+#, fuzzy
+msgid "Only Allow Local Logins"
+msgstr "Разрешать только локальные логины"
+
+#: core/admin/pages/AdminPageAccess.php:139
+#, fuzzy
+msgid ""
+"Software can remotely log in without actually visiting your website or using "
+"the login form. Unless you know that you need to be able to remotely login, "
+"it is recommended to only allow local logins. This does not disable XML-RPC. "
+"This is compatible with ManageWP."
+msgstr ""
+"Программное обеспечение может удаленно входить в систему, не посещая ваш "
+"сайт и не используя форму авторизации. Если вы не знаете, что вам необходимо "
+"иметь возможность удаленного входа в систему, рекомендуется разрешать только "
+"локальные логины. Это не отключает XML-RPC. Это совместимо с ManageWP."
+
+#: core/admin/pages/AdminPageAccess.php:144
+msgid "XML-RPC"
+msgstr "XML-RPC"
+
+#: core/admin/pages/AdminPageAccess.php:146
+msgid "Disable XML-RPC"
+msgstr "Отключить XML-RPC"
+
+#: core/admin/pages/AdminPageAccess.php:147
+#, fuzzy
+msgid ""
+"The xmlrpc.php file allows remote execution of scripts. This can be useful "
+"in some cases, but most of the time it is not needed. Attackers often use "
+"XML-RPC to brute force login to your website."
+msgstr ""
+"Файл xmlrpc.php позволяет удаленно выполнять скрипты. В некоторых случаях "
+"это может быть полезно, но в большинстве случаев это не требуется. "
+"Злоумышленники часто используют XML-RPC для перебора входа на ваш сайт."
+
+#: core/admin/pages/AdminPageAccess.php:153
+#: core/admin/pages/AdminPageContent.php:117
+#: core/admin/pages/AdminPageFiles.php:270
+#: core/admin/pages/AdminPageFirewall.php:188
+#: core/admin/pages/AdminPageGeneral.php:120
+#: core/admin/pages/AdminPagePrivacy.php:124
+msgid "Save Settings"
+msgstr "Сохранить настройки"
+
+#: core/admin/pages/AdminPageAccess.php:194
+#, fuzzy
+msgid "Search logins"
+msgstr "Логины поиска"
+
+#: core/admin/pages/AdminPageAccess.php:216
+#, fuzzy
+msgid "Search activity"
+msgstr "поисковая активность"
+
+#: core/admin/pages/AdminPageContent.php:24
+#, fuzzy
+msgid "Content Protection"
+msgstr "Защита содержания"
+
+#: core/admin/pages/AdminPageContent.php:25
+#, fuzzy
+msgid "Deter visitors from stealing your content."
+msgstr "Умерьте посетителей от кражи вашего контента."
+
+#: core/admin/pages/AdminPageContent.php:29 core/admin/tables/Table404s.php:102
+#, fuzzy
+msgid "404 Errors"
+msgstr "404 Ошибки"
+
+#: core/admin/pages/AdminPageContent.php:30
+#, fuzzy
+msgid "404 Error Log"
+msgstr "404 Журнал ошибок"
+
+#: core/admin/pages/AdminPageContent.php:40
+msgid "Content Settings"
+msgstr "Настройки содержимого"
+
+#: core/admin/pages/AdminPageContent.php:63
+#, fuzzy
+msgid "Content Policies"
+msgstr "Контентная политика"
+
+#: core/admin/pages/AdminPageContent.php:66
+#, fuzzy
+msgid ""
+"If you experience a problem, you may want to temporarily turn off all "
+"content policies at once to troubleshoot the issue. Be sure to clear your "
+"cache as well."
+msgstr ""
+"Если у вас возникла проблема, возможно, вы захотите временно отключить все "
+"политики содержимого сразу, чтобы устранить проблему. Обязательно очистите "
+"кэш."
+
+#: core/admin/pages/AdminPageContent.php:76
+#, fuzzy
+msgid "Copyright Protection"
+msgstr "Защита авторских прав"
+
+#: core/admin/pages/AdminPageContent.php:77
+#, fuzzy
+msgid ""
+"Copyright protection is meant to deter the majority of users from copying "
+"your content. These settings do not affect the admin area."
+msgstr ""
+"Защита авторского права призвана удержать большинство пользователей от "
+"копирования вашего контента. Эти настройки не влияют на область "
+"администрирования."
+
+#: core/admin/pages/AdminPageContent.php:82
+msgid "Highlight Text"
+msgstr "Выделите текст"
+
+#: core/admin/pages/AdminPageContent.php:84
+#, fuzzy
+msgid "Disable Text Highlighting"
+msgstr "Отключить выделение текста"
+
+#: core/admin/pages/AdminPageContent.php:85
+#, fuzzy
+msgid "Prevent users from highlighting your content text."
+msgstr "Не позволяйте пользователям выделять ваш текст."
+
+#: core/admin/pages/AdminPageContent.php:90
+#, fuzzy
+msgid "Right-Click"
+msgstr "Щелкните правой кнопкой мыши на "
+
+#: core/admin/pages/AdminPageContent.php:92
+#, fuzzy
+msgid "Disable Right-Click"
+msgstr "Отключить правой кнопкой мыши"
+
+#: core/admin/pages/AdminPageContent.php:93
+#, fuzzy
+msgid ""
+"Prevent users from right-clicking on your site to save images or copy text."
+msgstr ""
+"Не позволяйте пользователям нажимать правой кнопкой мыши на вашем сайте, "
+"чтобы сохранить изображения или скопировать текст."
+
+#: core/admin/pages/AdminPageContent.php:100
+#, fuzzy
+msgid "Password Protected Content"
+msgstr "Защищенное паролем содержимое"
+
+#: core/admin/pages/AdminPageContent.php:101
+#, fuzzy
+msgid ""
+"Sometimes, it is necessary to password protect content for special access "
+"without requiring a user to log in. The settings below enhance this "
+"WordPress feature."
+msgstr ""
+"Иногда возникает необходимость парольной защиты контента для специального "
+"доступа, не требуя от пользователя входа в систему. Настройки, приведенные "
+"ниже, улучшают эту функцию WordPress."
+
+#: core/admin/pages/AdminPageContent.php:106
+#, fuzzy
+msgid "Hide Posts"
+msgstr "Скрывать сообщения"
+
+#: core/admin/pages/AdminPageContent.php:108
+#, fuzzy
+msgid "Hide All Protected Posts"
+msgstr "Скрыть все защищенные сообщения"
+
+#: core/admin/pages/AdminPageContent.php:109
+#, fuzzy
+msgid ""
+"Prevent password protected content from being listed in the blog, search "
+"results, and any other public areas. (only affects the loop)"
+msgstr ""
+"Не допускайте попадания защищенного паролем содержимого в блог, результаты "
+"поиска и любые другие публичные зоны. (влияет только на цикл)"
+
+#: core/admin/pages/AdminPageContent.php:114
+#, fuzzy
+msgid ""
+"<b>NOTICE:</b> Be sure to clear your cache after changing these settings."
+msgstr ""
+"<b>ПРИМЕЧАНИЕ:</b> Обязательно очистите кэш после изменения этих настроек."
+
+#: core/admin/pages/AdminPageContent.php:137
+#, fuzzy
+msgid "Search 404s"
+msgstr "Поиск 404"
+
+#: core/admin/pages/AdminPageFiles.php:26
+msgid "Files & Folders"
+msgstr "Папка с файлами"
+
+#: core/admin/pages/AdminPageFiles.php:27
+#, fuzzy
+msgid ""
+"It is essential to keep all files updated and ensure only authorized users "
+"can access them."
+msgstr ""
+"Необходимо постоянно обновлять все файлы и обеспечивать доступ к ним только "
+"авторизованным пользователям."
+
+#: core/admin/pages/AdminPageFiles.php:32
+#, fuzzy
+msgid "File Settings"
+msgstr "Настройки файла"
+
+#: core/admin/pages/AdminPageFiles.php:40
+msgid "Core"
+msgstr "Ядро"
+
+#: core/admin/pages/AdminPageFiles.php:41
+#, fuzzy
+msgid "WordPress Base Directory & Files"
+msgstr "Базовый каталог и файлы WordPress"
+
+#: core/admin/pages/AdminPageFiles.php:42
+#, fuzzy
+msgid "Check to make sure all file permissions set correctly."
+msgstr "Убедитесь, что все файловые разрешения установлены правильно."
+
+#: core/admin/pages/AdminPageFiles.php:43
+#, fuzzy
+msgid ""
+"Incorrect directory or file permission values can lead to security "
+"vulnerabilities or even plugins or themes not functioning as intended. If "
+"you are not sure what values to set for a file or directory, use the "
+"standard recommended value."
+msgstr ""
+"Неправильные значения прав доступа к каталогам или файлам могут привести к "
+"уязвимости в безопасности или даже к тому, что плагины или темы будут "
+"работать не так, как предполагалось. Если вы не уверены, какие значения "
+"устанавливать для файла или каталога, используйте стандартное рекомендуемое "
+"значение."
+
+#: core/admin/pages/AdminPageFiles.php:50
+msgid "Theme"
+msgstr "Тема"
+
+#: core/admin/pages/AdminPageFiles.php:51
+#, fuzzy
+msgid "Theme Audit"
+msgstr "Тематический аудит"
+
+#: core/admin/pages/AdminPageFiles.php:52
+#, fuzzy
+msgid "Check to make sure all theme file permissions set correctly."
+msgstr "Убедитесь, что все разрешения на файлы тем установлены правильно."
+
+#: core/admin/pages/AdminPageFiles.php:53
+#, fuzzy
+msgid ""
+"If you use \"Secure\" permission settings, and experience problems, just set "
+"the file permissions back to \"Standard.\""
+msgstr ""
+"Если Вы используете настройки прав доступа \"Безопасный\", и у Вас возникли "
+"проблемы, просто установите права доступа к файлам обратно на \"Стандартный\""
+
+#: core/admin/pages/AdminPageFiles.php:60
+msgid "Uploads"
+msgstr "Загрузки"
+
+#: core/admin/pages/AdminPageFiles.php:61
+#, fuzzy
+msgid "Uploads Directory Audit"
+msgstr "Аудит каталога загрузок"
+
+#: core/admin/pages/AdminPageFiles.php:62
+#, fuzzy
+msgid "Check to make sure all uploaded files have proper permissions."
+msgstr "Убедитесь, что все загруженные файлы имеют соответствующие разрешения."
+
+#: core/admin/pages/AdminPageFiles.php:68
+#, fuzzy
+msgid ""
+"WordPress sets file permissions to minimum safe values by default when you "
+"install or update plugins. You will likely find file permission issues after "
+"migrating a site from one server to another. The file permissions for a "
+"plugin will get fixed when you perform an update on that particular plugin. "
+"We would recommend correcting any issues labeled \"bad\" immediately, versus "
+"waiting for an update."
+msgstr ""
+"WordPress по умолчанию устанавливает минимальные безопасные значения при "
+"установке или обновлении плагинов. Скорее всего, вы обнаружите проблемы с "
+"файловыми разрешениями после переноса сайта с одного сервера на другой. "
+"Права доступа к файлам для плагина будут исправлены при обновлении этого "
+"конкретного плагина. Мы рекомендуем немедленно исправлять любые проблемы, "
+"помеченные как \"плохие\", вместо того, чтобы ждать обновления."
+
+#: core/admin/pages/AdminPageFiles.php:72
+#, fuzzy
+msgid "Batch Plugin Permissions"
+msgstr "Разрешения на пакетную поставку"
+
+#: core/admin/pages/AdminPageFiles.php:72
+#: core/admin/pages/AdminPageFiles.php:73
+#: core/admin/pages/AdminPageFiles.php:74
+#, fuzzy
+msgid "Pro Feature"
+msgstr "Pro Feature"
+
+#: core/admin/pages/AdminPageFiles.php:72
+#, fuzzy
+msgid ""
+"You can change all plugin permissions to Standard or Secure permissions with "
+"one click."
+msgstr ""
+"Вы можете изменить все разрешения плагина на Стандартные или Безопасные "
+"одним щелчком мыши."
+
+#: core/admin/pages/AdminPageFiles.php:73
+#, fuzzy
+msgid "Prevent Plugin Version Snooping"
+msgstr "Предотвращение шуминга версий плагина"
+
+#: core/admin/pages/AdminPageFiles.php:73
+#, fuzzy
+msgid "Prevent access to plugin version files."
+msgstr "Предотвращение доступа к файлам версии плагина."
+
+#: core/admin/pages/AdminPageFiles.php:74
+#, fuzzy
+msgid "Maintain Secure Permissions"
+msgstr "Поддерживать безопасные разрешения"
+
+#: core/admin/pages/AdminPageFiles.php:74
+#, fuzzy
+msgid ""
+"Pro will automatically fix your file permissions after an core, plugin, and "
+"theme update."
+msgstr ""
+"Pro автоматически исправит ваши разрешения на файлы после обновления ядра, "
+"плагина и темы."
+
+#: core/admin/pages/AdminPageFiles.php:80
+msgid "Plugins"
+msgstr "Плагины"
+
+#: core/admin/pages/AdminPageFiles.php:81
+#, fuzzy
+msgid "Plugins Audit"
+msgstr "Аудит плагинов"
+
+#: core/admin/pages/AdminPageFiles.php:82
+#, fuzzy
+msgid "When plugin updates run, they will overwrite your permission changes."
+msgstr ""
+"Когда запускаются обновления плагина, они перезаписывают изменения ваших "
+"разрешений."
+
+#: core/admin/pages/AdminPageFiles.php:90
+msgid "Server"
+msgstr "Сервер"
+
+#: core/admin/pages/AdminPageFiles.php:91
+msgid "Server Information"
+msgstr "Информация Сервера"
+
+#: core/admin/pages/AdminPageFiles.php:92
+#, fuzzy
+msgid "It is your hosting provider's job to keep your server up-to-date."
+msgstr ""
+"Задача хостинг-провайдера - поддерживать сервер в актуальном состоянии."
+
+#: core/admin/pages/AdminPageFiles.php:93
+#, fuzzy
+msgid ""
+"This table below will help identify the software versions currently on your "
+"hosting server. <br>NOTE: System administrators often do server updates once "
+"per month. If something is a version behind, then you might be between "
+"update cycles or there may be compatibility issues due to version "
+"dependencies."
+msgstr ""
+"Эта таблица поможет определить версии программного обеспечения, которые в "
+"настоящее время находятся на вашем хостинговом сервере. <br>ПРИМЕЧАНИЕ: "
+"Системные администраторы часто производят обновление сервера один раз в "
+"месяц. Если что-то отстает от версии, то вы можете находиться в промежутке "
+"между циклами обновления, или могут возникнуть проблемы с совместимостью из-"
+"за зависимости от версии.</br>"
+
+#: core/admin/pages/AdminPageFiles.php:115
+#, fuzzy
+msgid "File Policies"
+msgstr "Файловая политика"
+
+#: core/admin/pages/AdminPageFiles.php:118
+#, fuzzy
+msgid ""
+"If you experience a problem, you may want to temporarily turn off all file "
+"policies at once to troubleshoot the issue."
+msgstr ""
+"Если у вас возникла проблема, возможно, вы захотите временно отключить все "
+"файловые политики сразу, чтобы устранить проблему."
+
+#: core/admin/pages/AdminPageFiles.php:127
+#, fuzzy
+msgid "Automatic WordPress Updates"
+msgstr "Автоматические обновления WordPress"
+
+#: core/admin/pages/AdminPageFiles.php:128
+#, fuzzy
+msgid "Updates are one of the main culprits to a compromised website."
+msgstr "Обновления являются одним из основных виновников взлома веб-сайта."
+
+#: core/admin/pages/AdminPageFiles.php:136
+#, fuzzy
+msgid ""
+"<b>NOTICE:</b> WordPress Automatic Core Updates are being controlled by the "
+"constant variable WP_AUTO_UPDATE_CORE in the wp-config.php file or by "
+"another plugin. As a result, Automatic Core Update feature settings for this "
+"plugin have been disabled."
+msgstr ""
+"<b>ВНИМАНИЕ:</b> Автоматическое обновление ядра WordPress управляется "
+"константной переменной WP_AUTO_UPDATE_CORE в файле wp-config.php или другим "
+"плагином. В результате настройки функции автоматического обновления ядра для "
+"данного плагина были отключены."
+
+#: core/admin/pages/AdminPageFiles.php:140
+#, fuzzy
+msgid "Dev Core Updates"
+msgstr "Обновления ядра устройства"
+
+#: core/admin/pages/AdminPageFiles.php:142
+#, fuzzy
+msgid "Automatic Nightly Core Updates"
+msgstr "Автоматические ночные обновления ядра"
+
+#: core/admin/pages/AdminPageFiles.php:143
+#, fuzzy
+msgid "Select this option if the site is in development only."
+msgstr "Выберите эту опцию, если сайт находится только в разработке."
+
+#: core/admin/pages/AdminPageFiles.php:149
+#, fuzzy
+msgid "Major Core Updates"
+msgstr "Основные обновления ядра"
+
+#: core/admin/pages/AdminPageFiles.php:151
+#, fuzzy
+msgid "Automatic Major Core Updates"
+msgstr "Автоматическое обновление основного ядра"
+
+#: core/admin/pages/AdminPageFiles.php:152
+#, fuzzy
+msgid ""
+"If you feel very confident in your code, you could automate the major "
+"version upgrades. (not recommended in most cases)"
+msgstr ""
+"Если вы чувствуете себя очень уверенно в своем коде, вы можете "
+"автоматизировать обновление основных версий. (не рекомендуется в большинстве "
+"случаев)"
+
+#: core/admin/pages/AdminPageFiles.php:158
+#, fuzzy
+msgid "Minor Core Updates"
+msgstr "Обновления второстепенных ядер"
+
+#: core/admin/pages/AdminPageFiles.php:160
+#, fuzzy
+msgid "Automatic Minor Core Updates"
+msgstr "Автоматическое обновление минорных ядер"
+
+#: core/admin/pages/AdminPageFiles.php:161
+#, fuzzy
+msgid ""
+"This is enabled by default in WordPress and only includes minor version and "
+"security updates."
+msgstr ""
+"Это включено по умолчанию в WordPress и включает в себя только "
+"незначительные обновления версий и безопасности."
+
+#: core/admin/pages/AdminPageFiles.php:167
+msgid "Plugin Updates"
+msgstr "Обновления плагинов"
+
+#: core/admin/pages/AdminPageFiles.php:169
+msgid "Automatic Plugin Updates"
+msgstr "Автоматическое обновление плагинов"
+
+#: core/admin/pages/AdminPageFiles.php:175
+msgid "Theme Updates"
+msgstr "Обновления темы"
+
+#: core/admin/pages/AdminPageFiles.php:177
+msgid "Automatic Theme Updates"
+msgstr "Автоматическое обновление тем"
+
+#: core/admin/pages/AdminPageFiles.php:185
+#, fuzzy
+msgid ""
+"<b>NOTICE:</b> WordPress Automatic Updates are disabled by the constant "
+"variable AUTOMATIC_UPDATER_DISABLED in the wp-config.php file or by another "
+"plugin. As a result, Automatic Update features for this plugin have been "
+"disabled."
+msgstr ""
+"<b>ЗАМЕЧАНИЕ:</b> Автоматическое обновление WordPress отключается "
+"константной переменной AUTOMATIC_UPDATER_DISABLED в файле wp-config.php или "
+"другим плагином. В результате функции автоматического обновления для данного "
+"плагина были отключены."
+
+#: core/admin/pages/AdminPageFiles.php:191
+#, fuzzy, php-format
+msgid ""
+"<b>NOTICE:</b> You are using WordPress Version %s. The WordPress Automatic "
+"Updates feature controls require version 3.7 or greater."
+msgstr ""
+"<b>ПРИМЕЧАНИЕ:</b> Вы используете версию WordPress %s. Для управления "
+"функцией автоматического обновления WordPress требуется версия 3.7 или более "
+"поздняя."
+
+#: core/admin/pages/AdminPageFiles.php:200
+#, fuzzy
+msgid "File Access"
+msgstr "Доступ к файлам"
+
+#: core/admin/pages/AdminPageFiles.php:205
+#, fuzzy
+msgid "Theme File Editing"
+msgstr "Редактирование тематического файла"
+
+#: core/admin/pages/AdminPageFiles.php:207
+#, fuzzy
+msgid "Disable Theme Editing"
+msgstr "Отключить редактирование тем"
+
+#: core/admin/pages/AdminPageFiles.php:208
+#, fuzzy
+msgid ""
+"Disable the ability for admin users to edit your theme files from the "
+"WordPress admin."
+msgstr ""
+"Отключите возможность для пользователей администратора редактировать файлы "
+"темы от администратора WordPress."
+
+#: core/admin/pages/AdminPageFiles.php:214
+#, fuzzy
+msgid "WordPress Version Files"
+msgstr "Файлы версий WordPress"
+
+#: core/admin/pages/AdminPageFiles.php:216
+#: core/admin/pages/AdminPageFiles.php:227
+#: core/admin/pages/AdminPageFiles.php:236
+#, fuzzy
+msgid "Prevent Access"
+msgstr "Предотвращение доступа"
+
+#: core/admin/pages/AdminPageFiles.php:217
+#, fuzzy, php-format
+msgid ""
+"Prevent access to files that disclose WordPress versions: readme.html and "
+"license.txt. <a href=\"%s\">Also, see Software Privacy</a>"
+msgstr ""
+"Запретить доступ к файлам, раскрывающим версии WordPress: readme.html и "
+"license.txt. <a href=\"%s\">Также см. раздел Конфиденциальность ПО</a>"
+
+#: core/admin/pages/AdminPageFiles.php:225
+#: core/admin/pages/AdminPageFiles.php:249
+#, fuzzy
+msgid "Plugin Version Files"
+msgstr "Файлы версии плагина"
+
+#: core/admin/pages/AdminPageFiles.php:228
+#: core/admin/pages/AdminPageFiles.php:237
+#, fuzzy, php-format
+msgid ""
+"Prevent access to files that disclose plugin versions: readme.txt, readme."
+"md, changelog.txt, changelog.md, and license.txt. <a href=\"%s\">Also, see "
+"Software Privacy"
+msgstr ""
+"Запретить доступ к файлам, раскрывающим версии плагинов: readme.txt, readme."
+"md, changelog.txt, changelog.md и license.txt. <a href=\"%s\">Также см. "
+"раздел Конфиденциальность ПО</a>"
+
+#: core/admin/pages/AdminPageFiles.php:234
+#: core/admin/pages/AdminPageFiles.php:258
+#, fuzzy
+msgid "Theme Version Files"
+msgstr "Файлы тематических версий"
+
+#: core/admin/pages/AdminPageFiles.php:251
+#, fuzzy, php-format
+msgid "Prevent Access (<a href=\"%1$s\">Pro Feature</a>)"
+msgstr "Предотвращение доступа<a href=\"%1$s\"> (Pro-функция</a>)"
+
+#: core/admin/pages/AdminPageFiles.php:252
+#: core/admin/pages/AdminPageFiles.php:261
+#, fuzzy
+msgid "Prevent access to files that disclose plugin versions."
+msgstr "Предотвращение доступа к файлам, раскрывающим версии плагинов."
+
+#: core/admin/pages/AdminPageFiles.php:260
+#, fuzzy, php-format
+msgid "Prevent Access (<a href=\"%s\">Pro Feature</a>)"
+msgstr "Предотвращение доступа<a href=\"%s\"> (Pro-функция</a>)"
+
+#: core/admin/pages/AdminPageFiles.php:395
+#, fuzzy
+msgid "Description"
+msgstr "Описание"
+
+#: core/admin/pages/AdminPageFiles.php:396
+msgid "Current Version"
+msgstr "Текущая версия"
+
+#: core/admin/pages/AdminPageFiles.php:397
+msgid "Recommend"
+msgstr "Рекомендованные"
+
+#: core/admin/pages/AdminPageFiles.php:398
+#: core/admin/pages/AdminPageFiles.php:603 core/admin/tables/Table404s.php:46
+#: core/admin/tables/TableActivity.php:46 core/admin/tables/TableBlocked.php:47
+#: core/admin/tables/TableFilePerms.php:44 core/admin/tables/TableLogins.php:45
+msgid "Status"
+msgstr "Статус"
+
+#: core/admin/pages/AdminPageFiles.php:413
+#: core/admin/pages/AdminPageFiles.php:435
+#: core/admin/pages/AdminPageFiles.php:772
+#: core/admin/pages/AdminPageFiles.php:784
+#: core/admin/pages/AdminPageFiles.php:1418
+msgid "Secure"
+msgstr "Безопасность"
+
+#: core/admin/pages/AdminPageFiles.php:419
+#: core/admin/pages/AdminPageFiles.php:1416
+msgid "Bad"
+msgstr "Плохо"
+
+#: core/admin/pages/AdminPageFiles.php:440
+#: core/admin/pages/AdminPageFiles.php:1415
+msgid "OK"
+msgstr "OK"
+
+#: core/admin/pages/AdminPageFiles.php:521
+#, fuzzy, php-format
+msgid ""
+"The phpinfo() function is disabled. You may need to contact the hosting "
+"provider to enable this function for more advanced version details. <a href="
+"\"%s\">See the documentation.</a>"
+msgstr ""
+"Функция phpinfo() отключена. Возможно, вам потребуется связаться с хостинг-"
+"провайдером, чтобы включить эту функцию для получения более подробной "
+"информации о версии. <a href=\"%s\">См. документацию.</a>"
+
+#: core/admin/pages/AdminPageFiles.php:600
+#: core/admin/tables/TableFilePerms.php:41
+#, fuzzy
+msgid "Relative Location"
+msgstr "Относительное местоположение"
+
+#: core/admin/pages/AdminPageFiles.php:601
+#: core/admin/tables/TableFilePerms.php:42
+msgid "Type"
+msgstr "Тип"
+
+#: core/admin/pages/AdminPageFiles.php:602
+#: core/admin/tables/TableFilePerms.php:43
+msgid "Current"
+msgstr "Текущий"
+
+#: core/admin/pages/AdminPageFiles.php:604
+#: core/admin/tables/TableFilePerms.php:45
+msgid "Modify"
+msgstr "Модифицировать"
+
+#: core/admin/pages/AdminPageFiles.php:611
+#, fuzzy
+msgid "Hide files that cannot be modified."
+msgstr "Скрыть файлы, которые нельзя изменить."
+
+#: core/admin/pages/AdminPageFiles.php:611
+#, fuzzy, php-format
+msgid ""
+"<i>NOTICE: Files which cannot be modified are hidden. <a href=\"%s\" style="
+"\"text-decoration: underline;\">Show all files</a>.</i>"
+msgstr ""
+"<i>ПРИМЕЧАНИЕ: Файлы, которые не могут быть изменены, скрыты. <a href=\"%s\" "
+"style=\"text-decoration: underline;\">Показать все файлы</a>.</i>"
+
+#: core/admin/pages/AdminPageFiles.php:616
+#, fuzzy
+msgid "Batch Options"
+msgstr "Пакетные опции"
+
+#: core/admin/pages/AdminPageFiles.php:616
+#: core/admin/pages/AdminPageFiles.php:621
+#, fuzzy
+msgid "Set All To Standard"
+msgstr "Установить все в соответствии со стандартами"
+
+#: core/admin/pages/AdminPageFiles.php:616
+#: core/admin/pages/AdminPageFiles.php:621
+#, fuzzy
+msgid "Set All To Secure"
+msgstr "Установить все в безопасное положение"
+
+#: core/admin/pages/AdminPageFiles.php:621
+#, fuzzy
+msgid "Batch Options (Pro)"
+msgstr "Пакетные опции (Pro)"
+
+#: core/admin/pages/AdminPageFiles.php:626
+#: core/admin/pages/AdminPageFiles.php:883
+msgid "Update Permissions"
+msgstr "Разрешения на обновление"
+
+#: core/admin/pages/AdminPageFiles.php:765
+msgid "Standard"
+msgstr "Стандарт"
+
+#: core/admin/pages/AdminPageFiles.php:802
+msgid "Select One"
+msgstr "Выберите"
+
+#: core/admin/pages/AdminPageFiles.php:814
+#: core/admin/pages/AdminPageFiles.php:981
+msgid "Upgrade to Pro"
+msgstr "Обновить до Pro"
+
+#: core/admin/pages/AdminPageFiles.php:872
+#, fuzzy
+msgid "Error: There were not any files to check."
+msgstr "Ошибка: Не было никаких файлов для проверки."
+
+#: core/admin/pages/AdminPageFiles.php:981
+#, fuzzy
+msgid "The batch file permissions feature requires an active Pro license."
+msgstr ""
+"Функция разрешения пакетных файлов требует наличия активной лицензии Pro."
+
+#: core/admin/pages/AdminPageFiles.php:988
+#, fuzzy
+msgid "Please review the Process Log below for details."
+msgstr ""
+"Пожалуйста, ознакомьтесь с Журналом процесса ниже для получения более "
+"подробной информации."
+
+#: core/admin/pages/AdminPageFiles.php:1032
+#, fuzzy
+msgid "Please review the Process Log below for any errors."
+msgstr "Пожалуйста, просмотрите Журнал процесса ниже на предмет ошибок."
+
+#: core/admin/pages/AdminPageFiles.php:1034
+#, fuzzy
+msgid "Started Batch Permissions Fix"
+msgstr "Исправление стартовых пакетных разрешений"
+
+#: core/admin/pages/AdminPageFiles.php:1089
+#, fuzzy
+msgid "Process finished."
+msgstr "Процесс закончен."
+
+#: core/admin/pages/AdminPageFiles.php:1154
+#, fuzzy, php-format
+msgid "Error: File does not exist - %s"
+msgstr "Ошибка: Файл не существует - %s"
+
+#: core/admin/pages/AdminPageFiles.php:1162
+#, fuzzy, php-format
+msgid "File permissions were successfully updated to %1$s for file: %2$s"
+msgstr "Файловые разрешения были успешно обновлены до %1$s для файла: %2$s"
+
+#: core/admin/pages/AdminPageFiles.php:1168
+#, fuzzy, php-format
+msgid ""
+"Error: File permissions could not be updated to %1$s for file: %2$s. Please "
+"contact your hosting provider or a developer for assistance."
+msgstr ""
+"Ошибка: Файловые разрешения не могли быть обновлены до %1$s для файла: %2$s. "
+"Пожалуйста, свяжитесь с вашим хостинг-провайдером или разработчиком для "
+"получения помощи."
+
+#: core/admin/pages/AdminPageFiles.php:1241
+#, fuzzy, php-format
+msgid "You have %d directories that could be more secure."
+msgstr "У вас есть каталоги %d, которые могут быть более безопасными."
+
+#: core/admin/pages/AdminPageFiles.php:1249
+#, fuzzy, php-format
+msgid "You have %d directory that could be more secure."
+msgstr "У вас есть каталог %d, который может быть более безопасным."
+
+#: core/admin/pages/AdminPageFiles.php:1266
+#, fuzzy, php-format
+msgid "You have %d files that could be more secure."
+msgstr "У вас есть файлы %d, которые могут быть более безопасными."
+
+#: core/admin/pages/AdminPageFiles.php:1274
+#, fuzzy, php-format
+msgid "You have %d file that could be more secure."
+msgstr "У вас есть файл %d, который может быть более безопасным."
+
+#: core/admin/pages/AdminPageFiles.php:1291
+#, fuzzy, php-format
+msgid ""
+"You have %d directories with safe but unique file permissions. This might "
+"cause functionality issues."
+msgstr ""
+"У вас есть каталоги %d с безопасными, но уникальными файловыми правами. Это "
+"может вызвать проблемы с функциональностью."
+
+#: core/admin/pages/AdminPageFiles.php:1299
+#, fuzzy, php-format
+msgid ""
+"You have %d directory with safe but unique file permissions. This might "
+"cause functionality issues."
+msgstr ""
+"У вас есть каталог %d с безопасными, но уникальными файловыми правами. Это "
+"может вызвать проблемы с функциональностью."
+
+#: core/admin/pages/AdminPageFiles.php:1316
+#, fuzzy, php-format
+msgid ""
+"You have %d files with safe but unique file permissions. This might cause "
+"functionality issues."
+msgstr ""
+"У вас есть файлы %d с безопасными, но уникальными файловыми правами. Это "
+"может вызвать проблемы с функциональностью."
+
+#: core/admin/pages/AdminPageFiles.php:1324
+#, fuzzy, php-format
+msgid ""
+"You have %d file with safe but unique file permissions. This might cause "
+"functionality issues."
+msgstr ""
+"У вас есть файл %d с безопасными, но уникальными файловыми правами. Это "
+"может вызвать проблемы с функциональностью."
+
+#: core/admin/pages/AdminPageFiles.php:1341
+#, fuzzy, php-format
+msgid "You have %d directories that are vulnerable."
+msgstr "У вас есть каталоги %d, которые уязвимы."
+
+#: core/admin/pages/AdminPageFiles.php:1349
+#, fuzzy, php-format
+msgid "You have %d directory that is vulnerable."
+msgstr "У вас есть каталог %d, который является уязвимым."
+
+#: core/admin/pages/AdminPageFiles.php:1366
+#, fuzzy, php-format
+msgid "You have %d files that are vulnerable."
+msgstr "У вас есть файлы %d, которые уязвимы."
+
+#: core/admin/pages/AdminPageFiles.php:1374
+#, fuzzy, php-format
+msgid "You have %d files that is vulnerable."
+msgstr "У вас есть файлы %d, которые уязвимы."
+
+#: core/admin/pages/AdminPageFiles.php:1389
+#, fuzzy, php-format
+msgid ""
+"You have PHP version %1$s and it needs to be updated to version %2$s or "
+"higher. If version %2$s was released more than 30 days ago and there is more "
+"than a 90-day timespan between PHP version %1$s and %2$s (<a href=\"%3$s\" "
+"target=\"_blank\">see changelog</a>), contact your hosting provider to "
+"upgrade PHP."
+msgstr ""
+"У вас есть версия PHP %1$s и ее необходимо обновить до версии %2$s или выше. "
+"Если версия %2$s была выпущена более 30 дней назад и существует более чем 90-"
+"дневный промежуток времени между версиями PHP %1$s и %2$s<a href=\"%3$s\" "
+"target=\"_blank\"> (см. журнал изменений</a>), свяжитесь с вашим хостинг-"
+"провайдером для обновления PHP."
+
+#: core/admin/pages/AdminPageFiles.php:1397
+#, fuzzy, php-format
+msgid ""
+"You are using PHP version %1$s, which is no longer supported or has critical "
+"vulnerabilities. Immediately contact your hosting company to upgrade PHP to "
+"version %2$s or higher."
+msgstr ""
+"Вы используете PHP версию %1$s, которая больше не поддерживается или имеет "
+"критические уязвимости. Немедленно свяжитесь с вашей хостинговой компанией "
+"для обновления PHP до версии %2$s или выше."
+
+#: core/admin/pages/AdminPageFiles.php:1417
+msgid "Good"
+msgstr "Хорошо"
+
+#: core/admin/pages/AdminPageFirewall.php:24
+#, fuzzy
+msgid ""
+"This area provides you the ability to log activity on the site and block "
+"future attempts if desired."
+msgstr ""
+"Эта область предоставляет вам возможность вести журнал активности на сайте и "
+"блокировать будущие попытки при желании."
+
+#: core/admin/pages/AdminPageFirewall.php:28
+#: core/admin/tables/TableBlocked.php:148 core/admin/tables/TableLogins.php:134
+#: core/includes/Yoda.php:76
+msgid "Threats"
+msgstr "Угрозы"
+
+#: core/admin/pages/AdminPageFirewall.php:29
+#, fuzzy
+msgid "Detected Threats"
+msgstr "Обнаруженные угрозы"
+
+#: core/admin/pages/AdminPageFirewall.php:38
+#, fuzzy
+msgid "Allow / Deny IP"
+msgstr "Разрешить / Запретить IP"
+
+#: core/admin/pages/AdminPageFirewall.php:39
+#, fuzzy
+msgid "Allow / Deny IP Addresses"
+msgstr "Разрешить / Запретить IP-адреса"
+
+#: core/admin/pages/AdminPageFirewall.php:49
+msgid "Firewall Settings"
+msgstr "Настройки брандмауэра"
+
+#: core/admin/pages/AdminPageFirewall.php:71
+#, fuzzy
+msgid "Automatically Block Logins"
+msgstr "Автоматически блокировать логины"
+
+#: core/admin/pages/AdminPageFirewall.php:72
+#, fuzzy
+msgid "Block login activity that meets the situations below:"
+msgstr ""
+"Блокируйте действия по входу в систему, которые соответствуют "
+"нижеприведенным ситуациям:"
+
+#: core/admin/pages/AdminPageFirewall.php:77
+#, fuzzy
+msgid "Upgrade to control this setting."
+msgstr "Обновите для управления этой настройкой."
+
+#: core/admin/pages/AdminPageFirewall.php:90
+#, fuzzy
+msgid "Lockout Method"
+msgstr "Метод блокировки"
+
+#: core/admin/pages/AdminPageFirewall.php:93
+#, fuzzy
+msgid ""
+"The Failed Logins method blocks users from logging in after a certain number "
+"of failed login attempts. The Threats method blocks users sooner as it is "
+"based on the number of threats detected. Threat Scoring is the most "
+"effective and blocks users based on the accumulative risk level of each "
+"threat."
+msgstr ""
+"Метод Failed Logins блокирует вход пользователей после определенного "
+"количества неудачных попыток входа. Метод Threats (Угрозы) блокирует "
+"пользователей быстрее, так как основан на количестве обнаруженных угроз. "
+"Скоринг угроз является наиболее эффективным и блокирует пользователей в "
+"зависимости от уровня накопленного риска каждой угрозы."
+
+#: core/admin/pages/AdminPageFirewall.php:100
+#, fuzzy
+msgid "Detection Threshold"
+msgstr "Порог обнаружения"
+
+#: core/admin/pages/AdminPageFirewall.php:103
+#, fuzzy
+msgid ""
+"If the Failed Logins or Threats blocking method is used, the threshold "
+"determines the number of failed logins/threats detected before the user is "
+"blocked. If Threat Scoring is used, the threshold determines the score of "
+"threats a user must surpass before the user gets banned. Raise the threshold "
+"if false-positive bans are occuring."
+msgstr ""
+"Если используется метод блокировки неудачных входов/угроз, то порог "
+"определяет количество неудачных входов/угроз, обнаруженных до того, как "
+"пользователь был заблокирован. Если используется метод Threat Scoring, порог "
+"определяет количество угроз, которое пользователь должен превысить до того, "
+"как пользователь будет заблокирован. При наличии ложноположительных запретов "
+"порог повышается."
+
+#: core/admin/pages/AdminPageFirewall.php:112
+#, fuzzy
+msgid "Detection Timespan"
+msgstr "Сроки обнаружения"
+
+#: core/admin/pages/AdminPageFirewall.php:115
+msgid "1 minute"
+msgstr "1 минута"
+
+#: core/admin/pages/AdminPageFirewall.php:116
+#: core/admin/pages/AdminPageFirewall.php:117
+#: core/admin/pages/AdminPageFirewall.php:118
+#: core/admin/pages/AdminPageFirewall.php:119
+#: core/admin/pages/AdminPageFirewall.php:120
+#: core/admin/pages/AdminPageFirewall.php:121
+#: core/admin/pages/AdminPageFirewall.php:122
+#: core/admin/pages/AdminPageFirewall.php:123
+#: core/admin/pages/AdminPageFirewall.php:137
+#: core/admin/pages/AdminPageFirewall.php:138
+#: core/admin/pages/AdminPageFirewall.php:139
+#: core/admin/pages/AdminPageFirewall.php:140
+#: core/admin/pages/AdminPageFirewall.php:141
+#: core/security/firewall/Firewall.php:294
+#, php-format
+msgid "%d minutes"
+msgstr "%d минут"
+
+#: core/admin/pages/AdminPageFirewall.php:125
+#, fuzzy
+msgid "5 minutes is the default detection timespan."
+msgstr "5 минут - это время обнаружения по умолчанию."
+
+#: core/admin/pages/AdminPageFirewall.php:134
+#, fuzzy
+msgid "First Lockout"
+msgstr "Первая блокировка"
+
+#: core/admin/pages/AdminPageFirewall.php:143
+#, fuzzy, php-format
+msgid "%d minutes is the default value."
+msgstr "%d минут - это значение по умолчанию."
+
+#: core/admin/pages/AdminPageFirewall.php:150
+#, fuzzy
+msgid "Second Lockout"
+msgstr "Вторая блокировка"
+
+#: core/admin/pages/AdminPageFirewall.php:153
+#: core/security/firewall/Firewall.php:274
+msgid "1 hour"
+msgstr "1 час"
+
+#: core/admin/pages/AdminPageFirewall.php:154
+#: core/admin/pages/AdminPageFirewall.php:155
+#: core/admin/pages/AdminPageFirewall.php:156
+#: core/admin/pages/AdminPageFirewall.php:157
+#: core/admin/pages/AdminPageFirewall.php:158
+#: core/security/firewall/Firewall.php:274
+#, php-format
+msgid "%d hours"
+msgstr "%d часов"
+
+#: core/admin/pages/AdminPageFirewall.php:159
+#: core/admin/pages/AdminPageFirewall.php:173
+#: core/security/firewall/Firewall.php:283
+msgid "1 day"
+msgstr "1 день"
+
+#: core/admin/pages/AdminPageFirewall.php:160
+#: core/admin/pages/AdminPageFirewall.php:161
+#: core/admin/pages/AdminPageFirewall.php:174
+#: core/admin/pages/AdminPageFirewall.php:175
+#: core/security/firewall/Firewall.php:283
+#, php-format
+msgid "%d days"
+msgstr "%d дней"
+
+#: core/admin/pages/AdminPageFirewall.php:163
+#, fuzzy
+msgid "1 hour is the default value. 4 hours is recommended."
+msgstr "1 час - это значение по умолчанию. Рекомендуется 4 часа."
+
+#: core/admin/pages/AdminPageFirewall.php:170
+#, fuzzy
+msgid "Third Lockout"
+msgstr "Третья блокировка"
+
+#: core/admin/pages/AdminPageFirewall.php:176
+msgid "1 week"
+msgstr "1 неделя"
+
+#: core/admin/pages/AdminPageFirewall.php:177
+#, php-format
+msgid "%d weeks"
+msgstr "%d недель"
+
+#: core/admin/pages/AdminPageFirewall.php:178
+msgid "1 month"
+msgstr "1 месяц"
+
+#: core/admin/pages/AdminPageFirewall.php:180
+#, fuzzy
+msgid "1 day is the default value. 3 days or greater is recommended."
+msgstr "1 день - это значение по умолчанию. Рекомендуется 3 дня и более."
+
+#: core/admin/pages/AdminPageFirewall.php:231
+#, fuzzy
+msgid "Search threats"
+msgstr "Поисковые угрозы"
+
+#: core/admin/pages/AdminPageGeneral.php:31
+#, php-format
+msgid "Welcome to %s"
+msgstr "Добро пожаловать в %s"
+
+#: core/admin/pages/AdminPageGeneral.php:32
+#, fuzzy, php-format
+msgid "Thank you for choosing %s to help protect your website."
+msgstr "Спасибо за то, что вы выбрали %s, чтобы помочь защитить ваш сайт."
+
+#: core/admin/pages/AdminPageGeneral.php:37
+msgid "Plugin Settings"
+msgstr "Настройки плагина"
+
+#: core/admin/pages/AdminPageGeneral.php:38
+#, fuzzy
+msgid "These are the general plugin settings."
+msgstr "Это общие настройки плагина."
+
+#: core/admin/pages/AdminPageGeneral.php:47
+msgid "Export/Import"
+msgstr "Экспорт/Импорт"
+
+#: core/admin/pages/AdminPageGeneral.php:48
+#, fuzzy
+msgid "Export/Import Plugin Settings"
+msgstr "Настройки модуля экспорта/импорта"
+
+#: core/admin/pages/AdminPageGeneral.php:58
+msgid "Debug"
+msgstr "Отладка"
+
+#: core/admin/pages/AdminPageGeneral.php:59
+msgid "Plugin Information"
+msgstr "Информация о плагине"
+
+#: core/admin/pages/AdminPageGeneral.php:60
+#, fuzzy
+msgid ""
+"This information may be useful when troubleshooting compatibility issues."
+msgstr ""
+"Эта информация может быть полезна при устранении проблем совместимости."
+
+#: core/admin/pages/AdminPageGeneral.php:75
+msgid "General Settings"
+msgstr "Основные настройки"
+
+#: core/admin/pages/AdminPageGeneral.php:81
+#, fuzzy
+msgid "All Security Policies"
+msgstr "Все политики безопасности"
+
+#: core/admin/pages/AdminPageGeneral.php:84
+#, fuzzy
+msgid ""
+"If you experience a problem, you may want to temporarily turn off all "
+"security policies at once to troubleshoot the issue. You can temporarily "
+"disable each type of policy at the top of each settings tab."
+msgstr ""
+"Если у вас возникла проблема, возможно, вы захотите временно отключить все "
+"политики безопасности сразу для устранения неполадок. Вы можете временно "
+"отключить каждый тип политик в верхней части каждой вкладки параметров."
+
+#: core/admin/pages/AdminPageGeneral.php:90
+msgid "Reset Settings"
+msgstr "Сбросить настройки"
+
+#: core/admin/pages/AdminPageGeneral.php:93
+#, fuzzy
+msgid ""
+"Click this button to reset the settings back to default. WARNING: You will "
+"lose all configuration changes you have made."
+msgstr ""
+"Нажмите эту кнопку, чтобы сбросить настройки обратно к настройкам по "
+"умолчанию. ПРЕДУПРЕЖДЕНИЕ: Вы потеряете все сделанные вами изменения "
+"конфигурации."
+
+#: core/admin/pages/AdminPageGeneral.php:100
+#, fuzzy
+msgid "Cleanup Database When Disabling Plugin"
+msgstr "Очистка базы данных при отключении плагина"
+
+#: core/admin/pages/AdminPageGeneral.php:102
+#, fuzzy
+msgid "Remove Settings, Logs, and Stats When Disabled"
+msgstr "Удаление настроек, журналов и статистики при отключении"
+
+#: core/admin/pages/AdminPageGeneral.php:103
+#, fuzzy
+msgid ""
+"If you ever decide to permanently disable this plugin, you may want to "
+"remove our settings, logs, and stats from the database. WARNING: Do not "
+"check this box if you are temporarily disabling the plugin, you will loase "
+"all data associated with this plugin."
+msgstr ""
+"Если вы когда-нибудь решите навсегда отключить этот плагин, вы можете "
+"удалить наши настройки, журналы и статистику из базы данных. ПРЕДУПРЕЖДЕНИЕ: "
+"Не устанавливайте этот флажок, если Вы временно отключаете плагин, Вы "
+"удалите все данные, связанные с этим плагином."
+
+#: core/admin/pages/AdminPageGeneral.php:110
+#, fuzzy
+msgid "Support Us"
+msgstr "Поддержите нас"
+
+#: core/admin/pages/AdminPageGeneral.php:112
+#, fuzzy
+msgid "Display link to us below the login form."
+msgstr "Отобразить ссылку на нас под формой авторизации."
+
+#: core/admin/pages/AdminPageGeneral.php:113
+#, fuzzy
+msgid "(This is optional)"
+msgstr "(Это необязательно)"
+
+#: core/admin/pages/AdminPageGeneral.php:137
+#, fuzzy
+msgid "Current Settings"
+msgstr "Текущие настройки"
+
+#: core/admin/pages/AdminPageGeneral.php:139
+msgid "Policies"
+msgstr "Правила"
+
+#: core/admin/pages/AdminPageGeneral.php:139
+msgid "Setting"
+msgstr "Настройки"
+
+#: core/admin/pages/AdminPageGeneral.php:139
+msgid "Value"
+msgstr "Значение"
+
+#: core/admin/pages/AdminPageGeneral.php:147
+msgid "Backups"
+msgstr "Резервные копии"
+
+#: core/admin/pages/AdminPageGeneral.php:148
+msgid "General"
+msgstr "Общие"
+
+#: core/admin/pages/AdminPageGeneral.php:182
+#, fuzzy
+msgid "Installed Plugin Version History"
+msgstr "История установленных версий плагина"
+
+#: core/admin/pages/AdminPageGeneral.php:209
+msgid "Export Settings"
+msgstr "Экспорт настроек"
+
+#: core/admin/pages/AdminPageGeneral.php:210
+#, fuzzy, php-format
+msgid "Click this button to export your current %s settings into a JSON file."
+msgstr ""
+"Нажмите эту кнопку, чтобы экспортировать ваши текущие настройки %s в JSON "
+"файл."
+
+#: core/admin/pages/AdminPageGeneral.php:216
+msgid "Export Current Settings"
+msgstr "Экспорт текущих настроек"
+
+#: core/admin/pages/AdminPageGeneral.php:228
+#: core/admin/pages/AdminPageGeneral.php:239
+msgid "Import Settings"
+msgstr "Импорт настроек"
+
+#: core/admin/pages/AdminPageGeneral.php:229
+#, fuzzy, php-format
+msgid "Select the %s JSON file you would like to import."
+msgstr "Выберите файл %s JSON, который вы хотите импортировать."
+
+#: core/admin/pages/AdminPageGeneral.php:233
+#, fuzzy
+msgid "Upload Setting"
+msgstr "Настройка загрузки"
+
+#: core/admin/pages/AdminPagePrivacy.php:24
+#, fuzzy
+msgid "Anonymity is one of your fundamental rights. Embody it in principle."
+msgstr "Анонимность - одно из ваших основных прав. Воплотите его в принцип."
+
+#: core/admin/pages/AdminPagePrivacy.php:29
+msgid "Privacy Settings"
+msgstr "Настройки приватности"
+
+#: core/admin/pages/AdminPagePrivacy.php:51
+#, fuzzy
+msgid "Privacy Policies"
+msgstr "Политика конфиденциальности"
+
+#: core/admin/pages/AdminPagePrivacy.php:54
+#, fuzzy
+msgid ""
+"If you experience a problem, you may want to temporarily turn off all "
+"privacy policies at once to troubleshoot the issue."
+msgstr ""
+"Если у вас возникла проблема, возможно, вы захотите временно отключить все "
+"политики конфиденциальности сразу, чтобы устранить проблему."
+
+#: core/admin/pages/AdminPagePrivacy.php:61
+#, fuzzy
+msgid "Software Privacy"
+msgstr "Конфиденциальность ПО"
+
+#: core/admin/pages/AdminPagePrivacy.php:62
+#, fuzzy
+msgid "It is important to conceal what versions of software you are using."
+msgstr "Важно скрывать, какие версии программного обеспечения вы используете."
+
+#: core/admin/pages/AdminPagePrivacy.php:70
+msgid "WordPress Version"
+msgstr "Версия WordPress"
+
+#: core/admin/pages/AdminPagePrivacy.php:72
+#, fuzzy
+msgid "Hide WordPress Version Publicly"
+msgstr "Скрыть версию WordPress публично"
+
+#: core/admin/pages/AdminPagePrivacy.php:73
+#, fuzzy
+msgid ""
+"WordPress leaves little public footprints about the version of your site in "
+"multiple places visible to the public. This feature removes the WordPress "
+"version from the generator tag and RSS feed."
+msgstr ""
+"WordPress оставляет мало общественных следов о версии вашего сайта в "
+"нескольких местах, видимых публике. Эта функция удаляет версию WordPress из "
+"тега генератора и RSS-канала."
+
+#: core/admin/pages/AdminPagePrivacy.php:83
+#, fuzzy
+msgid "Hide WordPress Version in Admin Footer"
+msgstr "Скрыть версию WordPress в нижней части корпуса администратора"
+
+#: core/admin/pages/AdminPagePrivacy.php:84
+#, fuzzy
+msgid ""
+"WordPress places the version number at the bottom of the WP-Admin screen."
+msgstr "WordPress помещает номер версии в нижней части экрана WP-Admin."
+
+#: core/admin/pages/AdminPagePrivacy.php:93
+#, fuzzy
+msgid "Script Versions"
+msgstr "Версии сценария"
+
+#: core/admin/pages/AdminPagePrivacy.php:95
+#, fuzzy
+msgid "Hide Script Versions"
+msgstr "Скрыть версии сценария"
+
+#: core/admin/pages/AdminPagePrivacy.php:96
+#, fuzzy
+msgid ""
+"This replaces all script versions appended to the enqueued JS and CSS files "
+"with the current date (YYYYMMDD)."
+msgstr ""
+"Это заменяет все версии сценариев, добавленные к запрошенным JS и CSS "
+"файлам, на текущую дату (YYYYMMDD)."
+
+#: core/admin/pages/AdminPagePrivacy.php:100
+#, fuzzy, php-format
+msgid ""
+"<i>NOTICE: You can also <a href=\"%s\">deny access to files</a> that "
+"disclose software versions.</i>"
+msgstr ""
+"<i>ПРИМЕЧАНИЕ: Вы также можете <a href=\"%s\">запретить доступ к файлам</a>, "
+"которые раскрывают версии программного обеспечения.</i>"
+
+#: core/admin/pages/AdminPagePrivacy.php:106
+#, fuzzy
+msgid "Website Privacy"
+msgstr "Конфиденциальность веб-сайта"
+
+#: core/admin/pages/AdminPagePrivacy.php:107
+#, fuzzy
+msgid "Do not share unnecessary information about your website."
+msgstr "Не публикуйте ненужную информацию о вашем сайте."
+
+#: core/admin/pages/AdminPagePrivacy.php:114
+#, fuzzy
+msgid "Website Information"
+msgstr "Информация о сайте"
+
+#: core/admin/pages/AdminPagePrivacy.php:116
+#, fuzzy
+msgid "Make Website Anonymous"
+msgstr "Сделать сайт анонимным"
+
+#: core/admin/pages/AdminPagePrivacy.php:117
+#, fuzzy
+msgid ""
+"When checking for updates, WordPress gets access to your current version and "
+"your website URL. The default info looks like this: \"WordPress/X.X; https://"
+"www.your-website.com\" This feature removes your URL address from the "
+"information sent."
+msgstr ""
+"При проверке обновлений WordPress получает доступ к вашей текущей версии и "
+"URL вашего сайта. Информация по умолчанию выглядит следующим образом: "
+"\"WordPress/X.X; https://www.your-website.com\" Эта функция удаляет ваш URL-"
+"адрес из отправленной информации."
+
+#: core/admin/tables/Table.php:153 core/admin/tables/Table404s.php:74
+#: core/admin/tables/TableBlocked.php:155 core/admin/tables/TableLogins.php:79
+#: core/admin/tables/TableLogins.php:141
+msgid "Blocked"
+msgstr "Заблокировано"
+
+#: core/admin/tables/Table.php:154 core/admin/tables/TableBlocked.php:58
+#: core/admin/tables/TableBlocked.php:93
+#, fuzzy
+msgid "not blocked"
+msgstr "незаблокированный"
+
+#: core/admin/tables/Table.php:155 core/admin/tables/TableLogins.php:77
+#: core/admin/tables/TableLogins.php:155
+msgid "Success"
+msgstr "Успех"
+
+#: core/admin/tables/Table.php:156 core/admin/tables/TableLogins.php:78
+#: core/admin/tables/TableLogins.php:148
+msgid "Failed"
+msgstr "Ошибка"
+
+#: core/admin/tables/Table.php:157
+#, fuzzy
+msgid "System Test"
+msgstr "Тестирование системы"
+
+#: core/admin/tables/Table.php:158
+msgid "Manual"
+msgstr "Вручную"
+
+#: core/admin/tables/Table.php:159
+msgid "Automatic"
+msgstr "Автоматически"
+
+#: core/admin/tables/Table.php:160
+msgid "Deny"
+msgstr "Отклонить"
+
+#: core/admin/tables/Table.php:161
+msgid "Allow"
+msgstr "Разрешить"
+
+#: core/admin/tables/Table.php:179
+msgid "Yes"
+msgstr "Да"
+
+#: core/admin/tables/Table.php:179
+msgid "No"
+msgstr "Нет"
+
+#: core/admin/tables/Table.php:192
+msgid "never"
+msgstr "никогда"
+
+#: core/admin/tables/Table.php:215
+#, fuzzy
+msgid "Error: Could not delete row. Your session expired. Please try again."
+msgstr ""
+"Ошибка: Не удалось удалить строку. Ваш сеанс истек. Пожалуйста, попробуйте "
+"еще раз."
+
+#: core/admin/tables/Table.php:228
+#, fuzzy, php-format
+msgid "%d rows deleted"
+msgstr "удалённые строки %d"
+
+#: core/admin/tables/Table.php:232
+#, fuzzy
+msgid "Could not delete entry. Please try again."
+msgstr "Не смог удалить запись. Пожалуйста, попробуйте еще раз."
+
+#: core/admin/tables/Table.php:284
+#, fuzzy
+msgid "Search results are provided below."
+msgstr "Результаты поиска представлены ниже."
+
+#: core/admin/tables/Table.php:432
+msgid "Select Status"
+msgstr "Выберите статус"
+
+#: core/admin/tables/Table.php:454
+msgid "Per Page"
+msgstr "На страницу"
+
+#: core/admin/tables/Table.php:463
+msgid "Apply Filters"
+msgstr "Применить фильтры"
+
+#: core/admin/tables/Table.php:472
+msgid "reset filters"
+msgstr "очистить фильтр"
+
+#: core/admin/tables/Table404s.php:41
+msgid "Date / Time"
+msgstr "Дата / Время"
+
+#: core/admin/tables/Table404s.php:42 core/admin/tables/TableBlocked.php:43
+msgid "URL"
+msgstr "URL"
+
+#: core/admin/tables/Table404s.php:43 core/admin/tables/TableActivity.php:44
+#: core/admin/tables/TableBlocked.php:44 core/admin/tables/TableLogins.php:44
+msgid "User Agent"
+msgstr "Агент пользователя"
+
+#: core/admin/tables/Table404s.php:44 core/admin/tables/TableBlocked.php:45
+#, fuzzy
+msgid "HTTP Referer"
+msgstr "HTTP-рефрижератор"
+
+#: core/admin/tables/Table404s.php:45 core/admin/tables/TableActivity.php:43
+#: core/admin/tables/TableAllowDeny.php:44
+#: core/admin/tables/TableAllowDeny.php:116
+#: core/admin/tables/TableBlocked.php:46 core/admin/tables/TableLogins.php:43
+msgid "IP Address"
+msgstr "IP адрес"
+
+#: core/admin/tables/Table404s.php:47 core/admin/tables/TableLogins.php:46
+msgid "Threat"
+msgstr "Угроза"
+
+#: core/admin/tables/Table404s.php:114
+#, fuzzy
+msgid "# 404 Errors"
+msgstr "# 404 Ошибки"
+
+#: core/admin/tables/Table404s.php:131
+#, fuzzy, php-format
+msgid "404 Errors Over The Past %d Days"
+msgstr "404 Ошибки за прошедшие % дней"
+
+#: core/admin/tables/TableActivity.php:41 core/admin/tables/TableBlocked.php:42
+#: core/admin/tables/TableLogins.php:41
+msgid "Date"
+msgstr "Дата"
+
+#: core/admin/tables/TableActivity.php:42 core/admin/tables/TableLogins.php:42
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: core/admin/tables/TableActivity.php:45 core/admin/tables/TableBlocked.php:48
+#: core/admin/tables/TableLogins.php:47
+msgid "Details"
+msgstr "Детали"
+
+#: core/admin/tables/TableAllowDeny.php:42
+msgid "Date Added"
+msgstr "Дата добавления"
+
+#: core/admin/tables/TableAllowDeny.php:43
+msgid "Expires"
+msgstr "Истекает"
+
+#: core/admin/tables/TableAllowDeny.php:45
+#: core/admin/tables/TableAllowDeny.php:118
+msgid "Rule"
+msgstr "Правило"
+
+#: core/admin/tables/TableAllowDeny.php:46
+#: core/admin/tables/TableAllowDeny.php:132
+msgid "Notes"
+msgstr "Заметки"
+
+#: core/admin/tables/TableAllowDeny.php:78
+msgid "Delete"
+msgstr "Удалить"
+
+#: core/admin/tables/TableAllowDeny.php:87
+#, fuzzy
+msgid "Search IPs"
+msgstr "IP-адреса поиска"
+
+#: core/admin/tables/TableAllowDeny.php:119
+#, fuzzy
+msgid "allow"
+msgstr "разрешать"
+
+#: core/admin/tables/TableAllowDeny.php:120
+msgid "deny"
+msgstr "отрицать"
+
+#: core/admin/tables/TableAllowDeny.php:123
+#, fuzzy
+msgid "Timespan"
+msgstr "Timespan"
+
+#: core/admin/tables/TableAllowDeny.php:124
+msgid "day"
+msgstr "день"
+
+#: core/admin/tables/TableAllowDeny.php:125
+#: core/admin/tables/TableAllowDeny.php:126
+msgid "days"
+msgstr "дней"
+
+#: core/admin/tables/TableAllowDeny.php:127
+msgid "month"
+msgstr "месяц"
+
+#: core/admin/tables/TableAllowDeny.php:128
+#: core/admin/tables/TableAllowDeny.php:129
+msgid "months"
+msgstr "месяцев"
+
+#: core/admin/tables/TableAllowDeny.php:130
+msgid "forever"
+msgstr "навсегда"
+
+#: core/admin/tables/TableAllowDeny.php:133
+#, fuzzy
+msgid "Add IP"
+msgstr "Добавить IP"
+
+#: core/admin/tables/TableAllowDeny.php:158
+#, fuzzy
+msgid "Error: IP address not added. Your session expired. Please try again."
+msgstr ""
+"Ошибка: IP-адрес не добавлен. Ваш сеанс истек. Пожалуйста, попробуйте еще "
+"раз."
+
+#: core/admin/tables/TableAllowDeny.php:181
+#, fuzzy, php-format
+msgid "Notice: %1$s -  IP address is already in the database."
+msgstr "Примечание: %1$s - IP-адрес уже есть в базе данных."
+
+#: core/admin/tables/TableAllowDeny.php:189
+#, fuzzy, php-format
+msgid "%1$s - IP address added with %2$s rule."
+msgstr "%1$s - IP-адрес добавлен с правилом %2$s."
+
+#: core/admin/tables/TableAllowDeny.php:193
+#, fuzzy, php-format
+msgid "Error: %1$s - IP address could not be added. Unknown reason."
+msgstr "Ошибка: %1$s - IP-адрес не может быть добавлен. Неизвестная причина."
+
+#: core/admin/tables/TableAllowDeny.php:203
+#, fuzzy, php-format
+msgid "Error: %s - IP address not valid."
+msgstr "Ошибка: %s - IP-адрес недействителен."
+
+#: core/admin/tables/TableAllowDeny.php:207
+#, fuzzy, php-format
+msgid "Error: %s - Timespan not valid."
+msgstr "Ошибка: %s - Продолжительность недействительна."
+
+#: core/admin/tables/TableAllowDeny.php:255
+#, fuzzy, php-format
+msgid "%s We recommend adding your IP to the whitelist using the form below."
+msgstr ""
+"%s Мы рекомендуем добавить ваш IP в белый список, используя форму ниже."
+
+#: core/admin/tables/TableBlocked.php:59 core/admin/tables/TableBlocked.php:93
+msgid "blocked"
+msgstr "заблокирована"
+
+#: core/admin/tables/TableBlocked.php:105
+#, fuzzy
+msgid "Login attempt was successful."
+msgstr "Попытка входа была успешной."
+
+#: core/admin/tables/TableBlocked.php:106
+#, fuzzy
+msgid "Login attempt failed."
+msgstr "Попытка входа не удалась."
+
+#: core/admin/tables/TableBlocked.php:107
+#, fuzzy
+msgid "Login attempt blocked."
+msgstr "Попытка входа заблокирована."
+
+#: core/admin/tables/TableBlocked.php:108
+#, php-format
+msgid "Username: %s"
+msgstr "Имя пользователя: %s"
+
+#: core/admin/tables/TableBlocked.php:130
+#, fuzzy, php-format
+msgid "Threats Over The Past %d Days"
+msgstr "Угрозы за прошедшие % дней"
+
+#: core/admin/tables/TableBlocked.php:135
+#, fuzzy
+msgid "Threats Blocked"
+msgstr "Угрозы заблокированы"
+
+#: core/admin/tables/TableBlocked.php:166
+#, fuzzy
+msgid "# Threats"
+msgstr "# Угрозы"
+
+#: core/admin/tables/TableLogins.php:108
+#, fuzzy, php-format
+msgid "Login Attempts Over The Past %d Days"
+msgstr "Попытки входа в систему за прошедшие %d дни"
+
+#: core/admin/tables/TableLogins.php:113
+#, fuzzy
+msgid "Login Distribution"
+msgstr "Распределение входа"
+
+#: core/admin/tables/TableLogins.php:126
+msgid "Total"
+msgstr "Всего"
+
+#: core/admin/tables/TableLogins.php:166
+#, fuzzy
+msgid "# Login Attempts"
+msgstr "# Попытки входа"
+
+#: core/includes/Janitor.php:65 core/includes/Janitor.php:84
+#, fuzzy, php-format
+msgid "%s plugin updated."
+msgstr "%s плагин обновлен."
+
+#: core/includes/Janitor.php:117
+#, fuzzy, php-format
+msgid "%s plugin enabled."
+msgstr "Плагин %s включен."
+
+#: core/includes/Janitor.php:154
+#, fuzzy, php-format
+msgid "%s plugin disabled."
+msgstr "%s плагин отключен."
+
+#: core/includes/Janitor.php:253 core/includes/Janitor.php:289
+#, fuzzy
+msgid "database maintenance"
+msgstr "обслуживание серверов"
+
+#: core/includes/Janitor.php:293
+#, fuzzy, php-format
+msgid "Error: %s is not a valid type."
+msgstr "Ошибка: %s не является действительным типом."
+
+#: core/includes/Yoda.php:33
+#, fuzzy
+msgid "WP Security Safe"
+msgstr "WP Безопасность Безопасность"
+
+#: core/includes/Yoda.php:34
+#, fuzzy
+msgid "WP Security Safe Pro"
+msgstr "WP Security Safe Pro"
+
+#: core/includes/Yoda.php:70
+#, fuzzy
+msgid "404s Errors"
+msgstr "404с Ошибки"
+
+#: core/includes/Yoda.php:71
+msgid "Login Attempts"
+msgstr "Попытки входа"
+
+#: core/includes/Yoda.php:72
+msgid "Comments"
+msgstr "Комментарии"
+
+#: core/includes/Yoda.php:73
+msgid "Firewall Rules"
+msgstr "Правила межсетевого экрана"
+
+#: core/includes/Yoda.php:74
+msgid "User Activity"
+msgstr "Активность пользователя"
+
+#: core/includes/Yoda.php:75
+#, fuzzy
+msgid "Blocked Activity"
+msgstr "Блокированная деятельность"
+
+#: core/includes/Yoda.php:107
+#, fuzzy
+msgid "IP Unavailable"
+msgstr "IP-адрес недоступен"
+
+#: core/includes/Yoda.php:113
+#, fuzzy
+msgid "Not Valid IP"
+msgstr "Недействительный IP"
+
+#: core/security/firewall/Firewall.php:42
+#, fuzzy, php-format
+msgid "%s: Access blocked."
+msgstr "%s: Доступ заблокирован."
+
+#: core/security/firewall/Firewall.php:300
+#, fuzzy, php-format
+msgid "Too many offenses. Blacklisted for %s."
+msgstr "Слишком много правонарушений. Занесено в черный список за %s."
+
+#: core/security/firewall/PolicyLog404s.php:44
+#: core/security/firewall/PolicyLogLogins.php:120
+#: core/security/firewall/PolicyLogLogins.php:144
+#: core/security/firewall/PolicyLoginLocal.php:86
+#, fuzzy
+msgid "IP is blacklisted."
+msgstr "IP занесен в черный список."
+
+#: core/security/firewall/PolicyLog404s.php:68
+#, fuzzy
+msgid "Multiple threat detection."
+msgstr "Обнаружение множественных угроз."
+
+#: core/security/firewall/PolicyLogLogins.php:75
+#, fuzzy
+msgid "XML-RPC Login Attempt."
+msgstr "XML-RPC Попытка входа."
+
+#: core/security/firewall/PolicyLogLogins.php:75
+#, fuzzy
+msgid "XML-RPC Login Successful."
+msgstr "XML-RPC Логин Успешный."
+
+#: core/security/firewall/PolicyLogLogins.php:87
+#, fuzzy
+msgid "This username is too common. Consider changing it."
+msgstr ""
+"Это имя пользователя слишком распространено. Подумай о том, чтобы изменить "
+"его."
+
+#: core/security/firewall/PolicyLoginLocal.php:96
+#, fuzzy
+msgid "Error: Local login required and Nonce missing."
+msgstr "Ошибка: Требуется локальный логин и Нонсе отсутствует."
+
+#: core/security/firewall/PolicyLoginLocal.php:102
+#, fuzzy
+msgid "Error: Local login required and Referer missing."
+msgstr "Ошибка: Требуется локальный логин и отсутствует Referer."
+
+#: core/security/firewall/PolicyLoginLocal.php:111
+#, fuzzy
+msgid "Error: Local login required and Nonce not valid."
+msgstr "Ошибка: Требуется локальный логин и недействителен Nonce."
+
+#: core/security/firewall/PolicyXMLRPC.php:38
+#, fuzzy
+msgid "XML-RPC Disabled."
+msgstr "XML-RPC Отключен."
+
+#: core/security/privacy/PolicyLoginErrors.php:31
+msgid "Invalid username or password."
+msgstr "Неверное имя пользователя или пароль."
+
+#: core/security/privacy/PolicyPluginVersionFiles__premium_only.php:52
+#, fuzzy, php-format
+msgid "<b>%s:</b> Updating plugin file permissions..."
+msgstr "<b>%s:</b> Обновление прав доступа к файлам плагина..."
+
+#: core/security/privacy/PolicyPluginVersionFiles__premium_only.php:84
+#, fuzzy
+msgid "All plugin files are secure. Done."
+msgstr "Все файлы плагина защищены. Готово."
+
+#: core/security/privacy/PolicyPluginVersionFiles__premium_only.php:155
+#: core/security/privacy/PolicyThemeVersionFiles__premium_only.php:153
+#: core/security/privacy/PolicyWordPressVersionFiles.php:51
+msgid "Fixed:"
+msgstr "Исправлено:"
+
+#: core/security/privacy/PolicyPluginVersionFiles__premium_only.php:160
+#: core/security/privacy/PolicyThemeVersionFiles__premium_only.php:158
+#: core/security/privacy/PolicyWordPressVersionFiles.php:56
+#, fuzzy
+msgid "Could Not Fix File:"
+msgstr "Не мог исправить файл:"
+
+#: core/security/privacy/PolicyThemeVersionFiles__premium_only.php:50
+#, fuzzy, php-format
+msgid "<b>%s:</b> Update plugin file permissions..."
+msgstr "<b>%s:</b> Обновить права доступа к файлам плагина..."
+
+#: core/security/privacy/PolicyThemeVersionFiles__premium_only.php:82
+#, fuzzy
+msgid "All theme files are secure. Done."
+msgstr "Все файлы тем защищены. Готово."
+
+#: security-safe.php:21
+#, fuzzy
+msgid "Firewall, Security Hardening, Auditing & Privacy"
+msgstr "Брандмауэр, Защита безопасности, аудит и конфиденциальность"

@@ -1,0 +1,2216 @@
+# Copyright (C) 2019 Sovereign Stack, LLC
+# This file is distributed under the same license as the WP Security Safe plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Security Safe\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/security-safe\n"
+"Language-Team: Sovereign Stack Team\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-04-19 18:13-0400\n"
+"PO-Revision-Date: 2020-04-19 18:26-0400\n"
+"X-Generator: Poedit 2.3\n"
+"X-Domain: security-safe\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr\n"
+"X-Poedit-SearchPath-0: security-safe.php\n"
+"X-Poedit-SearchPath-1: core\n"
+
+#: core/Plugin.php:287
+msgid "Error: Settings could not be deleted [1]."
+msgstr "Erreur : Les paramètres n'ont pas pu être supprimés [1]."
+
+#: core/Plugin.php:301
+#, php-format
+msgid "%s settings have been set to the minimum standards."
+msgstr "Les paramètres de %s ont été fixés aux normes minimales."
+
+#: core/Plugin.php:305
+msgid "The settings have been reset to default."
+msgstr "Les paramètres ont été remis à leur valeur par défaut."
+
+#: core/Plugin.php:309
+msgid "Error: Settings could not be reset. [2]"
+msgstr "Erreur : Les paramètres n'ont pas pu être réinitialisés. [2]"
+
+#: core/Plugin.php:430
+#, php-format
+msgid "%s: Your database has been upgraded."
+msgstr "%s : Votre base de données a été mise à jour."
+
+#: core/Plugin.php:466
+#, php-format
+msgid "%s: Your settings have been upgraded."
+msgstr "%s : Vos paramètres ont été mis à jour."
+
+#: core/Plugin.php:474
+#, php-format
+msgid ""
+"%s: There was an error upgrading your settings. We would recommend resetting "
+"your settings to fix the issue."
+msgstr ""
+"%s : Il y a eu une erreur lors de la mise à jour de vos paramètres. Nous "
+"vous recommandons de réinitialiser vos paramètres pour résoudre le problème."
+
+#: core/Plugin.php:504
+msgid "Error: Settings not saved. Your session expired. Please try again."
+msgstr ""
+"Erreur : Les réglages ne sont pas enregistrés. Votre session a expiré. "
+"Veuillez réessayer."
+
+#: core/Plugin.php:568
+msgid "Settings saved."
+msgstr "Paramètres sauvegardés."
+
+#: core/Plugin.php:577
+msgid "Your settings have been saved."
+msgstr "Vos réglages ont été enregistrés."
+
+#: core/Plugin.php:582
+msgid "Error: Settings not saved."
+msgstr "Erreur : Paramètres non enregistrés."
+
+#: core/Plugin.php:857
+#, php-format
+msgid "Security by %s"
+msgstr "Sécurité en %s"
+
+#: core/admin/Admin.php:139 core/admin/pages/AdminPageGeneral.php:149
+msgid "Plugin"
+msgstr "Extension"
+
+#: core/admin/Admin.php:140 core/admin/pages/AdminPageGeneral.php:142
+#: core/admin/pages/AdminPagePrivacy.php:23
+msgid "Privacy"
+msgstr "Confidentialité"
+
+#: core/admin/Admin.php:141 core/admin/pages/AdminPageGeneral.php:143
+msgid "Files"
+msgstr "Fichiers"
+
+#: core/admin/Admin.php:142 core/admin/Admin.php:575
+#: core/admin/pages/AdminPageGeneral.php:145
+msgid "User Access"
+msgstr "Accès de l'utilisateur"
+
+#: core/admin/Admin.php:143 core/admin/pages/AdminPageGeneral.php:144
+msgid "Content"
+msgstr "Contenu"
+
+#: core/admin/Admin.php:144 core/admin/pages/AdminPageFirewall.php:23
+#: core/admin/pages/AdminPageGeneral.php:146
+msgid "Firewall"
+msgstr "Firewall"
+
+#: core/admin/Admin.php:357
+#, php-format
+msgid "Pro Version %s"
+msgstr "Pro Version %s"
+
+#: core/admin/Admin.php:358
+msgid "( free features only )"
+msgstr "(fonctions gratuites uniquement)"
+
+#: core/admin/Admin.php:366
+#, php-format
+msgid "Version %s"
+msgstr "Version %s"
+
+#: core/admin/Admin.php:421
+#, php-format
+msgid ""
+"If you like %1$s, please <a href=\"%2$s\" target=\"_blank\">post a review</"
+"a>."
+msgstr ""
+"Si vous aimez les %1$s, veuillez <a href=\"%2$s\" target=\"_blank\">poster "
+"une</a> critique."
+
+#: core/admin/Admin.php:423
+#, php-format
+msgid ""
+"Need help? Visit the <a href=\"%1$s\" target=\"_blank\">support forum</a>"
+msgstr ""
+"Besoin d'aide ? Visitez le <a href=\"%1$s\" target=\"_blank\">forum de "
+"soutien</a>"
+
+#: core/admin/Admin.php:487
+msgid "Support This Plugin"
+msgstr "Soutenir ce plugin"
+
+#: core/admin/Admin.php:488
+msgid "Your review encourages ongoing maintenance of this Free version."
+msgstr ""
+"Votre avis encourage la maintenance continue de cette version gratuite."
+
+#: core/admin/Admin.php:492
+#, php-format
+msgid "Like %s?"
+msgstr "J'aime %s?"
+
+#: core/admin/Admin.php:493
+msgid "Share your positive experience!"
+msgstr "Partagez votre expérience positive !"
+
+#: core/admin/Admin.php:502
+#, php-format
+msgid "Follow %s"
+msgstr "Suivre %s"
+
+#: core/admin/Admin.php:508
+msgid "Get More Features"
+msgstr "Obtenir plus de fonctionnalités"
+
+#: core/admin/Admin.php:509
+msgid "Pro features give you more control and save you time."
+msgstr ""
+"Les fonctionnalités pro vous donnent plus de contrôle et vous font gagner du "
+"temps."
+
+#: core/admin/Admin.php:510
+msgid "Upgrade to Pro!"
+msgstr "Passez à la version PRO !"
+
+#: core/admin/Admin.php:575
+msgid "Access"
+msgstr "Accès"
+
+#: core/admin/Admin.php:721
+msgid ""
+"Error: Settings could not be reset. Your session expired. Please try again."
+msgstr ""
+"Erreur : Les paramètres n'ont pas pu être réinitialisés. Votre session a "
+"expiré. Veuillez réessayer."
+
+#: core/admin/Admin.php:769
+#, php-format
+msgid ""
+"%s: WP Cron is disabled. This will affect the routine database table "
+"cleanup. Please setup a manual cron to trigger WP Cron daily or enable WP "
+"Cron."
+msgstr ""
+"%s : Le WP Cron est désactivé. Cela affectera le nettoyage de routine des "
+"tables de la base de données. Veuillez configurer un cron manuel pour "
+"déclencher WP Cron quotidiennement ou activer WP Cron."
+
+#: core/admin/Admin.php:779
+#, php-format
+msgid "%s: Plugin Debug Mode is on."
+msgstr "%s : Le mode \"Plugin Debug\" est activé."
+
+#: core/admin/Admin.php:798
+#, php-format
+msgid "%s: All security policies are disabled."
+msgstr "%s : Toutes les politiques de sécurité sont désactivées."
+
+#: core/admin/Admin.php:803
+#, php-format
+msgid ""
+"%s: All security policies are disabled. You can enable them in <a href=\"%s"
+"\">Plugin Settings</a>. If you are experiencing an issue, <a href=\"%s"
+"\">reset your settings.</a>"
+msgstr ""
+"%s : Toutes les politiques de sécurité sont désactivées. Vous pouvez les "
+"activer dans les <a href=\"%s\">paramètres des plugins</a>. Si vous "
+"rencontrez un problème, <a href=\"%s\">réinitialisez vos paramètres.</a>"
+
+#: core/admin/Admin.php:820
+#, php-format
+msgid "%s: All privacy policies are disabled."
+msgstr ""
+"%s : Toutes les politiques de protection de la vie privée sont désactivées."
+
+#: core/admin/Admin.php:825
+#, php-format
+msgid ""
+"%s: All privacy policies are disabled. You can enable them at the top of <a "
+"href=\"%s\">Privacy Settings</a>."
+msgstr ""
+"%s : Toutes les politiques de protection de la vie privée sont désactivées. "
+"Vous pouvez les activer en haut des <a href=\"%s\">paramètres</a> de "
+"confidentialité."
+
+#: core/admin/Admin.php:841
+#, php-format
+msgid "%s: All file policies are disabled."
+msgstr "%s : Toutes les politiques de fichiers sont désactivées."
+
+#: core/admin/Admin.php:846
+#, php-format
+msgid ""
+"%s: All file policies are disabled. You can enable them at the top of <a "
+"href=\"%s\">File Settings</a>."
+msgstr ""
+"%s : Toutes les politiques de fichiers sont désactivées. Vous pouvez les "
+"activer en haut de la page <a href=\"%s\">Paramètres</a> des fichiers."
+
+#: core/admin/Admin.php:862
+#, php-format
+msgid "%s: All user access policies are disabled."
+msgstr "%s : Toutes les politiques d'accès des utilisateurs sont désactivées."
+
+#: core/admin/Admin.php:867
+#, php-format
+msgid ""
+"%s: All user access policies are disabled. You can enable them at the top of "
+"<a href=\"%s\">User Access Settings</a>."
+msgstr ""
+"%s : Toutes les politiques d'accès des utilisateurs sont désactivées. Vous "
+"pouvez les activer en haut des <a href=\"%s\">paramètres</a> d'accès des "
+"utilisateurs."
+
+#: core/admin/Admin.php:883
+#, php-format
+msgid "%s: All content policies are disabled."
+msgstr "%s : Toutes les politiques de contenu sont désactivées."
+
+#: core/admin/Admin.php:888
+#, php-format
+msgid ""
+"%s: All content policies are disabled. You can enable them at the top of <a "
+"href=\"%s\">Content Settings</a>."
+msgstr ""
+"%s : Toutes les politiques de contenu sont désactivées. Vous pouvez les "
+"activer en haut des <a href=\"%s\">paramètres</a> de contenu."
+
+#: core/admin/Admin.php:913
+#, php-format
+msgid ""
+"%1$s: Your Pro Key has expired or no longer valid. Please review <a href="
+"\"%2$s\">your account</a>."
+msgstr ""
+"%1$s : Votre clé pro a expiré ou n'est plus valable. Veuillez vérifier <a "
+"href=\"%2$s\">votre compte</a>."
+
+#: core/admin/Admin.php:995
+msgid "Current settings match the imported settings. No changes were made."
+msgstr ""
+"Les paramètres actuels correspondent aux paramètres importés. Aucune "
+"modification n'a été apportée."
+
+#: core/admin/Admin.php:1004
+msgid "Your settings imported successfully."
+msgstr "Vos paramètres ont été importés avec succès."
+
+#: core/admin/Admin.php:1009
+msgid "Import Failed: File is corrupted [1]."
+msgstr "L'importation a échoué : Le fichier est corrompu [1]."
+
+#: core/admin/Admin.php:1018
+msgid "Import Failed: File is corrupted [2]."
+msgstr "L'importation a échoué : Le fichier est corrompu [2]."
+
+#: core/admin/Admin.php:1024
+msgid "Import Failed: Please upload a JSON file."
+msgstr "L'importation a échoué : Veuillez télécharger un fichier JSON."
+
+#: core/admin/Admin.php:1043
+msgid "Rate Plugin"
+msgstr "Taux plugin"
+
+#: core/admin/pages/AdminPage.php:259
+msgid "Error: There are parameters missing to properly display checkbox."
+msgstr ""
+"Erreur : Il manque des paramètres pour afficher correctement la case à "
+"cocher."
+
+#: core/admin/pages/AdminPage.php:306 core/admin/pages/AdminPage.php:358
+#, php-format
+msgid "Error: There is an issue displaying this form field: %s."
+msgstr ""
+"Erreur : Il y a un problème d'affichage de ce champ de formulaire : %s."
+
+#: core/admin/pages/AdminPage.php:342
+msgid "Error: Form field \"select\" is not an array."
+msgstr "Erreur : Le champ \"select\" du formulaire n'est pas un tableau."
+
+#: core/admin/pages/AdminPage.php:391
+msgid "Choose File"
+msgstr "Choisissez un fichier"
+
+#: core/admin/pages/AdminPage.php:391
+msgid "No File Chosen"
+msgstr "Aucun fichier chargé"
+
+#: core/admin/pages/AdminPage.php:436
+msgid "Save Changes"
+msgstr "Sauvegarder les changements"
+
+#: core/admin/pages/AdminPage.php:484
+msgid "Process Log"
+msgstr "Journal de bord"
+
+#: core/admin/pages/AdminPage.php:500
+msgid "No changes were made to file permissions."
+msgstr "Aucune modification n'a été apportée aux autorisations de dépôt."
+
+#: core/admin/pages/AdminPageAccess.php:24
+msgid "Control how users access your admin area."
+msgstr ""
+"Contrôlez la manière dont les utilisateurs accèdent à votre zone "
+"d'administration."
+
+#: core/admin/pages/AdminPageAccess.php:32
+#: core/admin/pages/AdminPageAccess.php:33
+msgid "Users"
+msgstr "Utilisateurs"
+
+#: core/admin/pages/AdminPageAccess.php:42
+msgid "Logins"
+msgstr "Connexions"
+
+#: core/admin/pages/AdminPageAccess.php:43
+msgid "Login Log"
+msgstr "Journal de connexion"
+
+#: core/admin/pages/AdminPageAccess.php:52
+#: core/admin/pages/AdminPageContent.php:39
+#: core/admin/pages/AdminPageFiles.php:31
+#: core/admin/pages/AdminPageFirewall.php:48
+#: core/admin/pages/AdminPageGeneral.php:36
+#: core/admin/pages/AdminPagePrivacy.php:28
+msgid "Settings"
+msgstr "Paramètres"
+
+#: core/admin/pages/AdminPageAccess.php:53
+msgid "User Access Settings"
+msgstr "Réglages d'accès utilisateurs"
+
+#: core/admin/pages/AdminPageAccess.php:63
+msgid "Activity Log"
+msgstr "Journal d'activité"
+
+#: core/admin/pages/AdminPageAccess.php:64
+msgid "Admin Activity Log"
+msgstr "Journal d'activité de l'administration"
+
+#: core/admin/pages/AdminPageAccess.php:88
+msgid "User Access Policies"
+msgstr "Politiques d'accès des utilisateurs"
+
+#: core/admin/pages/AdminPageAccess.php:90
+#: core/admin/pages/AdminPageContent.php:65
+#: core/admin/pages/AdminPageFiles.php:117
+#: core/admin/pages/AdminPageGeneral.php:83
+#: core/admin/pages/AdminPagePrivacy.php:53
+msgid "Disabled"
+msgstr "Désactivé"
+
+#: core/admin/pages/AdminPageAccess.php:90
+#: core/admin/pages/AdminPageContent.php:65
+#: core/admin/pages/AdminPageFiles.php:117
+#: core/admin/pages/AdminPageGeneral.php:83
+#: core/admin/pages/AdminPagePrivacy.php:53
+msgid "Enabled"
+msgstr "Activé"
+
+#: core/admin/pages/AdminPageAccess.php:91
+msgid ""
+"If you experience a problem, you may want to temporarily turn off all user "
+"access policies at once to troubleshoot the issue."
+msgstr ""
+"Si vous rencontrez un problème, vous pouvez désactiver temporairement toutes "
+"les politiques d'accès des utilisateurs en une fois pour résoudre le "
+"problème."
+
+#: core/admin/pages/AdminPageAccess.php:99
+msgid "Login Form"
+msgstr "Formulaire de connexion"
+
+#: core/admin/pages/AdminPageAccess.php:100
+msgid "Your website's first line of defense is the login form."
+msgstr ""
+"La première ligne de défense de votre site web est le formulaire de "
+"connexion."
+
+#: core/admin/pages/AdminPageAccess.php:105
+msgid "Login Errors"
+msgstr "Erreurs de connexion"
+
+#: core/admin/pages/AdminPageAccess.php:107
+msgid "Make login errors generic."
+msgstr "Rendre les erreurs de connexion génériques."
+
+#: core/admin/pages/AdminPageAccess.php:108
+msgid ""
+"When someone attempts to log in, by default, the error messages will tell "
+"the user that the password is incorrect or that the username is not valid. "
+"This exposes too much information to the potential intruder."
+msgstr ""
+"Lorsque quelqu'un tente de se connecter, par défaut, les messages d'erreur "
+"indiquent à l'utilisateur que le mot de passe est incorrect ou que le nom "
+"d'utilisateur n'est pas valide. Cela expose trop d'informations à l'intrus "
+"potentiel."
+
+#: core/admin/pages/AdminPageAccess.php:113
+msgid "Password Reset"
+msgstr "Réinitialiser le mot de passe"
+
+#: core/admin/pages/AdminPageAccess.php:115
+msgid "Disable Password Reset"
+msgstr "Désactiver la réinitialisation du mot de passe"
+
+#: core/admin/pages/AdminPageAccess.php:116
+msgid ""
+"If you are the only user of the site, you may want to disable this feature "
+"as you have access to the database and hosting control panel."
+msgstr ""
+"Si vous êtes le seul utilisateur du site, vous pouvez désactiver cette "
+"fonction car vous avez accès à la base de données et au panneau de contrôle "
+"de l'hébergement."
+
+#: core/admin/pages/AdminPageAccess.php:121
+msgid "Remember Me"
+msgstr "Se souvenir de moi"
+
+#: core/admin/pages/AdminPageAccess.php:123
+msgid "Disable Remember Me Checkbox"
+msgstr "Désactiver se rappeler de moi"
+
+#: core/admin/pages/AdminPageAccess.php:124
+msgid ""
+"If the device that uses the remember me feature gets stolen, then the person "
+"in possession can now log in."
+msgstr ""
+"Si l'appareil qui utilise la fonction \"se souvenir de moi\" est volé, la "
+"personne en possession de l'appareil peut alors se connecter."
+
+#: core/admin/pages/AdminPageAccess.php:130
+msgid "Brute Force Logins"
+msgstr "Logins de la force brute"
+
+#: core/admin/pages/AdminPageAccess.php:131
+msgid ""
+"Brute Force login attempts are repetitive attempts to gain access to your "
+"site using the login form."
+msgstr ""
+"Les tentatives de connexion de la Brute Force sont des tentatives répétées "
+"d'accéder à votre site en utilisant le formulaire de connexion."
+
+#: core/admin/pages/AdminPageAccess.php:136
+msgid "Local Logins"
+msgstr "Connexions locales"
+
+#: core/admin/pages/AdminPageAccess.php:138
+msgid "Only Allow Local Logins"
+msgstr "N'autoriser que les connexions locales"
+
+#: core/admin/pages/AdminPageAccess.php:139
+msgid ""
+"Software can remotely log in without actually visiting your website or using "
+"the login form. Unless you know that you need to be able to remotely login, "
+"it is recommended to only allow local logins. This does not disable XML-RPC. "
+"This is compatible with ManageWP."
+msgstr ""
+"Les logiciels peuvent se connecter à distance sans avoir à visiter votre "
+"site web ou à utiliser le formulaire de connexion. Sauf si vous savez que "
+"vous devez pouvoir vous connecter à distance, il est recommandé de "
+"n'autoriser que les connexions locales. Cela ne désactive pas le XML-RPC. Il "
+"est compatible avec ManageWP."
+
+#: core/admin/pages/AdminPageAccess.php:144
+msgid "XML-RPC"
+msgstr "XML-RPC"
+
+#: core/admin/pages/AdminPageAccess.php:146
+msgid "Disable XML-RPC"
+msgstr "Désactiver XML-RPC"
+
+#: core/admin/pages/AdminPageAccess.php:147
+msgid ""
+"The xmlrpc.php file allows remote execution of scripts. This can be useful "
+"in some cases, but most of the time it is not needed. Attackers often use "
+"XML-RPC to brute force login to your website."
+msgstr ""
+"Le fichier xmlrpc.php permet l'exécution à distance de scripts. Cela peut "
+"être utile dans certains cas, mais la plupart du temps ce n'est pas "
+"nécessaire. Les attaquants utilisent souvent XML-RPC pour forcer la "
+"connexion à votre site web."
+
+#: core/admin/pages/AdminPageAccess.php:153
+#: core/admin/pages/AdminPageContent.php:117
+#: core/admin/pages/AdminPageFiles.php:270
+#: core/admin/pages/AdminPageFirewall.php:188
+#: core/admin/pages/AdminPageGeneral.php:120
+#: core/admin/pages/AdminPagePrivacy.php:124
+msgid "Save Settings"
+msgstr "Enregistrer les paramètres"
+
+#: core/admin/pages/AdminPageAccess.php:194
+msgid "Search logins"
+msgstr "Rechercher des connexions"
+
+#: core/admin/pages/AdminPageAccess.php:216
+msgid "Search activity"
+msgstr "Activité de recherche"
+
+#: core/admin/pages/AdminPageContent.php:24
+msgid "Content Protection"
+msgstr "Protection de Contenu"
+
+#: core/admin/pages/AdminPageContent.php:25
+msgid "Deter visitors from stealing your content."
+msgstr "Dissuader les visiteurs de voler votre contenu."
+
+#: core/admin/pages/AdminPageContent.php:29 core/admin/tables/Table404s.php:102
+msgid "404 Errors"
+msgstr "Erreurs 404"
+
+#: core/admin/pages/AdminPageContent.php:30
+msgid "404 Error Log"
+msgstr "Journal des erreurs 404"
+
+#: core/admin/pages/AdminPageContent.php:40
+msgid "Content Settings"
+msgstr "Paramètres de contenu"
+
+#: core/admin/pages/AdminPageContent.php:63
+msgid "Content Policies"
+msgstr "Politiques de contenu"
+
+#: core/admin/pages/AdminPageContent.php:66
+msgid ""
+"If you experience a problem, you may want to temporarily turn off all "
+"content policies at once to troubleshoot the issue. Be sure to clear your "
+"cache as well."
+msgstr ""
+"Si vous rencontrez un problème, vous pouvez désactiver temporairement toutes "
+"les politiques de contenu en même temps pour résoudre le problème. Veillez "
+"également à vider votre cache."
+
+#: core/admin/pages/AdminPageContent.php:76
+msgid "Copyright Protection"
+msgstr "Protection des droits d'auteur"
+
+#: core/admin/pages/AdminPageContent.php:77
+msgid ""
+"Copyright protection is meant to deter the majority of users from copying "
+"your content. These settings do not affect the admin area."
+msgstr ""
+"La protection du droit d'auteur vise à dissuader la majorité des "
+"utilisateurs de copier votre contenu. Ces paramètres n'affectent pas la zone "
+"d'administration."
+
+#: core/admin/pages/AdminPageContent.php:82
+msgid "Highlight Text"
+msgstr "Texte en surbrillance"
+
+#: core/admin/pages/AdminPageContent.php:84
+msgid "Disable Text Highlighting"
+msgstr "Désactiver le surlignage du texte"
+
+#: core/admin/pages/AdminPageContent.php:85
+msgid "Prevent users from highlighting your content text."
+msgstr ""
+"Empêchez les utilisateurs de mettre en évidence le texte de votre contenu."
+
+#: core/admin/pages/AdminPageContent.php:90
+msgid "Right-Click"
+msgstr "Clic droit"
+
+#: core/admin/pages/AdminPageContent.php:92
+msgid "Disable Right-Click"
+msgstr "Désactiver le clic droit"
+
+#: core/admin/pages/AdminPageContent.php:93
+msgid ""
+"Prevent users from right-clicking on your site to save images or copy text."
+msgstr ""
+"Empêchez les utilisateurs de cliquer avec le bouton droit de la souris sur "
+"votre site pour enregistrer des images ou copier du texte."
+
+#: core/admin/pages/AdminPageContent.php:100
+msgid "Password Protected Content"
+msgstr "Contenu protégé par mot de passe"
+
+#: core/admin/pages/AdminPageContent.php:101
+msgid ""
+"Sometimes, it is necessary to password protect content for special access "
+"without requiring a user to log in. The settings below enhance this "
+"WordPress feature."
+msgstr ""
+"Parfois, il est nécessaire de protéger le contenu par un mot de passe pour "
+"un accès spécial sans qu'un utilisateur ait besoin de se connecter. Les "
+"paramètres ci-dessous améliorent cette fonction de WordPress."
+
+#: core/admin/pages/AdminPageContent.php:106
+msgid "Hide Posts"
+msgstr "Cacher les postes"
+
+#: core/admin/pages/AdminPageContent.php:108
+msgid "Hide All Protected Posts"
+msgstr "Cacher tous les postes protégés"
+
+#: core/admin/pages/AdminPageContent.php:109
+msgid ""
+"Prevent password protected content from being listed in the blog, search "
+"results, and any other public areas. (only affects the loop)"
+msgstr ""
+"Empêcher que des contenus protégés par un mot de passe soient répertoriés "
+"dans le blog, les résultats de recherche et tout autre espace public. "
+"(n'affecte que la boucle)"
+
+#: core/admin/pages/AdminPageContent.php:114
+msgid ""
+"<b>NOTICE:</b> Be sure to clear your cache after changing these settings."
+msgstr ""
+"REMARQUE<b> :</b> Veillez à vider votre cache après avoir modifié ces "
+"paramètres."
+
+#: core/admin/pages/AdminPageContent.php:137
+msgid "Search 404s"
+msgstr "Rechercher 404s"
+
+#: core/admin/pages/AdminPageFiles.php:26
+msgid "Files & Folders"
+msgstr "Fichiers et dossiers"
+
+#: core/admin/pages/AdminPageFiles.php:27
+msgid ""
+"It is essential to keep all files updated and ensure only authorized users "
+"can access them."
+msgstr ""
+"Il est essentiel de tenir tous les dossiers à jour et de veiller à ce que "
+"seuls les utilisateurs autorisés puissent y accéder."
+
+#: core/admin/pages/AdminPageFiles.php:32
+msgid "File Settings"
+msgstr "Paramètres de fichiers"
+
+#: core/admin/pages/AdminPageFiles.php:40
+msgid "Core"
+msgstr "Noyau"
+
+#: core/admin/pages/AdminPageFiles.php:41
+msgid "WordPress Base Directory & Files"
+msgstr "Répertoire et fichiers de la base WordPress"
+
+#: core/admin/pages/AdminPageFiles.php:42
+msgid "Check to make sure all file permissions set correctly."
+msgstr ""
+"Vérifiez que toutes les autorisations de fichiers sont correctement définies."
+
+#: core/admin/pages/AdminPageFiles.php:43
+msgid ""
+"Incorrect directory or file permission values can lead to security "
+"vulnerabilities or even plugins or themes not functioning as intended. If "
+"you are not sure what values to set for a file or directory, use the "
+"standard recommended value."
+msgstr ""
+"Des valeurs de permission incorrectes pour les répertoires ou les fichiers "
+"peuvent entraîner des failles de sécurité ou même des plugins ou des thèmes "
+"ne fonctionnant pas comme prévu. Si vous n'êtes pas sûr des valeurs à "
+"définir pour un fichier ou un répertoire, utilisez la valeur standard "
+"recommandée."
+
+#: core/admin/pages/AdminPageFiles.php:50
+msgid "Theme"
+msgstr "Thème"
+
+#: core/admin/pages/AdminPageFiles.php:51
+msgid "Theme Audit"
+msgstr "Thème Audit"
+
+#: core/admin/pages/AdminPageFiles.php:52
+msgid "Check to make sure all theme file permissions set correctly."
+msgstr ""
+"Vérifiez que toutes les permissions des fichiers de thème sont correctement "
+"définies."
+
+#: core/admin/pages/AdminPageFiles.php:53
+msgid ""
+"If you use \"Secure\" permission settings, and experience problems, just set "
+"the file permissions back to \"Standard.\""
+msgstr ""
+"Si vous utilisez les paramètres de permission \"Secure\" et que vous "
+"rencontrez des problèmes, il suffit de remettre les permissions du fichier à "
+"\"Standard\""
+
+#: core/admin/pages/AdminPageFiles.php:60
+msgid "Uploads"
+msgstr "Téléchargements"
+
+#: core/admin/pages/AdminPageFiles.php:61
+msgid "Uploads Directory Audit"
+msgstr "Audit de l'annuaire des téléchargements"
+
+#: core/admin/pages/AdminPageFiles.php:62
+msgid "Check to make sure all uploaded files have proper permissions."
+msgstr ""
+"Vérifiez que tous les fichiers téléchargés ont les autorisations appropriées."
+
+#: core/admin/pages/AdminPageFiles.php:68
+msgid ""
+"WordPress sets file permissions to minimum safe values by default when you "
+"install or update plugins. You will likely find file permission issues after "
+"migrating a site from one server to another. The file permissions for a "
+"plugin will get fixed when you perform an update on that particular plugin. "
+"We would recommend correcting any issues labeled \"bad\" immediately, versus "
+"waiting for an update."
+msgstr ""
+"WordPress fixe par défaut les permissions des fichiers à des valeurs "
+"minimales sûres lorsque vous installez ou mettez à jour des plugins. Vous "
+"trouverez probablement des problèmes de permission de fichiers après avoir "
+"migré un site d'un serveur à un autre. Les autorisations de fichiers pour un "
+"plugin seront corrigées lorsque vous effectuerez une mise à jour sur ce "
+"plugin particulier. Nous vous recommandons de corriger immédiatement tout "
+"problème qualifié de \"mauvais\", plutôt que d'attendre une mise à jour."
+
+#: core/admin/pages/AdminPageFiles.php:72
+msgid "Batch Plugin Permissions"
+msgstr "Autorisations pour les plugins en lots"
+
+#: core/admin/pages/AdminPageFiles.php:72
+#: core/admin/pages/AdminPageFiles.php:73
+#: core/admin/pages/AdminPageFiles.php:74
+msgid "Pro Feature"
+msgstr "Fonctionnalité PRO"
+
+#: core/admin/pages/AdminPageFiles.php:72
+msgid ""
+"You can change all plugin permissions to Standard or Secure permissions with "
+"one click."
+msgstr ""
+"Vous pouvez changer toutes les autorisations des plugins en autorisations "
+"Standard ou Sécurisées en un seul clic."
+
+#: core/admin/pages/AdminPageFiles.php:73
+msgid "Prevent Plugin Version Snooping"
+msgstr "Empêcher l'espionnage des versions de plugin"
+
+#: core/admin/pages/AdminPageFiles.php:73
+msgid "Prevent access to plugin version files."
+msgstr "Empêcher l'accès aux fichiers de la version du plugin."
+
+#: core/admin/pages/AdminPageFiles.php:74
+msgid "Maintain Secure Permissions"
+msgstr "Maintenir des autorisations sûres"
+
+#: core/admin/pages/AdminPageFiles.php:74
+msgid ""
+"Pro will automatically fix your file permissions after an core, plugin, and "
+"theme update."
+msgstr ""
+"Pro corrigera automatiquement les permissions de vos fichiers après une mise "
+"à jour du noyau, du plugin et du thème."
+
+#: core/admin/pages/AdminPageFiles.php:80
+msgid "Plugins"
+msgstr "Extensions"
+
+#: core/admin/pages/AdminPageFiles.php:81
+msgid "Plugins Audit"
+msgstr "Audit des plugins"
+
+#: core/admin/pages/AdminPageFiles.php:82
+msgid "When plugin updates run, they will overwrite your permission changes."
+msgstr ""
+"Lorsque les mises à jour des plugins s'exécutent, elles écrasent les "
+"modifications de vos autorisations."
+
+#: core/admin/pages/AdminPageFiles.php:90
+msgid "Server"
+msgstr "Serveur"
+
+#: core/admin/pages/AdminPageFiles.php:91
+msgid "Server Information"
+msgstr "Informations sur le serveur"
+
+#: core/admin/pages/AdminPageFiles.php:92
+msgid "It is your hosting provider's job to keep your server up-to-date."
+msgstr ""
+"Il appartient à votre fournisseur d'hébergement de tenir votre serveur à "
+"jour."
+
+#: core/admin/pages/AdminPageFiles.php:93
+msgid ""
+"This table below will help identify the software versions currently on your "
+"hosting server. <br>NOTE: System administrators often do server updates once "
+"per month. If something is a version behind, then you might be between "
+"update cycles or there may be compatibility issues due to version "
+"dependencies."
+msgstr ""
+"Le tableau ci-dessous vous aidera à identifier les versions de logiciels "
+"actuellement disponibles sur votre serveur d'hébergement. <br>REMARQUE : Les "
+"administrateurs système effectuent souvent des mises à jour du serveur une "
+"fois par mois. S'il y a un retard de version, il se peut que vous soyez "
+"entre deux cycles de mise à jour ou qu'il y ait des problèmes de "
+"compatibilité en raison de dépendances de versions."
+
+#: core/admin/pages/AdminPageFiles.php:115
+msgid "File Policies"
+msgstr "Politiques des fichiers"
+
+#: core/admin/pages/AdminPageFiles.php:118
+msgid ""
+"If you experience a problem, you may want to temporarily turn off all file "
+"policies at once to troubleshoot the issue."
+msgstr ""
+"Si vous rencontrez un problème, vous pouvez désactiver temporairement toutes "
+"les politiques de fichiers en même temps pour résoudre le problème."
+
+#: core/admin/pages/AdminPageFiles.php:127
+msgid "Automatic WordPress Updates"
+msgstr "Mises à jour automatiques de WordPress"
+
+#: core/admin/pages/AdminPageFiles.php:128
+msgid "Updates are one of the main culprits to a compromised website."
+msgstr ""
+"Les mises à jour sont l'un des principaux responsables d'un site web "
+"compromis."
+
+#: core/admin/pages/AdminPageFiles.php:136
+msgid ""
+"<b>NOTICE:</b> WordPress Automatic Core Updates are being controlled by the "
+"constant variable WP_AUTO_UPDATE_CORE in the wp-config.php file or by "
+"another plugin. As a result, Automatic Core Update feature settings for this "
+"plugin have been disabled."
+msgstr ""
+"<b>AVIS :</b> Les mises à jour automatiques du noyau de WordPress sont "
+"contrôlées par la variable constante WP_AUTO_UPDATE_CORE dans le fichier wp-"
+"config.php ou par un autre plugin. En conséquence, les paramètres de la "
+"fonction de mise à jour automatique du noyau pour ce plugin ont été "
+"désactivés."
+
+#: core/admin/pages/AdminPageFiles.php:140
+msgid "Dev Core Updates"
+msgstr "Mises à jour du noyau de développement"
+
+#: core/admin/pages/AdminPageFiles.php:142
+msgid "Automatic Nightly Core Updates"
+msgstr "Mises à jour nocturnes automatiques du noyau"
+
+#: core/admin/pages/AdminPageFiles.php:143
+msgid "Select this option if the site is in development only."
+msgstr ""
+"Sélectionnez cette option si le site est uniquement en cours de "
+"développement."
+
+#: core/admin/pages/AdminPageFiles.php:149
+msgid "Major Core Updates"
+msgstr "Principales mises à jour de base"
+
+#: core/admin/pages/AdminPageFiles.php:151
+msgid "Automatic Major Core Updates"
+msgstr "Mises à jour majeures automatiques du noyau"
+
+#: core/admin/pages/AdminPageFiles.php:152
+msgid ""
+"If you feel very confident in your code, you could automate the major "
+"version upgrades. (not recommended in most cases)"
+msgstr ""
+"Si vous êtes très confiant dans votre code, vous pourriez automatiser les "
+"principales mises à jour de la version. (non recommandé dans la plupart des "
+"cas)"
+
+#: core/admin/pages/AdminPageFiles.php:158
+msgid "Minor Core Updates"
+msgstr "Mises à jour mineures du noyau"
+
+#: core/admin/pages/AdminPageFiles.php:160
+msgid "Automatic Minor Core Updates"
+msgstr "Mises à jour mineures automatiques du noyau"
+
+#: core/admin/pages/AdminPageFiles.php:161
+msgid ""
+"This is enabled by default in WordPress and only includes minor version and "
+"security updates."
+msgstr ""
+"Cette fonction est activée par défaut dans WordPress et ne comprend que des "
+"mises à jour mineures de la version et de la sécurité."
+
+#: core/admin/pages/AdminPageFiles.php:167
+msgid "Plugin Updates"
+msgstr "Mises à jour des plugins"
+
+#: core/admin/pages/AdminPageFiles.php:169
+msgid "Automatic Plugin Updates"
+msgstr "Mise à jour des extensions"
+
+#: core/admin/pages/AdminPageFiles.php:175
+msgid "Theme Updates"
+msgstr "Mises à jour du thème"
+
+#: core/admin/pages/AdminPageFiles.php:177
+msgid "Automatic Theme Updates"
+msgstr "Mise à jour des thèmes"
+
+#: core/admin/pages/AdminPageFiles.php:185
+msgid ""
+"<b>NOTICE:</b> WordPress Automatic Updates are disabled by the constant "
+"variable AUTOMATIC_UPDATER_DISABLED in the wp-config.php file or by another "
+"plugin. As a result, Automatic Update features for this plugin have been "
+"disabled."
+msgstr ""
+"<b>AVIS :</b> Les mises à jour automatiques de WordPress sont désactivées "
+"par la variable constante AUTOMATIC_UPDATER_DISABLED dans le fichier wp-"
+"config.php ou par un autre plugin. Par conséquent, les fonctions de mise à "
+"jour automatique de ce plugin ont été désactivées."
+
+#: core/admin/pages/AdminPageFiles.php:191
+#, php-format
+msgid ""
+"<b>NOTICE:</b> You are using WordPress Version %s. The WordPress Automatic "
+"Updates feature controls require version 3.7 or greater."
+msgstr ""
+"<b>AVIS :</b> Vous utilisez les %s de la version WordPress. Les contrôles de "
+"la fonction de mise à jour automatique de WordPress nécessitent la version "
+"3.7 ou supérieure."
+
+#: core/admin/pages/AdminPageFiles.php:200
+msgid "File Access"
+msgstr "Accès aux fichiers"
+
+#: core/admin/pages/AdminPageFiles.php:205
+msgid "Theme File Editing"
+msgstr "Édition de fichiers thématiques"
+
+#: core/admin/pages/AdminPageFiles.php:207
+msgid "Disable Theme Editing"
+msgstr "Désactiver l'édition du thème"
+
+#: core/admin/pages/AdminPageFiles.php:208
+msgid ""
+"Disable the ability for admin users to edit your theme files from the "
+"WordPress admin."
+msgstr ""
+"Désactivez la possibilité pour les utilisateurs de l'admin de modifier les "
+"fichiers de votre thème depuis l'admin de WordPress."
+
+#: core/admin/pages/AdminPageFiles.php:214
+msgid "WordPress Version Files"
+msgstr "Fichiers de la version WordPress"
+
+#: core/admin/pages/AdminPageFiles.php:216
+#: core/admin/pages/AdminPageFiles.php:227
+#: core/admin/pages/AdminPageFiles.php:236
+msgid "Prevent Access"
+msgstr "Empêcher l'accès"
+
+#: core/admin/pages/AdminPageFiles.php:217
+#, php-format
+msgid ""
+"Prevent access to files that disclose WordPress versions: readme.html and "
+"license.txt. <a href=\"%s\">Also, see Software Privacy</a>"
+msgstr ""
+"Empêcher l'accès aux fichiers qui divulguent des versions de WordPress : "
+"readme.html et license.txt. <a href=\"%s\">Voir aussi la section \"Vie "
+"privée des logiciels\"</a>"
+
+#: core/admin/pages/AdminPageFiles.php:225
+#: core/admin/pages/AdminPageFiles.php:249
+msgid "Plugin Version Files"
+msgstr "Fichiers de la version des plugins"
+
+#: core/admin/pages/AdminPageFiles.php:228
+#: core/admin/pages/AdminPageFiles.php:237
+#, php-format
+msgid ""
+"Prevent access to files that disclose plugin versions: readme.txt, readme."
+"md, changelog.txt, changelog.md, and license.txt. <a href=\"%s\">Also, see "
+"Software Privacy"
+msgstr ""
+"Empêcher l'accès aux fichiers qui révèlent les versions des plugins : readme."
+"txt, readme.md, changelog.txt, changelog.md et license.txt. <a href=\"%s"
+"\">Voir aussi la section sur la confidentialité des logiciels</a>"
+
+#: core/admin/pages/AdminPageFiles.php:234
+#: core/admin/pages/AdminPageFiles.php:258
+msgid "Theme Version Files"
+msgstr "Fichiers de la version thématique"
+
+#: core/admin/pages/AdminPageFiles.php:251
+#, php-format
+msgid "Prevent Access (<a href=\"%1$s\">Pro Feature</a>)"
+msgstr "Empêcher l'accès<a href=\"%1$s\"> (Pro Feature</a>)"
+
+#: core/admin/pages/AdminPageFiles.php:252
+#: core/admin/pages/AdminPageFiles.php:261
+msgid "Prevent access to files that disclose plugin versions."
+msgstr "Empêcher l'accès aux fichiers qui divulguent des versions de plugin."
+
+#: core/admin/pages/AdminPageFiles.php:260
+#, php-format
+msgid "Prevent Access (<a href=\"%s\">Pro Feature</a>)"
+msgstr "Empêcher l'accès<a href=\"%s\"> (Pro Feature</a>)"
+
+#: core/admin/pages/AdminPageFiles.php:395
+msgid "Description"
+msgstr "Description"
+
+#: core/admin/pages/AdminPageFiles.php:396
+msgid "Current Version"
+msgstr "Version Actuelle"
+
+#: core/admin/pages/AdminPageFiles.php:397
+msgid "Recommend"
+msgstr "Recommander"
+
+#: core/admin/pages/AdminPageFiles.php:398
+#: core/admin/pages/AdminPageFiles.php:603 core/admin/tables/Table404s.php:46
+#: core/admin/tables/TableActivity.php:46 core/admin/tables/TableBlocked.php:47
+#: core/admin/tables/TableFilePerms.php:44 core/admin/tables/TableLogins.php:45
+msgid "Status"
+msgstr "Statut"
+
+#: core/admin/pages/AdminPageFiles.php:413
+#: core/admin/pages/AdminPageFiles.php:435
+#: core/admin/pages/AdminPageFiles.php:772
+#: core/admin/pages/AdminPageFiles.php:784
+#: core/admin/pages/AdminPageFiles.php:1418
+msgid "Secure"
+msgstr "Garantir"
+
+#: core/admin/pages/AdminPageFiles.php:419
+#: core/admin/pages/AdminPageFiles.php:1416
+msgid "Bad"
+msgstr "Mauvais"
+
+#: core/admin/pages/AdminPageFiles.php:440
+#: core/admin/pages/AdminPageFiles.php:1415
+msgid "OK"
+msgstr "OK"
+
+#: core/admin/pages/AdminPageFiles.php:521
+#, php-format
+msgid ""
+"The phpinfo() function is disabled. You may need to contact the hosting "
+"provider to enable this function for more advanced version details. <a href="
+"\"%s\">See the documentation.</a>"
+msgstr ""
+"La fonction phpinfo() est désactivée. Vous devrez peut-être contacter le "
+"fournisseur d'hébergement pour activer cette fonction afin d'obtenir des "
+"détails sur la version plus avancée. <a href=\"%s\">Voir la documentation.</"
+"a>"
+
+#: core/admin/pages/AdminPageFiles.php:600
+#: core/admin/tables/TableFilePerms.php:41
+msgid "Relative Location"
+msgstr "Situation relative"
+
+#: core/admin/pages/AdminPageFiles.php:601
+#: core/admin/tables/TableFilePerms.php:42
+msgid "Type"
+msgstr "Type"
+
+#: core/admin/pages/AdminPageFiles.php:602
+#: core/admin/tables/TableFilePerms.php:43
+msgid "Current"
+msgstr "Actuel"
+
+#: core/admin/pages/AdminPageFiles.php:604
+#: core/admin/tables/TableFilePerms.php:45
+msgid "Modify"
+msgstr "Modifier"
+
+#: core/admin/pages/AdminPageFiles.php:611
+msgid "Hide files that cannot be modified."
+msgstr "Cachez les fichiers qui ne peuvent pas être modifiés."
+
+#: core/admin/pages/AdminPageFiles.php:611
+#, php-format
+msgid ""
+"<i>NOTICE: Files which cannot be modified are hidden. <a href=\"%s\" style="
+"\"text-decoration: underline;\">Show all files</a>.</i>"
+msgstr ""
+"<i>AVIS : Les fichiers qui ne peuvent pas être modifiés sont cachés. <a href="
+"\"%s\" style=\"text-decoration: underline;\">Afficher tous les</a> fichiers."
+"</i>"
+
+#: core/admin/pages/AdminPageFiles.php:616
+msgid "Batch Options"
+msgstr "Options par lots"
+
+#: core/admin/pages/AdminPageFiles.php:616
+#: core/admin/pages/AdminPageFiles.php:621
+msgid "Set All To Standard"
+msgstr "Tout mettre au standard"
+
+#: core/admin/pages/AdminPageFiles.php:616
+#: core/admin/pages/AdminPageFiles.php:621
+msgid "Set All To Secure"
+msgstr "Tout mettre en sécurité"
+
+#: core/admin/pages/AdminPageFiles.php:621
+msgid "Batch Options (Pro)"
+msgstr "Options par lots (Pro)"
+
+#: core/admin/pages/AdminPageFiles.php:626
+#: core/admin/pages/AdminPageFiles.php:883
+msgid "Update Permissions"
+msgstr "Permis de mise à jour"
+
+#: core/admin/pages/AdminPageFiles.php:765
+msgid "Standard"
+msgstr "Standard"
+
+#: core/admin/pages/AdminPageFiles.php:802
+msgid "Select One"
+msgstr "Sélectionnez-en un"
+
+#: core/admin/pages/AdminPageFiles.php:814
+#: core/admin/pages/AdminPageFiles.php:981
+msgid "Upgrade to Pro"
+msgstr "Passer à la version Pro"
+
+#: core/admin/pages/AdminPageFiles.php:872
+msgid "Error: There were not any files to check."
+msgstr "Erreur : Il n'y avait aucun fichier à vérifier."
+
+#: core/admin/pages/AdminPageFiles.php:981
+msgid "The batch file permissions feature requires an active Pro license."
+msgstr ""
+"La fonction d'autorisation de fichiers par lots nécessite une licence Pro "
+"active."
+
+#: core/admin/pages/AdminPageFiles.php:988
+msgid "Please review the Process Log below for details."
+msgstr "Veuillez consulter le journal de bord ci-dessous pour plus de détails."
+
+#: core/admin/pages/AdminPageFiles.php:1032
+msgid "Please review the Process Log below for any errors."
+msgstr ""
+"Veuillez consulter le journal de bord ci-dessous pour vérifier s'il y a des "
+"erreurs."
+
+#: core/admin/pages/AdminPageFiles.php:1034
+msgid "Started Batch Permissions Fix"
+msgstr "Début de la correction des autorisations par lots"
+
+#: core/admin/pages/AdminPageFiles.php:1089
+msgid "Process finished."
+msgstr "Processus terminé."
+
+#: core/admin/pages/AdminPageFiles.php:1154
+#, php-format
+msgid "Error: File does not exist - %s"
+msgstr "Erreur : Le fichier n'existe pas - %s"
+
+#: core/admin/pages/AdminPageFiles.php:1162
+#, php-format
+msgid "File permissions were successfully updated to %1$s for file: %2$s"
+msgstr ""
+"Les autorisations de fichiers ont été mises à jour avec succès à %1$s pour "
+"le fichier : %2$s"
+
+#: core/admin/pages/AdminPageFiles.php:1168
+#, php-format
+msgid ""
+"Error: File permissions could not be updated to %1$s for file: %2$s. Please "
+"contact your hosting provider or a developer for assistance."
+msgstr ""
+"Erreur : Les autorisations de fichiers n'ont pas pu être mises à jour à %1$s "
+"pour le fichier : %2$s. Veuillez contacter votre fournisseur d'hébergement "
+"ou un développeur pour obtenir de l'aide."
+
+#: core/admin/pages/AdminPageFiles.php:1241
+#, php-format
+msgid "You have %d directories that could be more secure."
+msgstr "Vous avez des annuaires %d qui pourraient être plus sûrs."
+
+#: core/admin/pages/AdminPageFiles.php:1249
+#, php-format
+msgid "You have %d directory that could be more secure."
+msgstr "Vous avez un répertoire %d qui pourrait être plus sûr."
+
+#: core/admin/pages/AdminPageFiles.php:1266
+#, php-format
+msgid "You have %d files that could be more secure."
+msgstr "Vous avez des fichiers %d qui pourraient être plus sûrs."
+
+#: core/admin/pages/AdminPageFiles.php:1274
+#, php-format
+msgid "You have %d file that could be more secure."
+msgstr "Vous avez un fichier %d qui pourrait être plus sûr."
+
+#: core/admin/pages/AdminPageFiles.php:1291
+#, php-format
+msgid ""
+"You have %d directories with safe but unique file permissions. This might "
+"cause functionality issues."
+msgstr ""
+"Vous avez des répertoires %d avec des autorisations de fichiers sûres mais "
+"uniques. Cela peut entraîner des problèmes de fonctionnalité."
+
+#: core/admin/pages/AdminPageFiles.php:1299
+#, php-format
+msgid ""
+"You have %d directory with safe but unique file permissions. This might "
+"cause functionality issues."
+msgstr ""
+"Vous avez un répertoire %d avec des permissions de fichiers sûres mais "
+"uniques. Cela peut entraîner des problèmes de fonctionnalité."
+
+#: core/admin/pages/AdminPageFiles.php:1316
+#, php-format
+msgid ""
+"You have %d files with safe but unique file permissions. This might cause "
+"functionality issues."
+msgstr ""
+"Vous avez des fichiers %d avec des permissions sûres mais uniques. Cela peut "
+"entraîner des problèmes de fonctionnalité."
+
+#: core/admin/pages/AdminPageFiles.php:1324
+#, php-format
+msgid ""
+"You have %d file with safe but unique file permissions. This might cause "
+"functionality issues."
+msgstr ""
+"Vous avez un fichier %d avec des autorisations de fichier sûres mais "
+"uniques. Cela peut entraîner des problèmes de fonctionnalité."
+
+#: core/admin/pages/AdminPageFiles.php:1341
+#, php-format
+msgid "You have %d directories that are vulnerable."
+msgstr "Vous avez des annuaires %d qui sont vulnérables."
+
+#: core/admin/pages/AdminPageFiles.php:1349
+#, php-format
+msgid "You have %d directory that is vulnerable."
+msgstr "Vous avez un répertoire %d qui est vulnérable."
+
+#: core/admin/pages/AdminPageFiles.php:1366
+#, php-format
+msgid "You have %d files that are vulnerable."
+msgstr "Vous avez des fichiers %d qui sont vulnérables."
+
+#: core/admin/pages/AdminPageFiles.php:1374
+#, fuzzy, php-format
+msgid "You have %d files that is vulnerable."
+msgstr "Vous avez des fichiers %d qui sont vulnérables."
+
+#: core/admin/pages/AdminPageFiles.php:1389
+#, php-format
+msgid ""
+"You have PHP version %1$s and it needs to be updated to version %2$s or "
+"higher. If version %2$s was released more than 30 days ago and there is more "
+"than a 90-day timespan between PHP version %1$s and %2$s (<a href=\"%3$s\" "
+"target=\"_blank\">see changelog</a>), contact your hosting provider to "
+"upgrade PHP."
+msgstr ""
+"Vous avez la version de PHP %1$s et elle doit être mise à jour à la version "
+"%2$s ou supérieure. Si la version %2$s a été publiée il y a plus de 30 jours "
+"et qu'il y a plus de 90 jours entre la version %1$s et %2$s de PHP<a href="
+"\"%3$s\" target=\"_blank\"> (voir changelog</a>), contactez votre hébergeur "
+"pour mettre à jour PHP."
+
+#: core/admin/pages/AdminPageFiles.php:1397
+#, php-format
+msgid ""
+"You are using PHP version %1$s, which is no longer supported or has critical "
+"vulnerabilities. Immediately contact your hosting company to upgrade PHP to "
+"version %2$s or higher."
+msgstr ""
+"Vous utilisez la version %1$s de PHP, qui n'est plus supportée ou qui "
+"présente des vulnérabilités critiques. Contactez immédiatement votre "
+"hébergeur pour mettre à jour PHP à la version %2$s ou supérieure."
+
+#: core/admin/pages/AdminPageFiles.php:1417
+msgid "Good"
+msgstr "Bon"
+
+#: core/admin/pages/AdminPageFirewall.php:24
+msgid ""
+"This area provides you the ability to log activity on the site and block "
+"future attempts if desired."
+msgstr ""
+"Cette zone vous permet d'enregistrer les activités sur le site et de bloquer "
+"les tentatives futures si vous le souhaitez."
+
+#: core/admin/pages/AdminPageFirewall.php:28
+#: core/admin/tables/TableBlocked.php:148 core/admin/tables/TableLogins.php:134
+#: core/includes/Yoda.php:76
+msgid "Threats"
+msgstr "Menaces"
+
+#: core/admin/pages/AdminPageFirewall.php:29
+msgid "Detected Threats"
+msgstr "Menaces détectées"
+
+#: core/admin/pages/AdminPageFirewall.php:38
+msgid "Allow / Deny IP"
+msgstr "Autoriser / Refuser la PI"
+
+#: core/admin/pages/AdminPageFirewall.php:39
+msgid "Allow / Deny IP Addresses"
+msgstr "Autoriser / Refuser des adresses IP"
+
+#: core/admin/pages/AdminPageFirewall.php:49
+msgid "Firewall Settings"
+msgstr "Paramètres du pare-feu"
+
+#: core/admin/pages/AdminPageFirewall.php:71
+msgid "Automatically Block Logins"
+msgstr "Bloquer automatiquement les connexions"
+
+#: core/admin/pages/AdminPageFirewall.php:72
+msgid "Block login activity that meets the situations below:"
+msgstr ""
+"Bloquez les activités de connexion qui répondent aux situations ci-dessous :"
+
+#: core/admin/pages/AdminPageFirewall.php:77
+msgid "Upgrade to control this setting."
+msgstr "Mise à niveau pour contrôler ce paramètre."
+
+#: core/admin/pages/AdminPageFirewall.php:90
+msgid "Lockout Method"
+msgstr "Méthode de cadenassage"
+
+#: core/admin/pages/AdminPageFirewall.php:93
+msgid ""
+"The Failed Logins method blocks users from logging in after a certain number "
+"of failed login attempts. The Threats method blocks users sooner as it is "
+"based on the number of threats detected. Threat Scoring is the most "
+"effective and blocks users based on the accumulative risk level of each "
+"threat."
+msgstr ""
+"La méthode des échecs de connexion empêche les utilisateurs de se connecter "
+"après un certain nombre d'échecs de connexion. La méthode des menaces bloque "
+"les utilisateurs plus tôt car elle est basée sur le nombre de menaces "
+"détectées. La méthode de notation des menaces est la plus efficace et bloque "
+"les utilisateurs en fonction du niveau de risque cumulé de chaque menace."
+
+#: core/admin/pages/AdminPageFirewall.php:100
+msgid "Detection Threshold"
+msgstr "Seuil de détection"
+
+#: core/admin/pages/AdminPageFirewall.php:103
+msgid ""
+"If the Failed Logins or Threats blocking method is used, the threshold "
+"determines the number of failed logins/threats detected before the user is "
+"blocked. If Threat Scoring is used, the threshold determines the score of "
+"threats a user must surpass before the user gets banned. Raise the threshold "
+"if false-positive bans are occuring."
+msgstr ""
+"Si la méthode de blocage des échecs de connexion ou des menaces est "
+"utilisée, le seuil détermine le nombre d'échecs de connexion/menaces "
+"détectés avant que l'utilisateur ne soit bloqué. Si la méthode de notation "
+"des menaces est utilisée, le seuil détermine le nombre de menaces qu'un "
+"utilisateur doit dépasser avant d'être banni. Augmentez le seuil si des "
+"interdictions faussement positives se produisent."
+
+#: core/admin/pages/AdminPageFirewall.php:112
+msgid "Detection Timespan"
+msgstr "Durée de la détection"
+
+#: core/admin/pages/AdminPageFirewall.php:115
+msgid "1 minute"
+msgstr "1 minute"
+
+#: core/admin/pages/AdminPageFirewall.php:116
+#: core/admin/pages/AdminPageFirewall.php:117
+#: core/admin/pages/AdminPageFirewall.php:118
+#: core/admin/pages/AdminPageFirewall.php:119
+#: core/admin/pages/AdminPageFirewall.php:120
+#: core/admin/pages/AdminPageFirewall.php:121
+#: core/admin/pages/AdminPageFirewall.php:122
+#: core/admin/pages/AdminPageFirewall.php:123
+#: core/admin/pages/AdminPageFirewall.php:137
+#: core/admin/pages/AdminPageFirewall.php:138
+#: core/admin/pages/AdminPageFirewall.php:139
+#: core/admin/pages/AdminPageFirewall.php:140
+#: core/admin/pages/AdminPageFirewall.php:141
+#: core/security/firewall/Firewall.php:294
+#, php-format
+msgid "%d minutes"
+msgstr "%d minutes"
+
+#: core/admin/pages/AdminPageFirewall.php:125
+msgid "5 minutes is the default detection timespan."
+msgstr "5 minutes est le délai de détection par défaut."
+
+#: core/admin/pages/AdminPageFirewall.php:134
+msgid "First Lockout"
+msgstr "Premier lock-out"
+
+#: core/admin/pages/AdminPageFirewall.php:143
+#, php-format
+msgid "%d minutes is the default value."
+msgstr "%d minutes est la valeur par défaut."
+
+#: core/admin/pages/AdminPageFirewall.php:150
+msgid "Second Lockout"
+msgstr "Deuxième lock-out"
+
+#: core/admin/pages/AdminPageFirewall.php:153
+#: core/security/firewall/Firewall.php:274
+msgid "1 hour"
+msgstr "1 heure"
+
+#: core/admin/pages/AdminPageFirewall.php:154
+#: core/admin/pages/AdminPageFirewall.php:155
+#: core/admin/pages/AdminPageFirewall.php:156
+#: core/admin/pages/AdminPageFirewall.php:157
+#: core/admin/pages/AdminPageFirewall.php:158
+#: core/security/firewall/Firewall.php:274
+#, php-format
+msgid "%d hours"
+msgstr "%d heures"
+
+#: core/admin/pages/AdminPageFirewall.php:159
+#: core/admin/pages/AdminPageFirewall.php:173
+#: core/security/firewall/Firewall.php:283
+msgid "1 day"
+msgstr "1 jour"
+
+#: core/admin/pages/AdminPageFirewall.php:160
+#: core/admin/pages/AdminPageFirewall.php:161
+#: core/admin/pages/AdminPageFirewall.php:174
+#: core/admin/pages/AdminPageFirewall.php:175
+#: core/security/firewall/Firewall.php:283
+#, php-format
+msgid "%d days"
+msgstr "%d jours"
+
+#: core/admin/pages/AdminPageFirewall.php:163
+msgid "1 hour is the default value. 4 hours is recommended."
+msgstr "1 heure est la valeur par défaut. 4 heures est recommandé."
+
+#: core/admin/pages/AdminPageFirewall.php:170
+msgid "Third Lockout"
+msgstr "Troisième lock-out"
+
+#: core/admin/pages/AdminPageFirewall.php:176
+msgid "1 week"
+msgstr "1 semaine"
+
+#: core/admin/pages/AdminPageFirewall.php:177
+#, php-format
+msgid "%d weeks"
+msgstr "%d semaines"
+
+#: core/admin/pages/AdminPageFirewall.php:178
+msgid "1 month"
+msgstr "1 mois"
+
+#: core/admin/pages/AdminPageFirewall.php:180
+msgid "1 day is the default value. 3 days or greater is recommended."
+msgstr "1 jour est la valeur par défaut. 3 jours ou plus est recommandé."
+
+#: core/admin/pages/AdminPageFirewall.php:231
+msgid "Search threats"
+msgstr "Menaces de recherche"
+
+#: core/admin/pages/AdminPageGeneral.php:31
+#, php-format
+msgid "Welcome to %s"
+msgstr "Bienvenue sur %s"
+
+#: core/admin/pages/AdminPageGeneral.php:32
+#, php-format
+msgid "Thank you for choosing %s to help protect your website."
+msgstr "Merci d'avoir choisi %s pour aider à protéger votre site web."
+
+#: core/admin/pages/AdminPageGeneral.php:37
+msgid "Plugin Settings"
+msgstr "Paramètres du plugin"
+
+#: core/admin/pages/AdminPageGeneral.php:38
+msgid "These are the general plugin settings."
+msgstr "Voici les paramètres généraux du plugin."
+
+#: core/admin/pages/AdminPageGeneral.php:47
+msgid "Export/Import"
+msgstr "Export/Import"
+
+#: core/admin/pages/AdminPageGeneral.php:48
+msgid "Export/Import Plugin Settings"
+msgstr "Réglages d’exportation/importation de l’extension"
+
+#: core/admin/pages/AdminPageGeneral.php:58
+msgid "Debug"
+msgstr "Débogage"
+
+#: core/admin/pages/AdminPageGeneral.php:59
+msgid "Plugin Information"
+msgstr "Informations sur l’extension"
+
+#: core/admin/pages/AdminPageGeneral.php:60
+msgid ""
+"This information may be useful when troubleshooting compatibility issues."
+msgstr ""
+"Ces informations peuvent être utiles pour résoudre les problèmes de "
+"compatibilité."
+
+#: core/admin/pages/AdminPageGeneral.php:75
+msgid "General Settings"
+msgstr "Réglages généraux"
+
+#: core/admin/pages/AdminPageGeneral.php:81
+msgid "All Security Policies"
+msgstr "Toutes les politiques de sécurité"
+
+#: core/admin/pages/AdminPageGeneral.php:84
+msgid ""
+"If you experience a problem, you may want to temporarily turn off all "
+"security policies at once to troubleshoot the issue. You can temporarily "
+"disable each type of policy at the top of each settings tab."
+msgstr ""
+"Si vous rencontrez un problème, vous pouvez désactiver temporairement toutes "
+"les politiques de sécurité en même temps pour résoudre le problème. Vous "
+"pouvez désactiver temporairement chaque type de politique en haut de chaque "
+"onglet de paramètres."
+
+#: core/admin/pages/AdminPageGeneral.php:90
+msgid "Reset Settings"
+msgstr "Réinitialiser les paramètres"
+
+#: core/admin/pages/AdminPageGeneral.php:93
+msgid ""
+"Click this button to reset the settings back to default. WARNING: You will "
+"lose all configuration changes you have made."
+msgstr ""
+"Cliquez sur ce bouton pour rétablir les paramètres par défaut. "
+"AVERTISSEMENT : Vous perdrez tous les changements de configuration que vous "
+"avez effectués."
+
+#: core/admin/pages/AdminPageGeneral.php:100
+msgid "Cleanup Database When Disabling Plugin"
+msgstr "Nettoyage de la base de données lors de la désactivation du plugin"
+
+#: core/admin/pages/AdminPageGeneral.php:102
+msgid "Remove Settings, Logs, and Stats When Disabled"
+msgstr ""
+"Supprimer les paramètres, les journaux et les statistiques lorsqu'ils sont "
+"désactivés"
+
+#: core/admin/pages/AdminPageGeneral.php:103
+msgid ""
+"If you ever decide to permanently disable this plugin, you may want to "
+"remove our settings, logs, and stats from the database. WARNING: Do not "
+"check this box if you are temporarily disabling the plugin, you will loase "
+"all data associated with this plugin."
+msgstr ""
+"Si jamais vous décidez de désactiver définitivement ce plugin, vous voudrez "
+"peut-être supprimer nos paramètres, nos journaux et nos statistiques de la "
+"base de données. ATTENTION : Ne cochez pas cette case si vous désactivez "
+"temporairement le plugin, vous perdrez toutes les données associées à ce "
+"plugin."
+
+#: core/admin/pages/AdminPageGeneral.php:110
+msgid "Support Us"
+msgstr "Support Us"
+
+#: core/admin/pages/AdminPageGeneral.php:112
+msgid "Display link to us below the login form."
+msgstr "Afficher le lien vers nous sous le formulaire de connexion."
+
+#: core/admin/pages/AdminPageGeneral.php:113
+msgid "(This is optional)"
+msgstr "(Ceci est facultatif)"
+
+#: core/admin/pages/AdminPageGeneral.php:137
+msgid "Current Settings"
+msgstr "Paramètres actuels"
+
+#: core/admin/pages/AdminPageGeneral.php:139
+msgid "Policies"
+msgstr "Politiques"
+
+#: core/admin/pages/AdminPageGeneral.php:139
+msgid "Setting"
+msgstr "Paramètre"
+
+#: core/admin/pages/AdminPageGeneral.php:139
+msgid "Value"
+msgstr "Valeur"
+
+#: core/admin/pages/AdminPageGeneral.php:147
+msgid "Backups"
+msgstr "Sauvegardes"
+
+#: core/admin/pages/AdminPageGeneral.php:148
+msgid "General"
+msgstr "Général"
+
+#: core/admin/pages/AdminPageGeneral.php:182
+msgid "Installed Plugin Version History"
+msgstr "Historique des versions de plugins installées"
+
+#: core/admin/pages/AdminPageGeneral.php:209
+msgid "Export Settings"
+msgstr "Exporter les paramètres"
+
+#: core/admin/pages/AdminPageGeneral.php:210
+#, php-format
+msgid "Click this button to export your current %s settings into a JSON file."
+msgstr ""
+"Cliquez sur ce bouton pour exporter vos paramètres %s actuels dans un "
+"fichier JSON."
+
+#: core/admin/pages/AdminPageGeneral.php:216
+msgid "Export Current Settings"
+msgstr "Exporter les paramètres actuels"
+
+#: core/admin/pages/AdminPageGeneral.php:228
+#: core/admin/pages/AdminPageGeneral.php:239
+msgid "Import Settings"
+msgstr "Importer les paramètres"
+
+#: core/admin/pages/AdminPageGeneral.php:229
+#, php-format
+msgid "Select the %s JSON file you would like to import."
+msgstr "Sélectionnez le fichier %s JSON que vous souhaitez importer."
+
+#: core/admin/pages/AdminPageGeneral.php:233
+msgid "Upload Setting"
+msgstr "Paramétrage de l'upload"
+
+#: core/admin/pages/AdminPagePrivacy.php:24
+msgid "Anonymity is one of your fundamental rights. Embody it in principle."
+msgstr ""
+"L'anonymat est l'un de vos droits fondamentaux. Incarnez-le en principe."
+
+#: core/admin/pages/AdminPagePrivacy.php:29
+msgid "Privacy Settings"
+msgstr "Paramètres de confidentialité"
+
+#: core/admin/pages/AdminPagePrivacy.php:51
+msgid "Privacy Policies"
+msgstr "Politiques de protection de la vie privée"
+
+#: core/admin/pages/AdminPagePrivacy.php:54
+msgid ""
+"If you experience a problem, you may want to temporarily turn off all "
+"privacy policies at once to troubleshoot the issue."
+msgstr ""
+"Si vous rencontrez un problème, vous pouvez désactiver temporairement toutes "
+"les politiques de protection de la vie privée en même temps pour résoudre le "
+"problème."
+
+#: core/admin/pages/AdminPagePrivacy.php:61
+msgid "Software Privacy"
+msgstr "Confidentialité des logiciels"
+
+#: core/admin/pages/AdminPagePrivacy.php:62
+msgid "It is important to conceal what versions of software you are using."
+msgstr ""
+"Il est important de dissimuler les versions des logiciels que vous utilisez."
+
+#: core/admin/pages/AdminPagePrivacy.php:70
+msgid "WordPress Version"
+msgstr "Version de WordPress"
+
+#: core/admin/pages/AdminPagePrivacy.php:72
+msgid "Hide WordPress Version Publicly"
+msgstr "Cacher la version WordPress publiquement"
+
+#: core/admin/pages/AdminPagePrivacy.php:73
+msgid ""
+"WordPress leaves little public footprints about the version of your site in "
+"multiple places visible to the public. This feature removes the WordPress "
+"version from the generator tag and RSS feed."
+msgstr ""
+"WordPress laisse peu de traces publiques sur la version de votre site à de "
+"multiples endroits visibles par le public. Cette fonctionnalité supprime la "
+"version de WordPress de la balise du générateur et du flux RSS."
+
+#: core/admin/pages/AdminPagePrivacy.php:83
+msgid "Hide WordPress Version in Admin Footer"
+msgstr "Cacher la version WordPress dans le pied de page de l'administration"
+
+#: core/admin/pages/AdminPagePrivacy.php:84
+msgid ""
+"WordPress places the version number at the bottom of the WP-Admin screen."
+msgstr "WordPress place le numéro de version au bas de l'écran de WP-Admin."
+
+#: core/admin/pages/AdminPagePrivacy.php:93
+msgid "Script Versions"
+msgstr "Versions du scénario"
+
+#: core/admin/pages/AdminPagePrivacy.php:95
+msgid "Hide Script Versions"
+msgstr "Cacher les versions du script"
+
+#: core/admin/pages/AdminPagePrivacy.php:96
+msgid ""
+"This replaces all script versions appended to the enqueued JS and CSS files "
+"with the current date (YYYYMMDD)."
+msgstr ""
+"Il remplace toutes les versions de script annexées aux fichiers JS et CSS en "
+"attente par la date du jour (AAAAMMJJ)."
+
+#: core/admin/pages/AdminPagePrivacy.php:100
+#, php-format
+msgid ""
+"<i>NOTICE: You can also <a href=\"%s\">deny access to files</a> that "
+"disclose software versions.</i>"
+msgstr ""
+"<i>AVIS : Vous pouvez également <a href=\"%s\">refuser l'accès aux fichiers</"
+"a> qui divulguent des versions de logiciels.</i>"
+
+#: core/admin/pages/AdminPagePrivacy.php:106
+msgid "Website Privacy"
+msgstr "Confidentialité des sites web"
+
+#: core/admin/pages/AdminPagePrivacy.php:107
+msgid "Do not share unnecessary information about your website."
+msgstr "Ne partagez pas d'informations inutiles sur votre site web."
+
+#: core/admin/pages/AdminPagePrivacy.php:114
+msgid "Website Information"
+msgstr "Informations sur le site web"
+
+#: core/admin/pages/AdminPagePrivacy.php:116
+msgid "Make Website Anonymous"
+msgstr "Rendre le site web anonyme"
+
+#: core/admin/pages/AdminPagePrivacy.php:117
+msgid ""
+"When checking for updates, WordPress gets access to your current version and "
+"your website URL. The default info looks like this: \"WordPress/X.X; https://"
+"www.your-website.com\" This feature removes your URL address from the "
+"information sent."
+msgstr ""
+"Lorsqu'il vérifie les mises à jour, WordPress a accès à votre version "
+"actuelle et à l'URL de votre site web. Les informations par défaut "
+"ressemblent à ceci : \"WordPress/X.X ; https://www.your-website.com\" Cette "
+"fonction permet de supprimer votre adresse URL des informations envoyées."
+
+#: core/admin/tables/Table.php:153 core/admin/tables/Table404s.php:74
+#: core/admin/tables/TableBlocked.php:155 core/admin/tables/TableLogins.php:79
+#: core/admin/tables/TableLogins.php:141
+msgid "Blocked"
+msgstr "Bloqué"
+
+#: core/admin/tables/Table.php:154 core/admin/tables/TableBlocked.php:58
+#: core/admin/tables/TableBlocked.php:93
+msgid "not blocked"
+msgstr "non bloqué"
+
+#: core/admin/tables/Table.php:155 core/admin/tables/TableLogins.php:77
+#: core/admin/tables/TableLogins.php:155
+msgid "Success"
+msgstr "Succès"
+
+#: core/admin/tables/Table.php:156 core/admin/tables/TableLogins.php:78
+#: core/admin/tables/TableLogins.php:148
+msgid "Failed"
+msgstr "Echec"
+
+#: core/admin/tables/Table.php:157
+msgid "System Test"
+msgstr "Test du système"
+
+#: core/admin/tables/Table.php:158
+msgid "Manual"
+msgstr "Manuel"
+
+#: core/admin/tables/Table.php:159
+msgid "Automatic"
+msgstr "Automatique"
+
+#: core/admin/tables/Table.php:160
+msgid "Deny"
+msgstr "Refuser"
+
+#: core/admin/tables/Table.php:161
+msgid "Allow"
+msgstr "Autoriser"
+
+#: core/admin/tables/Table.php:179
+msgid "Yes"
+msgstr "Oui"
+
+#: core/admin/tables/Table.php:179
+msgid "No"
+msgstr "Non"
+
+#: core/admin/tables/Table.php:192
+msgid "never"
+msgstr "jamais"
+
+#: core/admin/tables/Table.php:215
+msgid "Error: Could not delete row. Your session expired. Please try again."
+msgstr ""
+"Erreur : Impossible de supprimer une ligne. Votre session a expiré. Veuillez "
+"réessayer."
+
+#: core/admin/tables/Table.php:228
+#, php-format
+msgid "%d rows deleted"
+msgstr "%d lignes supprimées"
+
+#: core/admin/tables/Table.php:232
+msgid "Could not delete entry. Please try again."
+msgstr "Impossible de supprimer l'entrée. Veuillez réessayer."
+
+#: core/admin/tables/Table.php:284
+msgid "Search results are provided below."
+msgstr "Les résultats de la recherche sont fournis ci-dessous."
+
+#: core/admin/tables/Table.php:432
+msgid "Select Status"
+msgstr "Sélectionner un statut"
+
+#: core/admin/tables/Table.php:454
+msgid "Per Page"
+msgstr "Par page"
+
+#: core/admin/tables/Table.php:463
+msgid "Apply Filters"
+msgstr "Appliquer les filtres"
+
+#: core/admin/tables/Table.php:472
+msgid "reset filters"
+msgstr "réinitialiser les filtres"
+
+#: core/admin/tables/Table404s.php:41
+msgid "Date / Time"
+msgstr "Date / Heure"
+
+#: core/admin/tables/Table404s.php:42 core/admin/tables/TableBlocked.php:43
+msgid "URL"
+msgstr "URL"
+
+#: core/admin/tables/Table404s.php:43 core/admin/tables/TableActivity.php:44
+#: core/admin/tables/TableBlocked.php:44 core/admin/tables/TableLogins.php:44
+msgid "User Agent"
+msgstr "Agent utilisateur"
+
+#: core/admin/tables/Table404s.php:44 core/admin/tables/TableBlocked.php:45
+msgid "HTTP Referer"
+msgstr "Référent HTTP"
+
+#: core/admin/tables/Table404s.php:45 core/admin/tables/TableActivity.php:43
+#: core/admin/tables/TableAllowDeny.php:44
+#: core/admin/tables/TableAllowDeny.php:116
+#: core/admin/tables/TableBlocked.php:46 core/admin/tables/TableLogins.php:43
+msgid "IP Address"
+msgstr "Adresse IP"
+
+#: core/admin/tables/Table404s.php:47 core/admin/tables/TableLogins.php:46
+msgid "Threat"
+msgstr "Menace"
+
+#: core/admin/tables/Table404s.php:114
+msgid "# 404 Errors"
+msgstr "# 404 Erreurs"
+
+#: core/admin/tables/Table404s.php:131
+#, php-format
+msgid "404 Errors Over The Past %d Days"
+msgstr "404 Erreurs au cours des derniers jours %d"
+
+#: core/admin/tables/TableActivity.php:41 core/admin/tables/TableBlocked.php:42
+#: core/admin/tables/TableLogins.php:41
+msgid "Date"
+msgstr "Date"
+
+#: core/admin/tables/TableActivity.php:42 core/admin/tables/TableLogins.php:42
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: core/admin/tables/TableActivity.php:45 core/admin/tables/TableBlocked.php:48
+#: core/admin/tables/TableLogins.php:47
+msgid "Details"
+msgstr "En savoir plus"
+
+#: core/admin/tables/TableAllowDeny.php:42
+msgid "Date Added"
+msgstr "Date d'ajout"
+
+#: core/admin/tables/TableAllowDeny.php:43
+msgid "Expires"
+msgstr "Expire"
+
+#: core/admin/tables/TableAllowDeny.php:45
+#: core/admin/tables/TableAllowDeny.php:118
+msgid "Rule"
+msgstr "Règle"
+
+#: core/admin/tables/TableAllowDeny.php:46
+#: core/admin/tables/TableAllowDeny.php:132
+msgid "Notes"
+msgstr "Notes"
+
+#: core/admin/tables/TableAllowDeny.php:78
+msgid "Delete"
+msgstr "Supprimer"
+
+#: core/admin/tables/TableAllowDeny.php:87
+msgid "Search IPs"
+msgstr "Rechercher des IP"
+
+#: core/admin/tables/TableAllowDeny.php:119
+msgid "allow"
+msgstr "autoriser"
+
+#: core/admin/tables/TableAllowDeny.php:120
+msgid "deny"
+msgstr "refuser"
+
+#: core/admin/tables/TableAllowDeny.php:123
+msgid "Timespan"
+msgstr "Durée"
+
+#: core/admin/tables/TableAllowDeny.php:124
+msgid "day"
+msgstr "jour"
+
+#: core/admin/tables/TableAllowDeny.php:125
+#: core/admin/tables/TableAllowDeny.php:126
+msgid "days"
+msgstr "jours"
+
+#: core/admin/tables/TableAllowDeny.php:127
+msgid "month"
+msgstr "mois"
+
+#: core/admin/tables/TableAllowDeny.php:128
+#: core/admin/tables/TableAllowDeny.php:129
+msgid "months"
+msgstr "mois"
+
+#: core/admin/tables/TableAllowDeny.php:130
+msgid "forever"
+msgstr "pour toujours"
+
+#: core/admin/tables/TableAllowDeny.php:133
+msgid "Add IP"
+msgstr "Ajouter un IP"
+
+#: core/admin/tables/TableAllowDeny.php:158
+msgid "Error: IP address not added. Your session expired. Please try again."
+msgstr ""
+"Erreur : L'adresse IP n'a pas été ajoutée. Votre session a expiré. Veuillez "
+"réessayer."
+
+#: core/admin/tables/TableAllowDeny.php:181
+#, php-format
+msgid "Notice: %1$s -  IP address is already in the database."
+msgstr "Remarque : %1$s - l'adresse IP est déjà dans la base de données."
+
+#: core/admin/tables/TableAllowDeny.php:189
+#, php-format
+msgid "%1$s - IP address added with %2$s rule."
+msgstr "%1$s - Adresse IP ajoutée avec la règle %2$s."
+
+#: core/admin/tables/TableAllowDeny.php:193
+#, php-format
+msgid "Error: %1$s - IP address could not be added. Unknown reason."
+msgstr "Erreur : %1$s - l'adresse IP n'a pas pu être ajoutée. Raison inconnue."
+
+#: core/admin/tables/TableAllowDeny.php:203
+#, php-format
+msgid "Error: %s - IP address not valid."
+msgstr "Erreur : %s - adresse IP non valide."
+
+#: core/admin/tables/TableAllowDeny.php:207
+#, php-format
+msgid "Error: %s - Timespan not valid."
+msgstr "Erreur : %s - Durée non valable."
+
+#: core/admin/tables/TableAllowDeny.php:255
+#, php-format
+msgid "%s We recommend adding your IP to the whitelist using the form below."
+msgstr ""
+"%s Nous vous recommandons d'ajouter votre IP à la liste blanche en utilisant "
+"le formulaire ci-dessous."
+
+#: core/admin/tables/TableBlocked.php:59 core/admin/tables/TableBlocked.php:93
+msgid "blocked"
+msgstr "bloqué"
+
+#: core/admin/tables/TableBlocked.php:105
+msgid "Login attempt was successful."
+msgstr "La tentative de connexion a été couronnée de succès."
+
+#: core/admin/tables/TableBlocked.php:106
+msgid "Login attempt failed."
+msgstr "La tentative de connexion a échoué."
+
+#: core/admin/tables/TableBlocked.php:107
+msgid "Login attempt blocked."
+msgstr "Tentative de connexion bloquée."
+
+#: core/admin/tables/TableBlocked.php:108
+#, php-format
+msgid "Username: %s"
+msgstr "Nom d’utilisateur : %s"
+
+#: core/admin/tables/TableBlocked.php:130
+#, php-format
+msgid "Threats Over The Past %d Days"
+msgstr "Menaces au cours des derniers jours %d"
+
+#: core/admin/tables/TableBlocked.php:135
+msgid "Threats Blocked"
+msgstr "Menaces bloquées"
+
+#: core/admin/tables/TableBlocked.php:166
+msgid "# Threats"
+msgstr "# Menaces"
+
+#: core/admin/tables/TableLogins.php:108
+#, php-format
+msgid "Login Attempts Over The Past %d Days"
+msgstr "Tentatives de connexion au cours des derniers jours %d"
+
+#: core/admin/tables/TableLogins.php:113
+msgid "Login Distribution"
+msgstr "Distribution de la connexion"
+
+#: core/admin/tables/TableLogins.php:126
+msgid "Total"
+msgstr "Total"
+
+#: core/admin/tables/TableLogins.php:166
+msgid "# Login Attempts"
+msgstr "# Tentatives de connexion"
+
+#: core/includes/Janitor.php:65 core/includes/Janitor.php:84
+#, php-format
+msgid "%s plugin updated."
+msgstr "Mise à jour du plugin %s."
+
+#: core/includes/Janitor.php:117
+#, php-format
+msgid "%s plugin enabled."
+msgstr "Plugin %s activé."
+
+#: core/includes/Janitor.php:154
+#, php-format
+msgid "%s plugin disabled."
+msgstr "Le plugin %s est désactivé."
+
+#: core/includes/Janitor.php:253 core/includes/Janitor.php:289
+msgid "database maintenance"
+msgstr "la maintenance de la base de données"
+
+#: core/includes/Janitor.php:293
+#, php-format
+msgid "Error: %s is not a valid type."
+msgstr "Erreur : %s n'est pas un type valide."
+
+#: core/includes/Yoda.php:33
+msgid "WP Security Safe"
+msgstr "Coffre-fort de sécurité WP"
+
+#: core/includes/Yoda.php:34
+msgid "WP Security Safe Pro"
+msgstr "WP Security Safe Pro"
+
+#: core/includes/Yoda.php:70
+msgid "404s Errors"
+msgstr "Erreurs 404s"
+
+#: core/includes/Yoda.php:71
+msgid "Login Attempts"
+msgstr "Tentatives de Connexion"
+
+#: core/includes/Yoda.php:72
+msgid "Comments"
+msgstr "Commentaires"
+
+#: core/includes/Yoda.php:73
+msgid "Firewall Rules"
+msgstr "Règles relatives aux pare-feu"
+
+#: core/includes/Yoda.php:74
+msgid "User Activity"
+msgstr "Activité de l’utilisateur"
+
+#: core/includes/Yoda.php:75
+msgid "Blocked Activity"
+msgstr "Activité bloquée"
+
+#: core/includes/Yoda.php:107
+msgid "IP Unavailable"
+msgstr "IP non disponible"
+
+#: core/includes/Yoda.php:113
+msgid "Not Valid IP"
+msgstr "IP non valide"
+
+#: core/security/firewall/Firewall.php:42
+#, php-format
+msgid "%s: Access blocked."
+msgstr "%s : Accès bloqué."
+
+#: core/security/firewall/Firewall.php:300
+#, php-format
+msgid "Too many offenses. Blacklisted for %s."
+msgstr "Trop de délits. Liste noire pour les %s."
+
+#: core/security/firewall/PolicyLog404s.php:44
+#: core/security/firewall/PolicyLogLogins.php:120
+#: core/security/firewall/PolicyLogLogins.php:144
+#: core/security/firewall/PolicyLoginLocal.php:86
+msgid "IP is blacklisted."
+msgstr "L'IP est sur liste noire."
+
+#: core/security/firewall/PolicyLog404s.php:68
+msgid "Multiple threat detection."
+msgstr "Détection de menaces multiples."
+
+#: core/security/firewall/PolicyLogLogins.php:75
+msgid "XML-RPC Login Attempt."
+msgstr "Tentative de connexion XML-RPC."
+
+#: core/security/firewall/PolicyLogLogins.php:75
+msgid "XML-RPC Login Successful."
+msgstr "Connexion XML-RPC réussie."
+
+#: core/security/firewall/PolicyLogLogins.php:87
+msgid "This username is too common. Consider changing it."
+msgstr "Ce nom d'utilisateur est trop courant. Pensez à le changer."
+
+#: core/security/firewall/PolicyLoginLocal.php:96
+msgid "Error: Local login required and Nonce missing."
+msgstr "Erreur : Login local requis et Nonce manquant."
+
+#: core/security/firewall/PolicyLoginLocal.php:102
+msgid "Error: Local login required and Referer missing."
+msgstr "Erreur : Connexion locale requise et Referer manquant."
+
+#: core/security/firewall/PolicyLoginLocal.php:111
+msgid "Error: Local login required and Nonce not valid."
+msgstr "Erreur : Login local requis et Nonce non valide."
+
+#: core/security/firewall/PolicyXMLRPC.php:38
+msgid "XML-RPC Disabled."
+msgstr "XML-RPC désactivé."
+
+#: core/security/privacy/PolicyLoginErrors.php:31
+msgid "Invalid username or password."
+msgstr "Nom d'utilisateur / mot de passe invalide."
+
+#: core/security/privacy/PolicyPluginVersionFiles__premium_only.php:52
+#, php-format
+msgid "<b>%s:</b> Updating plugin file permissions..."
+msgstr "<b>%s :</b> Mise à jour des permissions des fichiers de plugin..."
+
+#: core/security/privacy/PolicyPluginVersionFiles__premium_only.php:84
+msgid "All plugin files are secure. Done."
+msgstr "Tous les fichiers de plugin sont sécurisés. C'est fait."
+
+#: core/security/privacy/PolicyPluginVersionFiles__premium_only.php:155
+#: core/security/privacy/PolicyThemeVersionFiles__premium_only.php:153
+#: core/security/privacy/PolicyWordPressVersionFiles.php:51
+msgid "Fixed:"
+msgstr "Fixé:"
+
+#: core/security/privacy/PolicyPluginVersionFiles__premium_only.php:160
+#: core/security/privacy/PolicyThemeVersionFiles__premium_only.php:158
+#: core/security/privacy/PolicyWordPressVersionFiles.php:56
+msgid "Could Not Fix File:"
+msgstr "Impossible de réparer le fichier :"
+
+#: core/security/privacy/PolicyThemeVersionFiles__premium_only.php:50
+#, php-format
+msgid "<b>%s:</b> Update plugin file permissions..."
+msgstr "<b>%s :</b> Mettre à jour les permissions des fichiers de plugin..."
+
+#: core/security/privacy/PolicyThemeVersionFiles__premium_only.php:82
+msgid "All theme files are secure. Done."
+msgstr "Tous les fichiers de thèmes sont sécurisés. C'est fait."
+
+#: security-safe.php:21
+msgid "Firewall, Security Hardening, Auditing & Privacy"
+msgstr ""
+"Pare-feu, renforcement de la sécurité, audit et protection de la vie privée"
