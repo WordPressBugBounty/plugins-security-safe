@@ -103,11 +103,7 @@ $white: #ffffff;
 
     }
 
-    .updated,
-    .notice,
-    .error { display: none; }
-
-    .notice.active { 
+    .notice {
         display: block; 
         
         p { font-size: 13px; }

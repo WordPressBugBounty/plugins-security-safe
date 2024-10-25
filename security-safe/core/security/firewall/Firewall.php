@@ -8,25 +8,19 @@ use DateTime;
 use DateInterval;
 /**
  * Class Firewall
+ *
  * @package SecuritySafe
  * @since 2.0.0
  */
-class Firewall {
-    /**
-     * Firewall constructor.
-     */
-    function __construct() {
-        // Placeholder
-    }
-
+final class Firewall {
     /**
      * Determine if user is whitelisted in the DB
      *
      * @since  2.0.0
      */
-    public function is_whitelisted() : bool {
+    public static function is_whitelisted() : bool {
         //Janitor::log( 'Checking DB for whitelist. is_whitelisted()' );
-        return $this->get_listed( 'allow' );
+        return self::get_listed( 'allow' );
     }
 
     /**
@@ -38,7 +32,7 @@ class Firewall {
      *
      * @since  2.4.0
      */
-    private function get_listed( string $status = 'deny' ) : bool {
+    private static function get_listed( string $status = 'deny' ) : bool {
         global $wpdb, $SecuritySafe;
         $status = ( $status == 'allow' ? 'allow' : 'deny' );
         $ip_valid = filter_var( Yoda::get_ip(), FILTER_VALIDATE_IP );
@@ -52,7 +46,7 @@ class Firewall {
             $query = "SELECT * FROM {$table_name} WHERE `ip` = '{$ip_valid}' AND `type` = 'allow_deny' AND `status` = '{$status}' AND `date_expire` > '{$now}' LIMIT 1";
             $results = $wpdb->get_results( $query );
         }
-        $SecuritySafe->date_expires = ( isset( $results[0]->date_expire ) ? $results[0]->date_expire : '' );
+        $SecuritySafe->date_expires = $results[0]->date_expire ?? '';
         return isset( $results[0] );
     }
 
@@ -61,9 +55,9 @@ class Firewall {
      *
      * @since  2.0.0
      */
-    public function is_blacklisted() : bool {
+    public static function is_blacklisted() : bool {
         //Janitor::log( 'Checking DB for blacklist. is_blacklisted()' );
-        return $this->get_listed( 'deny' );
+        return self::get_listed( 'deny' );
     }
 
     /**
@@ -71,7 +65,7 @@ class Firewall {
      *
      * @since  2.4.0
      */
-    public function rate_limit() : void {
+    public static function rate_limit() : void {
         global $wpdb, $SecuritySafe;
         //Janitor::log( 'rate_limit()' );
         $settings_access = $SecuritySafe->get_page_settings( 'access' );
@@ -161,7 +155,7 @@ class Firewall {
                 $args['date_expire'] = $date->format( 'Y-m-d H:i:s' );
                 $args['details'] = sprintf( __( 'Too many offenses . Blacklisted for %s . ', SECSAFE_TRANSLATE ), $ban_text );
                 $args['ip'] = $ip_valid;
-                $this->blacklist_ip( $args );
+                self::blacklist_ip( $args );
             }
         }
     }
@@ -173,7 +167,7 @@ class Firewall {
      *
      * @since  2.4.0
      */
-    public function blacklist_ip( array $args ) : void {
+    public static function blacklist_ip( array $args ) : void {
         $args['ip'] = Yoda::get_ip();
         if ( isset( $args['date_expire'] ) && $args['date_expire'] && filter_var( $args['ip'], FILTER_VALIDATE_IP ) ) {
             $args['status'] = 'deny';
@@ -191,7 +185,7 @@ class Firewall {
      *
      * @since  2.0.0
      */
-    protected function block( array $args = [], bool $die = true ) : void {
+    public static function block( array $args = [], bool $die = true ) : void {
         global $SecuritySafe;
         // Bail if whitelisted
         if ( $SecuritySafe->is_whitelisted() ) {

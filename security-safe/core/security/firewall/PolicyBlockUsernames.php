@@ -5,31 +5,27 @@ namespace SovereignStack\SecuritySafe;
 // Prevent Direct Access
 ( defined( 'ABSPATH' ) ) || die;
 
-use \WP_Error;
+use WP_Error;
+
+// Run Policy
+PolicyBlockUsernames::init();
 
 /**
  * Class PolicyXMLRPC
  *
  * @package SecuritySafe
  */
-class PolicyBlockUsernames extends Firewall {
-
-	var $setting_on = false;
+final class PolicyBlockUsernames {
 
 	/**
-	 * PolicyXMLRPC constructor.
+	 * Register hooks
+	 *
+	 * @return void
 	 */
-	function __construct( $setting = false ) {
+	public static function init() : void {
 
-		if ( $setting ) {
-
-			// Run parent class constructor first
-			parent::__construct();
-
-			add_filter( 'authenticate', [ $this, 'check_username', ], 30, 2 );
-			add_filter( 'illegal_user_logins', [ $this, 'illegal_user_logins', ], 10, 1 );
-
-		}
+		add_filter( 'authenticate', [ self::class, 'check_username', ], 30, 2 );
+		add_filter( 'illegal_user_logins', [ self::class, 'illegal_user_logins', ], 10, 1 );
 
 	}
 
@@ -120,12 +116,12 @@ class PolicyBlockUsernames extends Firewall {
 	/**
 	 * Determine if the username is on the block list
 	 *
-	 * @param object|null $user
+	 * @param null|WP_User|WP_Error $user
 	 * @param string $username
 	 *
 	 * @return \WP_Error
 	 */
-	function check_username( $user, $username ) {
+	public static function check_username( $user, string $username ) {
 
 		global $SecuritySafe;
 
@@ -146,7 +142,7 @@ class PolicyBlockUsernames extends Firewall {
 				$args['score'] = 10;
 
 				// Block the attempt
-				$this->block( $args, false );
+				Firewall::block( $args, false );
 
 				// Prevent default generic message
 				$SecuritySafe->login_error = true;

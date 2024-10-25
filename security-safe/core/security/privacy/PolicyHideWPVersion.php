@@ -5,6 +5,9 @@
 	// Prevent Direct Access
 	( defined( 'ABSPATH' ) ) || die;
 
+	// Run Policy
+	PolicyHideWPVersion::init();
+
 	/**
 	 * Class PolicyHideWPVersion
 	 * @package SecuritySafe
@@ -13,12 +16,14 @@
 	class PolicyHideWPVersion {
 
 		/**
-		 * PolicyHideWPVersion constructor.
+		 * Register hooks
+		 *
+		 * @return void
 		 */
-		function __construct() {
+		public static function init() : void {
 
 			// Remove Version From RSS
-			add_filter( 'the_generator', [ $this, 'rss_version' ] );
+			add_filter( 'the_generator', [ self::class, 'rss_version' ], 10, 0 );
 
 			// Remove Generator Tag in HTML
 			remove_action( 'wp_head', 'wp_generator' );
@@ -32,7 +37,7 @@
 		 *
 		 * @since  1.1.3
 		 */
-		function rss_version() {
+		public static function rss_version() : string {
 
 			return '';
 

@@ -894,7 +894,11 @@ class AdminPageFiles extends AdminPage {
 
     /**
      * Get Pantheon's Secure permissions for all files and directories in uploads directory
+     *
+     * @param $p
      * @param $perms
+     *
+     * @return mixed|string
      */
     function get_pantheon_permissions( $p, $perms ) {
         if ( isset( $_ENV['PANTHEON_ENVIRONMENT'] ) ) {

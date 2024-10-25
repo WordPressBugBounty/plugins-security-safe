@@ -5,6 +5,11 @@
 	// Prevent Direct Access
 	( defined( 'ABSPATH' ) ) || die;
 
+	use WP_Query;
+
+	// Run Policy
+	PolicyHidePasswordProtectedPosts::init();
+
 	/**
 	 * Class PolicyHidePasswordProtectedPosts
 	 * @package SecuritySafe
@@ -13,11 +18,13 @@
 	class PolicyHidePasswordProtectedPosts {
 
 		/**
-		 * PolicyPasswordProtectChildren constructor.
+		 * Register hooks
+		 *
+		 * @return void
 		 */
-		function __construct() {
+		public static function init() : void {
 
-			add_action( 'pre_get_posts', [ $this, 'exclude' ] );
+			add_action( 'pre_get_posts', [ self::class, 'exclude' ] );
 
 		}
 
@@ -28,11 +35,11 @@
 		 *
 		 * @return string
 		 */
-		function query( $where ) {
+		public static function query( string $where ) : string {
 
 			global $wpdb;
 
-			$where .= " AND {$wpdb->posts}.post_password = '' ";
+			$where .= " AND $wpdb->posts.post_password = '' ";
 
 			return $where;
 
@@ -41,15 +48,17 @@
 		/**
 		 * Exclude the password protected pages
 		 *
-		 * @param object $query The WP_Query instance
-		 *
 		 * @link https://developer.wordpress.org/reference/hooks/pre_get_posts/
+		 *
+		 * @param \WP_Query $query
+		 *
+		 * @return void
 		 */
-		function exclude( $query ) {
+		public static function exclude( WP_Query $query ) : void {
 
 			if ( ! is_single() && ! is_page() && ! is_admin() ) {
 
-				add_filter( 'posts_where', [ $this, 'query' ] );
+				add_filter( 'posts_where', [ self::class, 'query' ] );
 
 			}
 

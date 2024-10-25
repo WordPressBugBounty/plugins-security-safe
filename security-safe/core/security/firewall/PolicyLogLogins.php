@@ -5,26 +5,28 @@
 	// Prevent Direct Access
 	( defined( 'ABSPATH' ) ) || die;
 
-	use \WP_Error;
+	use WP_Error;
+
+	// Run Policy
+	PolicyLogLogins::init();
 
 	/**
 	 * Class PolicyLogLogins
 	 * @package SecuritySafe
 	 * @since  2.0.0
 	 */
-	class PolicyLogLogins extends Firewall {
+	class PolicyLogLogins {
 
 		/**
-		 * PolicyLogLogins constructor.
+		 * Register hooks
+		 *
+		 * @return void
 		 */
-		function __construct() {
+		public static function init() : void {
 
-			// Run parent class constructor first
-			parent::__construct();
-
-			add_filter( 'authenticate', [ $this, 'blacklist_check' ], 0, 3 );
-			add_action( 'wp_login_failed', [ $this, 'failed' ], 99999, 1 );
-			add_action( 'wp_login', [ $this, 'success' ], 10, 2 );
+			add_filter( 'authenticate', [ self::class, 'blacklist_check' ], 0, 3 );
+			add_action( 'wp_login_failed', [ self::class, 'failed' ], 99999, 1 );
+			add_action( 'wp_login', [ self::class, 'success' ], 10, 2 );
 
 		}
 
@@ -33,15 +35,13 @@
 		 *
 		 * @param string $username
 		 *
-		 * @uses  $this->record
-		 *
 		 * @since  2.0.0
 		 */
-		public function failed( $username ) {
+		public static function failed( string $username ) : void {
 
 			if ( ! Yoda::is_login_error() ) {
 
-				$this->record( $username, 'failed' );
+				self::record( $username, 'failed' );
 
 			}
 
@@ -55,7 +55,7 @@
 		 *
 		 * @since  2.0.0
 		 */
-		private function record( $username, $status ) {
+		private static function record( $username, $status ) : void {
 
 			global $SecuritySafe;
 
@@ -102,33 +102,33 @@
 		/**
 		 * Logs a successful login
 		 *
-		 * @param string $username
-		 * @param object $user
-		 *
-		 * @uses  $this->record
-		 *
 		 * @since  2.0.0
+		 *
+		 * @param string   $username
+		 * @param \WP_User $user
+		 *
+		 * @return void
 		 */
-		public function success( $username, $user ) {
+		public static function success( string $username, \WP_User $user ) : void {
 
-			$this->record( $username, 'success' );
+			self::record( $username, 'success' );
 
 		}
 
 		/**
 		 * Checks if IP has been blacklisted and if so, prevents the login attempt.
 		 *
-		 * @param object $user
+		 * @param null|WP_User|WP_Error $user
 		 * @param string $username
 		 * @param string $password
 		 *
 		 * @uses  $this->block
 		 *
-		 * @return object
+		 * @return null|WP_User|WP_Error
 		 *
 		 * @since 2.0.0
 		 */
-		public function blacklist_check( $user, $username, $password ) {
+		public static function blacklist_check( $user, string $username, string $password ) {
 
 			global $SecuritySafe;
 
@@ -142,13 +142,12 @@
 				// This is a multiple attempt to login on the same request
 
 				// Update blacklist status in case multiple login attempts are made during a single session
-				$firewall = new Firewall();
-				$SecuritySafe->blacklisted = ( $firewall->is_blacklisted() ) ? true : false;
+				$SecuritySafe->blacklisted = ( Firewall::is_blacklisted() ) ? true : false;
 
 				if ( ! $SecuritySafe->is_blacklisted() ) {
 
 					// Run Rate Limiting to see if use gets blacklisted
-					$this->rate_limit();
+					Firewall::rate_limit();
 
 				}
 			} else {
@@ -167,7 +166,7 @@
 				$args['username'] = ( $username ) ? sanitize_user( $username ) : '';
 
 				// Block the attempt
-				$this->block( $args, false );
+				Firewall::block( $args, false );
 
 				// Prevent default generic message
 				$SecuritySafe->login_error = true;

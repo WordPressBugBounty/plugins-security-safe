@@ -5,6 +5,9 @@
 	// Prevent Direct Access
 	( defined( 'ABSPATH' ) ) || die;
 
+	// Run Policy
+	PolicyLoginPasswordReset::init();
+
 	/**
 	 * Class PolicyLoginPasswordReset
 	 * @package SecuritySafe
@@ -12,15 +15,17 @@
 	class PolicyLoginPasswordReset {
 
 		/**
-		 * PolicyLoginPasswordReset constructor.
+		 * Register hooks
+		 *
+		 * @return void
 		 */
-		function __construct() {
+		public static function init() : void {
 
 			// Disable Password Reset Form
 			add_filter( 'allow_password_reset', '__return_false' );
 
 			// Replace Link Text With Null
-			add_filter( 'gettext', [ $this, 'remove' ] );
+			add_filter( 'gettext', [ self::class, 'remove' ] );
 
 		}
 
@@ -33,7 +38,7 @@
 		 *
 		 * @link https://developer.wordpress.org/reference/hooks/gettext/
 		 */
-		public function remove( $text ) {
+		public static function remove( string $text ) : string {
 
 			return str_replace( [ 'Lost your password?', 'Lost your password' ], '', trim( $text, '?' ) );
 

@@ -5,6 +5,8 @@
 	// Prevent Direct Access
 	( defined( 'ABSPATH' ) ) || die;
 
+	use WP_Site;
+
 	/**
 	 * Class Janitor - Cleans up after the plugin
 	 *
@@ -21,13 +23,13 @@
 			// Register enable plugin process
 			add_action( "activated_plugin", [ self::class, 'enable_plugin'], 10, 2 );
 
-			add_action( 'upgrader_process_complete', [ $this, 'upgrade_complete' ], 10, 2 );
+			add_action( 'upgrader_process_complete', [ self::class, 'upgrade_complete' ], 10, 2 );
 
 			// Cleanup Settings, Database, & Crons on Plugin Disable
-			register_deactivation_hook( SECSAFE_FILE, [ $this, 'disable_plugin' ] );
+			register_deactivation_hook( SECSAFE_FILE, [ self::class, 'disable_plugin' ] );
 
 			// Add Cleanup Action
-			add_action( 'secsafe_cleanup_tables_daily', [ $this, 'cleanup_tables' ] );
+			add_action( 'secsafe_cleanup_tables_daily', [ self::class, 'cleanup_tables' ] );
 
 			// Schedule Cleanup Services
 			if ( ! wp_next_scheduled( 'secsafe_cleanup_tables_daily' ) ) {
@@ -37,10 +39,7 @@
 			}
 
 			// Create Tables For New Blog
-			add_action( 'wp_insert_site', [
-				self::class,
-				'wp_insert_site',
-			] );
+			add_action( 'wp_insert_site', [ self::class, 'wp_insert_site' ] );
 
 		}
 
@@ -75,7 +74,7 @@
 		 *
 		 * @since  2.0.1
 		 */
-		public function upgrade_complete( object $upgrader_object, array $options ) : void {
+		public static function upgrade_complete( object $upgrader_object, array $options ) : void {
 
 			if (
 				isset( $options['action'] ) && $options['action'] == 'update' &&
@@ -103,9 +102,12 @@
 		/**
 		 * Creates database tables
 		 *
-		 * @param array $args
-		 *
 		 * @since  2.5.0
+		 *
+		 * @param string $plugin
+		 * @param bool   $network_wide
+		 *
+		 * @return void
 		 */
 		public static function enable_plugin( string $plugin, bool $network_wide = false ) : void {
 
@@ -167,7 +169,7 @@
 		 *
 		 * @return void
 		 */
-		public static function wp_insert_site( \WP_Site $new_site ): void {
+		public static function wp_insert_site( WP_Site $new_site ): void {
 
 			self::enable_plugin( SECSAFE_PLUGIN );
 
@@ -178,7 +180,7 @@
 		 *
 		 * @since  2.0.0
 		 */
-		static function create_table_logs() : void {
+		public static function create_table_logs() : void {
 
 			global $wpdb;
 
@@ -214,7 +216,7 @@
 		 *
 		 * @since  2.0.0
 		 */
-		static function create_table_stats() : void {
+		public static function create_table_stats() : void {
 
 			global $wpdb;
 
@@ -250,7 +252,7 @@
 		 *
 		 * @since  2.0.0
 		 */
-		static public function add_entry( array $args ) : bool {
+		public static function add_entry( array $args ) : bool {
 
 			global $wpdb;
 
@@ -323,7 +325,7 @@
 		 *
 		 * @since  2.2.3
 		 */
-		static function prevent_caching() : void {
+		public static function prevent_caching() : void {
 
 			( defined( 'DONOTCACHEOBJECT' ) ) || define( 'DONOTCACHEOBJECT', true );
 			( defined( 'DONOTCACHEDB' ) )  || define( 'DONOTCACHEDB', true );
@@ -338,7 +340,7 @@
 		 *
 		 * @since  2.0.0
 		 */
-		static function add_stats( array $args ) : void {
+		public static function add_stats( array $args ) : void {
 
 			global $wpdb;
 
@@ -429,7 +431,7 @@
 		 *
 		 * @since  0.3.5
 		 */
-		public function disable_plugin() : void {
+		public static function disable_plugin() : void {
 
 			// Remove Cron
 			wp_clear_scheduled_hook( 'secsafe_cleanup_tables_daily' );
@@ -476,7 +478,7 @@
 
 				$table = $wpdb->prefix . $table;
 
-				$dropped = $wpdb->query( "DROP TABLE IF EXISTS {$table}" );
+				$dropped = $wpdb->query( "DROP TABLE IF EXISTS $table" );
 
 			}
 
@@ -489,7 +491,7 @@
 		 *
 		 * @since 2.0.0
 		 */
-		public function cleanup_tables() : void {
+		public static function cleanup_tables() : void {
 
 			Janitor::cleanup_type( '404s' );
 			Janitor::cleanup_type( 'logins' );
@@ -505,7 +507,7 @@
 		 *
 		 * @since 2.0.0
 		 */
-		static private function cleanup_type( string $type ) : void {
+		private static function cleanup_type( string $type ) : void {
 
 			global $wpdb;
 
@@ -531,7 +533,7 @@
 				if ( $exists > $limit ) {
 
 					// Calculate amount to delete
-					$delete = intval( $exists - $limit );
+					$delete = $exists - $limit;
 
 					$query = "DELETE FROM $table_main WHERE type = '$type' ORDER BY date ASC LIMIT $delete";
 

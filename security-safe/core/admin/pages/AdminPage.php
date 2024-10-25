@@ -20,13 +20,13 @@
 		 * Contains all the admin message values for the page.
 		 * @var array
 		 */
-		public $messages = [];
-		protected $page_settings = [];
+		public array $messages = [];
+		protected array $page_settings = [];
 
 		/**
 		 * AdminPage constructor.
 		 *
-		 * @param $page_settings
+		 * @param array $page_settings
 		 */
 		function __construct( array $page_settings ) {
 
@@ -333,7 +333,7 @@
 		/**
 		 * Adds row label
 		 *
-		 * @param $name
+		 * @param string $name
 		 *
 		 * @return string
 		 */
@@ -424,15 +424,15 @@
 		/**
 		 * Adds a select option row
 		 *
-		 * @param $page_options
-		 * @param $name
-		 * @param $slug
-		 * @param $options
-		 * @param $long_desc
+		 * @param array  $page_options
+		 * @param string $name
+		 * @param string $slug
+		 * @param array  $options
+		 * @param string $long_desc
 		 * @param string $classes
 		 * @param string $default
-		 * @param false $disabled
-		 * @param false $input_only
+		 * @param bool   $disabled
+		 * @param bool   $input_only
 		 *
 		 * @return string
 		 */

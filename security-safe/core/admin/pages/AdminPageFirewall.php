@@ -14,9 +14,12 @@
 
 		/**
 		 * This tab displays the IP addresses black and white listed.
+		 *
 		 * @since  2.0.0
+		 *
+		 * @return string
 		 */
-		function tab_allow_deny_ips() {
+		function tab_allow_deny_ips() : string {
 
 			require_once( SECSAFE_DIR_ADMIN_TABLES . '/TableAllowDeny.php' );
 
@@ -36,9 +39,12 @@
 
 		/**
 		 * This tab displays threats and blocks.
+		 *
 		 * @since  2.2.0
+		 *
+		 * @return string
 		 */
-		function tab_threats() {
+		public function tab_threats() : string {
 
 			require_once( SECSAFE_DIR_ADMIN_TABLES . '/TableBlocked.php' );
 
@@ -56,9 +62,12 @@
 
 		/**
 		 * This sets the variables for the page.
+		 *
 		 * @since  0.1.0
+		 *
+		 * @return void
 		 */
-		protected function set_page() {
+		protected function set_page() : void {
 
 			$this->slug        = SECSAFE_SLUG . '-firewall';
 			$this->title       = __( 'Firewall', SECSAFE_TRANSLATE );

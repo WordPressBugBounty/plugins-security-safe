@@ -5,22 +5,24 @@
 	// Prevent Direct Access
 	( defined( 'ABSPATH' ) ) || die;
 
+	// Run Policy
+	PolicyLog404s::init();
+
 	/**
 	 * Class PolicyLog404s
 	 * @package SecuritySafe
 	 * @since  2.0.0
 	 */
-	class PolicyLog404s extends Firewall {
+	class PolicyLog404s {
 
 		/**
-		 * PolicyLog404s constructor.
+		 * Register hooks
+		 *
+		 * @return void
 		 */
-		function __construct() {
+		public static function init() : void {
 
-			// Run parent class constructor first
-			parent::__construct();
-
-			add_action( 'get_header', [ $this, 'error' ] );
+			add_action( 'get_header', [ self::class, 'error' ], 10, 0 );
 
 		}
 
@@ -29,7 +31,7 @@
 		 *
 		 * @since  2.0.0
 		 */
-		function error() {
+		public static function error() : void {
 
 			global $SecuritySafe;
 
@@ -44,7 +46,7 @@
 					$args['details'] = __( 'IP is blacklisted.', SECSAFE_TRANSLATE ) . '[' . __LINE__ . ']';
 
 					// Block display of any 404 errors
-					$this->block( $args );
+					Firewall::block( $args );
 
 				} else {
 
@@ -63,7 +65,7 @@
 					if ( $args['score'] > 1 ) {
 
 						$args['details'] = __( 'Multiple threat detection.', SECSAFE_TRANSLATE ) . '[' . __LINE__ . ']';
-						$this->block( $args );
+						Firewall::block( $args );
 
 					} else {
 

@@ -5,7 +5,7 @@
 	// Prevent Direct Access
 	( defined( 'ABSPATH' ) ) || die;
 
-	use \WP_Users_List_Table;
+	use WP_Users_List_Table;
 
 	if ( ! class_exists( 'WP_Users_List_Table' ) ) {
 

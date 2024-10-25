@@ -5,6 +5,9 @@
 	// Prevent Direct Access
 	( defined( 'ABSPATH' ) ) || die;
 
+	// Run Policy
+	PolicyLoginErrors::init();
+
 	/**
 	 * Class PolicyLoginErrors
 	 * @package SecuritySafe
@@ -12,11 +15,13 @@
 	class PolicyLoginErrors {
 
 		/**
-		 * PolicyLoginErrors constructor.
+		 * Register hooks
+		 *
+		 * @return void
 		 */
-		function __construct() {
+		public static function init() : void {
 
-			add_filter( 'authenticate', [ $this, 'login_errors', ], 99999, 1 );
+			add_filter( 'authenticate', [ self::class, 'login_errors', ], 999999, 1 );
 
 		}
 
@@ -27,23 +32,27 @@
 		 *
 		 * @return object|null
 		 */
-		function login_errors( $user ) {
+		public static function login_errors( $user ) {
 
-			// Only affect core error messages
-			if ( ! Yoda::is_login_error() && ! empty( $user->errors ) ) {
+			if ( is_wp_error( $user ) ) {
 
-				$error_messages = [
-					'invalid_username'   => 1,
-					'incorrect_password' => 1,
-					'invalid_email'      => 1,
-				];
+				// Only affect core error messages
+				if ( ! Yoda::is_login_error() && ! empty( $user->errors ) ) {
 
-				foreach ( $user->errors as $key => $val ) {
+					$error_messages = [
+						'invalid_email' => 1,
+						'incorrect_password' => 1,
+						'invalid_email' => 1,
+					];
 
-					if ( isset( $error_messages[ $key ] ) ) {
+					foreach ( $user->errors as $key => $val ) {
 
-						$user->errors[ $key ][0] = __( 'Invalid username or password.', SECSAFE_TRANSLATE );
-						break;
+						if ( isset( $error_messages[ $key ] ) ) {
+
+							$user->errors[ $key ][0] = __( 'Invalid username or password.', SECSAFE_TRANSLATE );
+							break;
+
+						}
 
 					}
 

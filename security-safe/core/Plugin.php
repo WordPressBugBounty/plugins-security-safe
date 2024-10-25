@@ -16,27 +16,27 @@
 		 * User
 		 * @var array
 		 */
-		public $user;
+		public array $user;
 
 		/**
 		 * Contains all the admin message values.
 		 * @var array
 		 */
-		public $messages = [];
+		public array $messages = [];
 
 		/**
 		 * local settings values array.
 		 * @var array
 		 */
-		protected $settings = [];
+		protected array $settings = [];
 
-		public $logged_in = false;
+		public bool $logged_in = false;
 
 		/**
 		 * Contains all the sites involved in this WordPress install
 		 * @var array
 		 */
-		public $sites = [];
+		public array $sites = [];
 
 		/**
 		 * Plugin constructor.
@@ -584,20 +584,20 @@
 		 * @return int
 		 *
 		 */
-		public function get_cache_busting() : string {
+		public function get_cache_busting() : int {
 
 			$site_settings = $this->get_settings();
 
-			return ( isset( $site_settings['general']['cache_busting'] ) ) ? (int) $site_settings['general']['cache_busting'] : $this->increase_cache_busting();
+			return $site_settings['general']['cache_busting'] ?? $this->increase_cache_busting();
 
 		}
 
 		/**
 		 * Increase cache_busting value by 1
 		 *
-		 * @return string
+		 * @return int
 		 */
-		function increase_cache_busting() : string {
+		function increase_cache_busting() : int {
 
 			//Janitor::log( 'Running increase_cache_busting().' );
 
@@ -610,7 +610,7 @@
 
 			$result = $this->set_settings( $site_settings );
 
-			return ( $result ) ? $site_settings['general']['cache_busting'] : "0";
+			return ( $result ) ? $site_settings['general']['cache_busting'] : 0;
 
 		}
 

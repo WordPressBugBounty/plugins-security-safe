@@ -24,9 +24,9 @@ final class REQUEST {
 		$value = $default;
 
 		if ( $subkey && isset( $_REQUEST[ $key ][ $subkey ] ) ) {
-			$value = (bool) $_REQUEST[ $key ][ $subkey ];
+			$value = (bool) trim( $_REQUEST[ $key ][ $subkey ] );
 		} elseif ( isset( $_REQUEST[ $key ] ) ) {
-			$value = (bool) $_REQUEST[ $key ];
+			$value = (bool) trim( $_REQUEST[ $key ] );
 		}
 
 		return $value;
@@ -46,18 +46,34 @@ final class REQUEST {
 		$value = $default;
 
 		if ( $subkey && isset( $_REQUEST[ $key ][ $subkey ] ) ) {
-			$value = $_REQUEST[ $key ][ $subkey ];
+			$value = sanitize_text_field( $_REQUEST[ $key ][ $subkey ] );
 		} elseif ( isset( $_REQUEST[ $key ] ) ) {
-			$value = $_REQUEST[ $key ];
-		}
-
-		if ( strstr( $value, PHP_EOL ) ) {
-			$value = sanitize_textarea_field( $value );
-		} else {
-			$value = sanitize_text_field( $value );
+			$value = sanitize_text_field( $_REQUEST[ $key ] );
 		}
 
 		return $value;
+	}
+
+	/**
+	 * Retrieves and sanitizes the supplied key as a text field.
+	 *
+	 * @param string $key
+	 * @param string $subkey
+	 * @param string $default
+	 *
+	 * @return string
+	 */
+	public static function textarea_field( string $key = '', string $subkey = '', string $default = '' ): string {
+
+		$value = $default;
+
+		if ( $subkey && isset( $_REQUEST[ $key ][ $subkey ] ) ) {
+			$value = sanitize_textarea_field( $_REQUEST[ $key ][ $subkey ] );
+		} elseif ( isset( $_REQUEST[ $key ] ) ) {
+			$value = sanitize_textarea_field( $_REQUEST[ $key ] );
+		}
+
+		return trim( $value );
 	}
 
 	/**
@@ -183,7 +199,7 @@ final class REQUEST {
 	/**
 	 * Retrieves and sanitizes the entire $_GET array
 	 *
-	 * @param array $var_types Example: ['key_name' => 'int|string|bool|float|array']
+	 * @param array $var_types      Example: ['key_name' => 'int|string|bool|float|array']
 	 * @param array $default_values If the array key doesn't exist, the key will be created and the default value will be applied.
 	 *
 	 * @return array
@@ -197,7 +213,7 @@ final class REQUEST {
 	/**
 	 * Retrieves and sanitizes the entire $_POST array
 	 *
-	 * @param array $var_types Example: ['key_name' => 'int|string|bool|float|array']
+	 * @param array $var_types      Example: ['key_name' => 'int|string|bool|float|array']
 	 * @param array $default_values If the array key doesn't exist, the key will be created and the default value will be applied.
 	 *
 	 * @return array
@@ -211,7 +227,7 @@ final class REQUEST {
 	/**
 	 * Retrieves and sanitizes the entire $_REQUEST array
 	 *
-	 * @param array $var_types Example: ['key_name' => 'int|string|bool|float|array']
+	 * @param array $var_types      Example: ['key_name' => 'int|string|bool|float|array']
 	 * @param array $default_values If the array key doesn't exist, the key will be created and the default value will be applied.
 	 *
 	 * @return array
@@ -225,7 +241,7 @@ final class REQUEST {
 	/**
 	 * Retrieves and sanitizes the entire $_SERVER array
 	 *
-	 * @param array $var_types Example: ['key_name' => 'int|string|bool|float|array']
+	 * @param array $var_types      Example: ['key_name' => 'int|string|bool|float|array']
 	 * @param array $default_values If the array key doesn't exist, the key will be created and the default value will be applied.
 	 *
 	 * @return array
@@ -244,7 +260,7 @@ final class REQUEST {
 	 *
 	 * @return string
 	 */
-	public static function SERVER_text_field( string $key = '', string $default = '' ) : string {
+	public static function SERVER_text_field( string $key = '', string $default = '' ): string {
 
 		$value = $default;
 
@@ -259,7 +275,7 @@ final class REQUEST {
 	 * Retrieves and sanitizes $_GET, $_POST, and $_REQUEST arrays
 	 *
 	 * @param string $type
-	 * @param array $default_values If the array key doesn't exist, the key will be created and the default value will be applied.
+	 * @param array  $default_values If the array key doesn't exist, the key will be created and the default value will be applied.
 	 *
 	 * @return array
 	 */
@@ -327,7 +343,7 @@ final class REQUEST {
 
 		$clean = false;
 
-		if( $key ) {
+		if ( $key ) {
 
 			// Sanitize based on given array key
 			$url_fields = [
@@ -366,7 +382,7 @@ final class REQUEST {
 				// sanitize array
 				if ( ! empty( $value ) ) {
 					foreach ( $value as $k => $v ) {
-						$value[ $k ] = self::sanitize( $v, $k );
+						$value[ $k ] = self::sanitize( $v, (string) $k );
 					}
 				}
 			} elseif ( is_string( $value ) && self::is_url( $value ) ) {
@@ -383,13 +399,7 @@ final class REQUEST {
 				$value = (bool) $value;
 			} else {
 				// Generic Sanitization as text field
-
-				if ( strstr( $value, PHP_EOL ) ) {
-					$value = sanitize_textarea_field( $value );
-				} else {
-					$value = sanitize_text_field( $value );
-				}
-
+				$value = sanitize_text_field( $value );
 			}
 		}
 
@@ -411,14 +421,14 @@ final class REQUEST {
 		// Strip extra spaces
 		$value = trim( $value );
 
-		if ( !empty( $value) ) {
+		if ( ! empty( $value ) ) {
 
 			$parsed_url = parse_url( $value );
 
 			$scheme = $parsed_url["scheme"] ?? '';
 			$scheme_valid = false;
 
-			if ( in_array($scheme, wp_allowed_protocols() ) ) {
+			if ( in_array( $scheme, wp_allowed_protocols() ) ) {
 				$scheme_valid = true;
 			}
 
@@ -430,9 +440,9 @@ final class REQUEST {
 
 				// Check to see if there is a TLD involved
 				$domain_parts = explode( '.', $host );
-				$tld = end($domain_parts);
+				$tld = end( $domain_parts );
 
-				if ( strlen($tld) > 1 && strlen($tld) <= 10 ) {
+				if ( strlen( $tld ) > 1 && strlen( $tld ) <= 10 ) {
 					// It has a TLD (may not be a legit one though)
 					$host_valid = true;
 				}
@@ -457,14 +467,14 @@ final class REQUEST {
 				}
 			}
 
-			if ( $scheme ){
+			if ( $scheme ) {
 				// We have a scheme
-				if ( $scheme_valid && ($host_valid || $path_valid ) ) {
+				if ( $scheme_valid && ( $host_valid || $path_valid ) ) {
 					$is_url = true;
 				}
-			}  elseif ( $host_valid || $path_valid ) {
+			} elseif ( $host_valid || $path_valid ) {
 				$is_url = true;
-			} elseif ( isset($parsed_url["fragment"]) ) {
+			} elseif ( isset( $parsed_url["fragment"] ) ) {
 				$is_url = true;
 			}
 		}

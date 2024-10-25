@@ -5,6 +5,11 @@
 	// Prevent Direct Access
 	( defined( 'ABSPATH' ) ) || die;
 
+	use WP_Upgrader;
+
+	// Run Policy
+	PolicyWordPressVersionFiles::init();
+
 	/**
 	 * Class PolicyWordPressVersionFiles
 	 * @package SecuritySafe
@@ -13,11 +18,13 @@
 	class PolicyWordPressVersionFiles {
 
 		/**
-		 * PolicyWordPressVersionFiles constructor.
+		 * Register hooks
+		 *
+		 * @return void
 		 */
-		function __construct() {
+		public static function init() : void {
 
-			add_action( 'upgrader_process_complete', [ $this, 'protect_files' ], 10, 2 );
+			add_action( 'upgrader_process_complete', [ self::class, 'protect_files' ], 10, 2 );
 
 		}
 
@@ -26,14 +33,14 @@
 		 *
 		 * @link   https://developer.wordpress.org/reference/hooks/upgrader_process_complete/
 		 *
-		 * @param  object $upgrader_object  WP_Upgrader instance. In other contexts, $this, might be a Theme_Upgrader, Plugin_Upgrader, Core_Upgrade, or Language_Pack_Upgrader instance.
+		 * @param  WP_Upgrader $upgrader_object  WP_Upgrader instance. In other contexts, $this, might be a Theme_Upgrader, Plugin_Upgrader, Core_Upgrade, or Language_Pack_Upgrader instance.
 		 * @param  array $options Array of bulk item update data.
 		 *
 		 * @uses set_permissions() to change the permissions of files.
 		 *
 		 * @since 1.1.4
 		 */
-		public function protect_files( $upgrader_object, $options ) {
+		public static function protect_files( WP_Upgrader $upgrader_object, array $options ) : void {
 
 			if ( $options['action'] == 'update' && $options['type'] == 'core' ) {
 
@@ -71,7 +78,7 @@
 		 *
 		 * @return bool
 		 */
-		private static function set_permissions( $path ) {
+		private static function set_permissions( string $path ) : bool {
 
 			// Cleanup Path
 			$path = str_replace( [ '/./', '////', '///', '//' ], '/', $path );

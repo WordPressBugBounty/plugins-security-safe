@@ -5,7 +5,7 @@ namespace SovereignStack\SecuritySafe;
 define( 'SECSAFE_NAME', 'WP Security Safe' );
 define( 'SECSAFE_NAME_PRO', 'WP Security Safe Pro' );
 define( 'SECSAFE_SLUG', basename( plugin_dir_url( __FILE__ ) ) );
-define( 'SECSAFE_VERSION', '2.6.2' );
+define( 'SECSAFE_VERSION', '2.6.4' );
 define( 'SECSAFE_MIN_PHP', '7.4.0' );
 define( 'SECSAFE_MIN_WP', '5.3.0' );
 /**
@@ -16,10 +16,10 @@ define( 'SECSAFE_MIN_WP', '5.3.0' );
  *
  * @wordpress-plugin
  * Plugin Name: WP Security Safe
- * Version: 2.6.2
+ * Version: 2.6.4
  * Plugin URI: https://wpsecuritysafe.com
  * Description: Firewall, Security Hardening, Auditing & Privacy
- * Author: Sovereign Stack
+ * Author: Sovereign Stack, LLC
  * Author URI: https://sovstack.com
  * Text Domain: security-safe-translate
  * Domain Path: /languages/
@@ -146,6 +146,27 @@ function check_compatibility() {
             define( 'SECSAFE_COMPATIBLE_ERROR', $message );
         } else {
             // System is compatible with this plugin up to this point
+            /**
+             * Warn users of future update 3.0 version requirements for PHP and WP
+             *
+             * @since 2.6.3
+             *
+             * @TODO remove code in version 3.0+
+             */
+            if ( version_compare( SECSAFE_VERSION, '3.0.0', '<' ) ) {
+                // Warn the user that they will not be able to upgrade to 3.0 unless they have PHP 8.1
+                add_action( 'wp', function () {
+                    global $wp_version;
+                    if ( is_admin() && !wp_doing_ajax() && !wp_doing_cron() && current_user_can( 'manage_options' ) ) {
+                        if ( version_compare( PHP_VERSION, '8.1.0', '<' ) ) {
+                            echo '<div class="active notice notice-warning plugin-secsafe"><p>Security: Upcoming Version 3.0 will require you to have PHP 8.1+. Please upgrade PHP from version ' . PHP_VERSION . ' to version 8.1.0 or higher to get future updates of this plugin.</p></div>';
+                        }
+                        if ( version_compare( $wp_version, '6.1.0', '<' ) ) {
+                            echo '<div class="active notice notice-warning plugin-secsafe"><p>Security: Upcoming Version 3.0 of WP Security Safe will require you to have WordPress 6.1+. Please upgrade WordPress from version ' . $wp_version . ' to version 6.1.0 or higher to get future updates of this plugin.</p></div>';
+                        }
+                    }
+                } );
+            }
         }
     }
     return !defined( 'SECSAFE_COMPATIBLE_ERROR' );

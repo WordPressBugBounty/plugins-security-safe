@@ -15,14 +15,14 @@ class Security extends Plugin {
      * Logged In Status
      * @var bool
      */
-    public $logged_in = false;
+    public bool $logged_in = false;
 
     /**
      * Is the current IP allowed?
      * @var bool
      * @since  2.0.0
      */
-    public $whitelisted = false;
+    public bool $whitelisted = false;
 
     /**
      * Is the current IP blacklisted?
@@ -34,20 +34,20 @@ class Security extends Plugin {
     /**
      * @var string
      */
-    public $date_expires = '';
+    public string $date_expires = '';
 
     /**
      * Detect whether a login error has occurred
      * @var bool
      */
-    public $login_error = false;
+    public bool $login_error = false;
 
     /**
      * List of all policies running.
      * @var array
      * @todo Add @since version
      */
-    protected $policies;
+    protected array $policies;
 
     /**
      * Security constructor
@@ -86,23 +86,22 @@ class Security extends Plugin {
         //Janitor::log( 'running access().' );
         $settings_access = $this->get_page_settings( 'access' );
         if ( $settings_access['on'] == "1" ) {
-            // Disable xmlrpc.php
-            $this->add_firewall_policy( $settings_access, 'PolicyXMLRPC', 'xml_rpc' );
-            // Block usernames
-            $this->add_firewall_policy( $settings_access, 'PolicyBlockUsernames', 'block_usernames' );
             // Check only if not logged in
             if ( !$this->logged_in ) {
-                $firewall = new Firewall();
                 // Determine Allowed / Denied
-                if ( $firewall->is_whitelisted() ) {
+                if ( Firewall::is_whitelisted() ) {
                     $this->whitelisted = true;
                 } else {
                     //Janitor::log( 'Not Whitelisted' );
-                    if ( !$firewall->is_blacklisted() ) {
+                    // Disable xmlrpc.php
+                    $this->add_firewall_policy( $settings_access, 'PolicyXMLRPC', 'xml_rpc' );
+                    // Block usernames
+                    $this->add_firewall_policy( $settings_access, 'PolicyBlockUsernames', 'block_usernames' );
+                    if ( !Firewall::is_blacklisted() ) {
                         // Run Rate Limiting to see if user gets blacklisted
-                        $firewall->rate_limit();
+                        Firewall::rate_limit();
                     }
-                    if ( $firewall->is_blacklisted() ) {
+                    if ( Firewall::is_blacklisted() ) {
                         $this->blacklisted = true;
                         // Stop core from attempting to login
                         Security::stop_authenticate_process();
@@ -137,15 +136,10 @@ class Security extends Plugin {
         string $plan = ''
     ) : void {
         //Janitor::log( 'add policy().' );
-        // Include Specific Policy
-        require_once SECSAFE_DIR_FIREWALL . '/' . $policy . $plan . '.php';
         //Janitor::log( 'add policy ' . $policy );
-        $policy = __NAMESPACE__ . '\\' . $policy;
-        if ( isset( $page_settings[$slug] ) ) {
-            // Pass setting value
-            new $policy($page_settings[$slug]);
-        } else {
-            new $policy();
+        if ( empty( $slug ) || isset( $page_settings[$slug] ) ) {
+            // Include Specific Policy
+            require_once SECSAFE_DIR_FIREWALL . '/' . $policy . $plan . '.php';
         }
         $this->policies[] = $policy;
         //Janitor::log( $policy );
@@ -172,9 +166,7 @@ class Security extends Plugin {
             // Include Specific Policy
             require_once SECSAFE_DIR_PRIVACY . '/' . $policy . $plan . '.php';
             //Janitor::log( 'add policy ' . $policy );
-            $policy = __NAMESPACE__ . '\\' . $policy;
-            new $policy();
-            $this->policies[] = $policy;
+            $this->policies[] = $policy . $plan;
             //Janitor::log( $policy );
         }
     }

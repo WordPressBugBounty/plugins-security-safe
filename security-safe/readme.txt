@@ -3,8 +3,8 @@ Contributors: sovstack, stevenayers63, freemius
 Tags: 404 errors, disable XMLRPC, limit-login, wp security, firewall
 Requires at least: 5.3
 Requires PHP: 7.4
-Tested up to: 6.5.3
-Stable tag: 2.6.2
+Tested up to: 6.6.2
+Stable tag: 2.6.4
 
 This WordPress security plugin helps you quickly audit, harden, and secure your website.
 
@@ -86,7 +86,26 @@ https://player.vimeo.com/video/360060065
 * Minor - x.1.x increase introduces new features, improvements to existing features, or introduces deprecations. (low risk of breaking changes)
 * Patch - x.x.1 increase is a bug fix, security fix, or minor improvement and does not introduce new features. (non-breaking changes)
 
-= Version 2.6.2 (High Priority) =
+= Version 2.6.4 =
+*Release Date - 25 Oct 2024
+
+* Bug Fix: Calling non-static method statically
+
+= Version 2.6.3 =
+*Release Date - 25 Oct 2024
+
+* Notice: Version 3.0 will have minimum requirements of WP v6.1.0 and PHP 8.1.0
+* Bug Fix: The login error messages were not being displayed
+* Bug Fix: An IP was getting blacklisted even though they were whitelisted when attempting to login with a restricted username.
+* Minor Improvement: Added some type hinting for load performance and code stability
+* Minor Improvement: Implemented static method referencing for policies to save memory
+* Minor Improvement: Updated SDK dependency to version 2.9.0
+* Minor Improvement: Updated some PHPDoc
+* Minor Improvement: Updated PHP version checks
+* Minor Improvement: Updated PHP EOL Checks
+* Tested up to: 6.6.2
+
+= Version 2.6.2 =
 *Release Date - 31 May 2024
 
 * Bug Fix: Fatal Error: constant WP_FS__DIR was conflicting with other plugins using freemius.
@@ -94,7 +113,7 @@ https://player.vimeo.com/video/360060065
 * Minor Improvement: Updated PHP version checks
 * Tested up to 6.5.3
 
-= Version 2.6.1 (Medium Priority) =
+= Version 2.6.1 =
 *Release Date - 3 Nov 2023
 
 * Bug Fix: In a local development environment using symlinks for the plugin's directory, SDK was unable to reach local assets (css, js) thus causing display and functionality issue issues within the admin area.
@@ -104,7 +123,7 @@ https://player.vimeo.com/video/360060065
 * Minor Improvement: Updated PHP version checks
 * Tested up to 6.3.2
 
-= Version 2.6.0 (Medium Priority) =
+= Version 2.6.0 =
 *Release Date - 4 Oct 2023
 
 * Bug Fix: PHP fatal error encountered when adding a new site to a multisite environment.
@@ -118,17 +137,17 @@ https://player.vimeo.com/video/360060065
 * Tested with PHP versions 8.0, 8.1, 8.2
 * Tested up to 6.3.1
 
-= Version 2.5.2 (High Priority) =
+= Version 2.5.2 =
 *Release Date - 18 Jul 2023
 
 * Security Fix: Updated SDK dependency to version 2.5.10
 
-= Version 2.5.1 (High Priority) =
+= Version 2.5.1 =
 *Release Date - 4 May 2023*
 
 * Bug Fix: The blacklist check and username blocking were firing in the wrong orders
 
-= Version 2.5.0 (Medium Priority) =
+= Version 2.5.0 =
 *Release Date - 3 May 2023*
 
 * New Feature: Automatically block common generic usernames and custom defined usernames
@@ -150,7 +169,7 @@ https://player.vimeo.com/video/360060065
 * Minor Improvement: formatting improvements to the readme.txt
 * Tested up to 6.2.0
 
-= Version 2.4.4 (High Priority) =
+= Version 2.4.4 =
 *Release Date - 05 Apr 2022*
 
 * Security: Updated SDK to version 2.4.3 due to security vulnerability
@@ -160,7 +179,7 @@ https://player.vimeo.com/video/360060065
 * Minor Improvement: Updated PHP version checks
 * Tested up to 5.9.2
 
-= Version 2.4.2 (Medium Priority) =
+= Version 2.4.2 =
 *Release Date - 06 Feb 2022*
 
 * NOTICE: Upcoming Version 2.5 will require a minimum PHP 7.4 and WordPress 5.3
@@ -171,13 +190,13 @@ https://player.vimeo.com/video/360060065
 * Minor Improvement: Updated PHP version checks
 * Tested up to: 5.9
 
-= Version 2.4.1 (Low Priority) =
+= Version 2.4.1 =
 *Release Date - 04 March 2021*
 
 * Bug Fix: Pantheon Hosting: files in the uploads directory now accept 770 permissions as secure
 * Improvement: Removed the batch permissions dropdown and the update permissions button when no files/dirs are available to modify.
 
-= Version 2.4.0 (Medium Priority) =
+= Version 2.4.0 =
 *Release Date - 28 February 2021*
 *Release Notes: [https://wpsecuritysafe.com/changelog/version-2-4/](https://wpsecuritysafe.com/changelog/version-2-4/)*
 

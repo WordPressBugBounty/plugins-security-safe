@@ -76,18 +76,26 @@ class Yoda {
      * @since  2.0.0
      */
     static function get_ip() : string {
-        $ip = false;
-        $ip = ( !$ip && isset( $_SERVER['HTTP_CLIENT_IP'] ) && $_SERVER['HTTP_CLIENT_IP'] ? $_SERVER['HTTP_CLIENT_IP'] : $ip );
-        $ip = ( !$ip && isset( $_SERVER['HTTP_X_FORWARDED_FOR'] ) && $_SERVER['HTTP_X_FORWARDED_FOR'] ? $_SERVER['HTTP_X_FORWARDED_FOR'] : $ip );
-        $ip = ( !$ip && isset( $_SERVER['HTTP_X_FORWARDED'] ) && $_SERVER['HTTP_X_FORWARDED'] ? $_SERVER['HTTP_X_FORWARDED'] : $ip );
-        $ip = ( !$ip && isset( $_SERVER['HTTP_FORWARDED_FOR'] ) && $_SERVER['HTTP_FORWARDED_FOR'] ? $_SERVER['HTTP_FORWARDED_FOR'] : $ip );
-        $ip = ( !$ip && isset( $_SERVER['HTTP_FORWARDED'] ) && $_SERVER['HTTP_FORWARDED'] ? $_SERVER['HTTP_FORWARDED'] : $ip );
-        $ip = ( !$ip && isset( $_SERVER['REMOTE_ADDR'] ) && $_SERVER['REMOTE_ADDR'] ? $_SERVER['REMOTE_ADDR'] : $ip );
+        $ip = '';
+        $keys = [
+            'HTTP_CLIENT_IP',
+            'HTTP_X_FORWARDED_FOR',
+            'HTTP_X_FORWARDED',
+            'HTTP_FORWARDED_FOR',
+            'HTTP_FORWARDED',
+            'REMOTE_ADDR'
+        ];
+        foreach ( $keys as $key ) {
+            if ( !$ip ) {
+                // Get IP address(es) proxy server(s)
+                $ip = REQUEST::SERVER_text_field( $key );
+                if ( empty( $ip ) ) {
+                    break;
+                }
+            }
+        }
         if ( !$ip ) {
-            $ip = __( 'IP Unavailable', SECSAFE_TRANSLATE );
-        } else {
-            $ip = filter_var( $ip, FILTER_VALIDATE_IP );
-            $ip = ( !$ip ? __( 'Not Valid IP', SECSAFE_TRANSLATE ) : $ip );
+            $ip = __( 'IP Unavailable', SECSAFE_SLUG );
         }
         return $ip;
     }
@@ -230,13 +238,14 @@ class Yoda {
      *
      * @since 2.4.0
      */
-    static function get_php_versions() : array {
+    public static function get_php_versions() : array {
         // https://endoflife.software/programming-languages/server-side-scripting/php
         // https://secure.php.net/ChangeLog-7.php
         // https://secure.php.net/ChangeLog-8.php
         $versions = [
-            '8.2.0' => '8.2.18',
-            '8.1.0' => '8.1.27',
+            '8.3.0' => '8.3.12',
+            '8.2.0' => '8.2.24',
+            '8.1.0' => '8.1.30',
             '8.0.0' => '8.0.30',
         ];
         $eol = self::get_php_eol();
@@ -254,24 +263,26 @@ class Yoda {
 
     /**
      * Provides the End of Life date for a given version.
+     * @link https://endoflife.date/php
      *
      * @param string $php_version
      *
      * @return string|array
      */
-    static function get_php_eol( string $php_version = '' ) {
+    public static function get_php_eol( string $php_version = '' ) {
         $eol = [
-            '8.3.0' => '2026-11-23',
-            '8.2.0' => '2025-12-08',
-            '8.1.0' => '2024-11-24',
+            '8.3.0' => '2027-12-31',
+            '8.2.0' => '2026-12-31',
+            '8.1.0' => '2025-12-31',
             '8.0.0' => '2023-11-26',
             '7.4.0' => '2022-11-28',
+            '7.3.0' => '2021-12-06',
+            '7.2.0' => '2020-11-30',
+            '7.1.0' => '2019-12-01',
+            '7.0.0' => '2019-01-10',
+            '5.6.0' => '2018-12-31',
         ];
-        if ( isset( $eol[$php_version] ) ) {
-            return $eol[$php_version];
-        } else {
-            return $eol;
-        }
+        return $eol[$php_version] ?? $eol;
     }
 
     /**

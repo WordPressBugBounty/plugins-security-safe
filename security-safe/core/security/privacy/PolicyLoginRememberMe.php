@@ -5,6 +5,9 @@
 	// Prevent Direct Access
 	( defined( 'ABSPATH' ) ) || die;
 
+	// Run Policy
+	PolicyLoginRememberMe::init();
+
 	/**
 	 * Class PolicyLoginRememberMe
 	 * @package SecuritySafe
@@ -12,22 +15,24 @@
 	class PolicyLoginRememberMe {
 
 		/**
-		 * PolicyLoginRememberMe constructor.
+		 * Register hooks
+		 *
+		 * @return void
 		 */
-		function __construct() {
+		public static function init() : void {
 
 			// Clear Cache Attempt
-			add_action( 'login_form', [ $this, 'login_form' ], 99 );
+			add_action( 'login_form', [ self::class, 'login_form' ], 99, 0 );
 
 			// Clear Variable Attempt
-			add_action( 'login_head', [ $this, 'reset' ], 99 );
+			add_action( 'login_head', [ self::class, 'reset' ], 99, 0 );
 
 		}
 
 		/**
 		 * Unsets the GET variable rememberme
 		 */
-		public function reset() {
+		public static function reset() : void {
 
 			// Remove the rememberme post value
 			if ( isset( $_POST['rememberme'] ) ) {
@@ -41,9 +46,9 @@
 		/**
 		 * Filters the html before it reaches the browser.
 		 */
-		public function login_form() {
+		public static function login_form() : void {
 
-			ob_start( [ $this, 'remove' ] );
+			ob_start( [ self::class, 'remove' ] );
 
 		}
 
@@ -54,7 +59,7 @@
 		 *
 		 * @return string
 		 */
-		public function remove( $html ) {
+		public static function remove( string $html ) : string {
 
 			return preg_replace( '/<p class="forgetmenot">(.*)<\/p>/', '', $html );
 

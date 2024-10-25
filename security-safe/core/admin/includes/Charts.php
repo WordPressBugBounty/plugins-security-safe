@@ -383,7 +383,7 @@
 		 *
 		 * @since 2.0.0
 		 */
-		static function dependencies() : void {
+		public static function dependencies() : void {
 
 			/**
 			 * Get updated css/JS here: https://cdnjs.com/libraries

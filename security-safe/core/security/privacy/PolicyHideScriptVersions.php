@@ -5,6 +5,11 @@
 	// Prevent Direct Access
 	( defined( 'ABSPATH' ) ) || die;
 
+	use WP_Upgrader;
+
+	// Run Policy
+	PolicyHideScriptVersions::init();
+
 	/**
 	 * Class PolicyHideScriptVersions
 	 * @package SecuritySafe
@@ -13,16 +18,18 @@
 	class PolicyHideScriptVersions {
 
 		/**
-		 * PolicyHideWPVersion constructor.
+		 * Register hooks
+		 *
+		 * @return void
 		 */
-		function __construct() {
+		public static function init() : void {
 
 			// Cache Busting
-			add_action( 'upgrader_process_complete', [ $this, 'increase_cache_busting' ], 10, 2 );
+			add_action( 'upgrader_process_complete', [ self::class, 'increase_cache_busting' ], 10, 2 );
 
 			// Remove Version From Scripts
-			add_filter( 'style_loader_src', [ $this, 'css_js_version' ], 99999 );
-			add_filter( 'script_loader_src', [ $this, 'css_js_version' ], 99999 );
+			add_filter( 'style_loader_src', [ self::class, 'css_js_version' ], 99999 );
+			add_filter( 'script_loader_src', [ self::class, 'css_js_version' ], 99999 );
 
 		}
 
@@ -35,7 +42,7 @@
 		 *
 		 * @since  1.1.3
 		 */
-		function css_js_version( $src ) {
+		public static function css_js_version( string $src ) : string {
 
 			global $SecuritySafe;
 
@@ -57,12 +64,14 @@
 		/**
 		 * Increase Cache Busting value wrapper
 		 *
-		 * @param object $upgrader_object WP_Upgrader instance. In other contexts, $this, might be a Theme_Upgrader, Plugin_Upgrader, Core_Upgrade, or Language_Pack_Upgrader instance.
-		 * @param array $options Array of bulk item update data.
-		 *
 		 * @link https://developer.wordpress.org/reference/hooks/upgrader_process_complete/
+		 *
+		 * @param \WP_Upgrader $upgrader_object WP_Upgrader instance. In other contexts, $this, might be a Theme_Upgrader, Plugin_Upgrader, Core_Upgrade, or Language_Pack_Upgrader instance.
+		 * @param array $options
+		 *
+		 * @return void
 		 */
-		function increase_cache_busting( $upgrader_object, $options ) {
+		public static function increase_cache_busting( WP_Upgrader $upgrader_object, array $options ) : void {
 
 			global $SecuritySafe;
 

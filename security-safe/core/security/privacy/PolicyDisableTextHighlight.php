@@ -5,6 +5,9 @@
 	// Prevent Direct Access
 	( defined( 'ABSPATH' ) ) || die;
 
+	// Run Policy
+	PolicyDisableTextHighlight::init();
+
 	/**
 	 * Class PolicyDisableTextHighlight
 	 * @package SecuritySafe
@@ -13,18 +16,20 @@
 	class PolicyDisableTextHighlight {
 
 		/**
-		 * PolicyDisableTextHighlight constructor.
+		 * Register hooks
+		 *
+		 * @return void
 		 */
-		function __construct() {
+		public static function init() : void {
 
-			add_action( 'wp_enqueue_scripts', [ $this, 'scripts' ] );
+			add_action( 'wp_enqueue_scripts', [ self::class, 'scripts' ] );
 
 		}
 
 		/**
 		 * Loads CSS To Prevent Highlighting.
 		 */
-		function scripts() {
+		public static function scripts() : void {
 
 			// Load CSS
 			wp_register_style( 'ss-pdth', SECSAFE_URL_ASSETS . 'css/pdth.css', [], SECSAFE_VERSION, 'all' );

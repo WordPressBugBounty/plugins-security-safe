@@ -5,6 +5,9 @@
 	// Prevent Direct Access
 	( defined( 'ABSPATH' ) ) || die;
 
+	// Run Policy
+	PolicyAnonymousWebsite::init();
+
 	/**
 	 * Class PolicyAnonymousWebsite
 	 * @package SecuritySafe
@@ -13,11 +16,13 @@
 	class PolicyAnonymousWebsite {
 
 		/**
-		 * PolicyAnonymousWebsite constructor.
+		 * Register hooks
+		 *
+		 * @return void
 		 */
-		function __construct() {
+		public static function init() : void {
 
-			add_filter( 'http_headers_useragent', [ $this, 'make_anonymous' ] );
+			add_filter( 'http_headers_useragent', [ self::class, 'make_anonymous' ] );
 
 		}
 
@@ -26,7 +31,7 @@
 		 *
 		 * @return string
 		 */
-		function make_anonymous() {
+		public static function make_anonymous() : string {
 
 			global $wp_version;
 

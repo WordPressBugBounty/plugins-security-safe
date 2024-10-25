@@ -14,21 +14,21 @@ class Admin extends Security {
      *
      * @var bool
      */
-    public $is_settings_page;
+    public bool $is_settings_page;
 
     /**
      * Is this page a plugin page?
      *
      * @var bool
      */
-    public $is_plugin_page;
+    public bool $is_plugin_page;
 
     /**
      * The page we are currently on
      *
      * @var object
      */
-    protected $page;
+    protected object $page;
 
     /**
      * Admin constructor.
@@ -70,7 +70,7 @@ class Admin extends Security {
      *
      * @since  0.1.0
      */
-    function check_settings() : void {
+    public function check_settings() : void {
         $reset = REQUEST::key( 'reset' );
         $page = REQUEST::key( 'page' );
         $tab = REQUEST::key( 'tab' );
@@ -141,7 +141,7 @@ class Admin extends Security {
      * @return  boolean
      * @since  2.2.3
      */
-    function is_plugin_page() : bool {
+    public function is_plugin_page() : bool {
         $page = REQUEST::key( 'page' );
         if ( !isset( $this->is_plugin_page ) ) {
             $this->is_plugin_page = $page && strpos( $page, SECSAFE_SLUG ) !== false;
@@ -226,7 +226,7 @@ class Admin extends Security {
      *
      * @since 2.0.0
      */
-    static function load_charts( array $args ) : void {
+    public static function load_charts( array $args ) : void {
         require_once SECSAFE_DIR_ADMIN_INCLUDES . '/Charts.php';
         Charts::display_charts( $args );
     }
@@ -265,7 +265,7 @@ class Admin extends Security {
      * @return string
      * @since  0.2.0
      */
-    public function admin_body_class( string $classes ) {
+    public function admin_body_class( string $classes ) : string {
         return $classes . ' ' . SECSAFE_SLUG;
     }
 
@@ -650,7 +650,7 @@ class Admin extends Security {
      *
      * @since  0.2.0
      */
-    public function display_notices( bool $skip = false ) {
+    public function display_notices( bool $skip = false ) : void {
         if ( !$skip ) {
             // Register / Display Admin Notices
             $this->all_notices();

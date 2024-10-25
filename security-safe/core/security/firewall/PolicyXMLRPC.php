@@ -5,34 +5,33 @@
 	// Prevent Direct Access
 	( defined( 'ABSPATH' ) ) || die;
 
+	// Run Policy
+	PolicyXMLRPC::init();
+
 	/**
 	 * Class PolicyXMLRPC
 	 * @package SecuritySafe
 	 */
-	class PolicyXMLRPC extends Firewall {
-
-		var $setting_on = false;
+	class PolicyXMLRPC {
 
 		/**
-		 * PolicyXMLRPC constructor.
+		 * Register hooks
+		 *
+		 * @return void
 		 */
-		function __construct( $setting = false ) {
+		public static function init() : void {
 
-			if ( $setting ) {
+			add_filter( 'xmlrpc_enabled', [ self::class, 'disable' ], 50 );
 
-				add_filter( 'xmlrpc_enabled', [ $this, 'disable' ], 50 );
-
-				// Remove Link From Head
-				remove_action( 'wp_head', 'rsd_link' );
-
-			}
+			// Remove Link From Head
+			remove_action( 'wp_head', 'rsd_link' );
 
 		}
 
 		/**
 		 * Disable XML-RPC
 		 */
-		function disable() {
+		public static function disable() : void {
 
 			$args            = [];
 			$args['type']    = 'logins';
@@ -46,10 +45,10 @@
 			$username         = ( $xml && isset( $xml->params->param[2]->value->string ) ) ? $xml->params->param[2]->value->string : 'unknown';
 			$args['username'] = sanitize_user( $username );
 
-			$this->rate_limit();
+			Firewall::rate_limit();
 
 			// Block the attempt
-			$this->block( $args );
+			Firewall::block( $args );
 
 		}
 
