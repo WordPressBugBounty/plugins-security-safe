@@ -36,7 +36,7 @@ final class PolicyBlockUsernames {
 	 *
 	 * @return array
 	 */
-	public function illegal_user_logins( array $usernames = [] ) : array {
+	public static function illegal_user_logins( array $usernames = [] ) : array {
 
 		$usernames = array_merge( $usernames, self::get_blocked_usernames_list() );
 		$usernames = array_unique( $usernames );

@@ -5,7 +5,7 @@ namespace SovereignStack\SecuritySafe;
 define( 'SECSAFE_NAME', 'WP Security Safe' );
 define( 'SECSAFE_NAME_PRO', 'WP Security Safe Pro' );
 define( 'SECSAFE_SLUG', basename( plugin_dir_url( __FILE__ ) ) );
-define( 'SECSAFE_VERSION', '2.6.4' );
+define( 'SECSAFE_VERSION', '2.6.5' );
 define( 'SECSAFE_MIN_PHP', '7.4.0' );
 define( 'SECSAFE_MIN_WP', '5.3.0' );
 /**
@@ -16,7 +16,7 @@ define( 'SECSAFE_MIN_WP', '5.3.0' );
  *
  * @wordpress-plugin
  * Plugin Name: WP Security Safe
- * Version: 2.6.4
+ * Version: 2.6.5
  * Plugin URI: https://wpsecuritysafe.com
  * Description: Firewall, Security Hardening, Auditing & Privacy
  * Author: Sovereign Stack, LLC

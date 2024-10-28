@@ -4,7 +4,7 @@ Tags: 404 errors, disable XMLRPC, limit-login, wp security, firewall
 Requires at least: 5.3
 Requires PHP: 7.4
 Tested up to: 6.6.2
-Stable tag: 2.6.4
+Stable tag: 2.6.5
 
 This WordPress security plugin helps you quickly audit, harden, and secure your website.
 
@@ -85,6 +85,11 @@ https://player.vimeo.com/video/360060065
 * Major - 1.x.x increase involves major changes to the visual or functional aspects of the plugin, or removing functionality that has been previously deprecated. (higher risk of breaking changes)
 * Minor - x.1.x increase introduces new features, improvements to existing features, or introduces deprecations. (low risk of breaking changes)
 * Patch - x.x.1 increase is a bug fix, security fix, or minor improvement and does not introduce new features. (non-breaking changes)
+
+= Version 2.6.5 =
+*Release Date - 28 Oct 2024
+
+* Bug Fix: illegal_user_logins() not defined as static method causing fatal error
 
 = Version 2.6.4 =
 *Release Date - 25 Oct 2024
